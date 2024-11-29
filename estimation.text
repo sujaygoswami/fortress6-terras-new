@@ -50,15 +50,41 @@ Total:
 84hrs (Desktop)
 50hrs (Responsive[Low resolution desktop, tab portrait, tab landscape, mobile])
 =======================================================
-134hrs
+134hrs + parallax 4hrs + different light box image (R&D)
 
 ----------------------
 
 =================
 INTEGRATION
 =================
-90 hours
+90hours
 Page 7 (News page) => It will be a extension, feature is same as MTM so we can take this from MTM.
+
+
+
+
+
+
+Terras
+
+Recording 28.11.2024
+
+1. Slider thing we will try our best [map slider]
+2. Header will be visible only if I go up a little bit
+3. Video with slider: here only one bg video and the thumbnail slider is a different slider within itself
+4. Blur bg they can upload blur bg or bg image
+5. Slider with calendar they can set bg color
+6. Oval images will be one image
+7. In the media they can insert video
+8. Video and image can be inserted differently for different device
+9. Blur bg tiles with red must be centre align if less tiles
+10. Team video tiles 4 will be parallax videos thumb will scroll faster, if less tile, right align
+11. Different light box video for different resolution (R&D)
+12. Logo slider color logo css grey on hover color
+13. Image placement align they can choose
+14. Just before footer round box is part of footer (home pages’ box)
+15. Image banner watermark optional
+16. Match color with bg will be automatically
 
 
 
