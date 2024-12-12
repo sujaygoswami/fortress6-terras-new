@@ -1,0 +1,55 @@
+.terras{
+
+    header.header{
+        position: fixed;
+        z-index: 300;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        background-color: var(--site-global-grey);
+
+        .main-header-item-holder{
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+        }
+
+        .site-logo-holder{
+            display: flex;
+            column-gap: 26px;
+
+            & > div{
+                padding: 7px 0;
+                display: grid;
+                align-items: center;
+            }
+
+            .logo-caption{
+                font-family: var(--site-secondary-font);
+                font-weight: normal;
+                font-size: 20px;
+                line-height: normal;
+            }
+        }
+
+        .header-service-part{
+            display: flex;
+            column-gap: 45px;
+            align-items: center;
+        }
+
+        .header-menu-trigger{
+            .the-trigger{
+                width: 52.15px;
+                height: 35.14px;
+                background-image: url(../Images/menu-trigger-icon.svg);
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: 52.15px;
+                cursor: pointer;
+                display: block;
+            }
+        }
+    }
+    
+}
