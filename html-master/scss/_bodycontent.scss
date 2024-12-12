@@ -52,8 +52,9 @@
             .mask-it {
                 -webkit-mask-image: url(../Images/traingle-shape-banner-video-part.svg);
                 mask-image: url(../Images/traingle-shape-banner-video-part.svg);
-                mask-size: 70%;
-                mask-repeat: no-repeat;    
+                mask-size: 32vw;
+                mask-repeat: no-repeat;
+                mask-position: 66vw 8vw; 
               }
 
             video{
