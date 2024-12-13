@@ -142,7 +142,32 @@ jQuery('.touch .has-submenu > a').addClass('dual-click');
  jQuery('.go-top').click(function(){
    jQuery('html, body').animate({scrollTop: 0}, 400);
   
-});      
+});
+
+// traingle-view-1
+jQuery('.traingle-watermark-has').each(function(){
+  var HEIGHT = jQuery(this).height();
+  var WIDTH = jQuery(this).width();
+  var CLONEMASKHEIGHT = jQuery(this).find('.the-mask-img img').height();
+  var CLONEMASKWIDTH = jQuery(this).find('.the-mask-img img').width();
+  jQuery(this).find('.mask-it').css('-webkit-mask-position-y', HEIGHT - CLONEMASKHEIGHT);
+  jQuery(this).find('.mask-it').css('-webkit-mask-position-x', WIDTH - CLONEMASKWIDTH);
+});
+
+// banner mini slider
+jQuery('.banner-mini-slider-module .the-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  arrows: false
+});
+
+// cover-bg-content-module
+jQuery('.cover-bg-content-module').each(function(){
+  var CONTEXTHEIGHT = jQuery(this).find('.the-context > .main-wrap').height();
+  jQuery(this).css('min-height', CONTEXTHEIGHT);
+});
 
 
 });

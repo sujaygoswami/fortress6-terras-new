@@ -1,5 +1,12 @@
 // fonts
 :root{
+    --site-primary-font: 'Roboto';
+    --site-primary-font-medium: 500;
+    --site-primary-font-light: 300;
+    --site-primary-font-bold: bold;
+    --site-primary-font-thin: 100;
+    --site-primary-font-black: 900;
+    --site-primary-font-regular: normal;
     --site-secondary-font: 'Fjalla One';
 }
 
@@ -19,6 +26,8 @@
 :root{
     --site-text-color-dark: #1B2020;
     --site-global-grey: #F2F2F2;
+    --site-grey-type-2: #C6C6C6;
+    --site-primary-color: #FF211A;
 }
 
 // grid
