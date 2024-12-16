@@ -17,6 +17,15 @@
         .site-logo-holder{
             display: flex;
             column-gap: 26px;
+            
+            .logo-part{
+                padding-right: 26px;
+                border-right: 1px solid #3C4646;
+                &:last-child{
+                    border: none;
+                    padding-right: 0px;
+                }
+            }
 
             & > div{
                 padding: 7px 0;

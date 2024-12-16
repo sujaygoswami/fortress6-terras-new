@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="28.983395"
+   height="32.174606"
+   viewBox="0 0 28.983395 32.174606"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="play-icon-white-outline.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="Polygon_1"
+     data-name="Polygon 1"
+     transform="rotate(90,17.956349,15.043651)"
+     fill="none">
+    <path
+       d="m 15.534,6.021 a 4,4 0 0 1 6.933,0 L 34.548,27 a 4,4 0 0 1 -3.466,6 H 6.919 A 4,4 0 0 1 3.453,27 Z"
+       stroke="none"
+       id="path1" />
+    <path
+       d="m 19,7.0166092 c -0.215919,0 -0.615629,0.065088 -0.866619,0.50103 L 6.0520306,28.501028 c -0.2504788,0.435049 -0.1069508,0.81295 8.888e-4,0.999491 0.107851,0.186538 0.3637314,0.499479 0.8657303,0.499479 H 31.08135 c 0.50199,0 0.75788,-0.312941 0.865721,-0.499479 0.107849,-0.186541 0.251377,-0.564451 8.98e-4,-0.999491 L 19.866619,7.5176392 C 19.615629,7.0816975 19.215919,7.0166092 19,7.0166092 m 0,-3.0000038 c 1.348612,0 2.697226,0.6680469 3.46649,2.0041427 L 34.54784,27.004139 C 36.083191,29.670809 34.158421,33 31.08135,33 H 6.9186497 C 3.8415718,33 1.9168091,29.670809 3.4521599,27.004139 L 15.53351,6.0207481 C 16.302774,4.6846523 17.651388,4.0166054 19,4.0166054 Z"
+       stroke="none"
+       fill="#ffffff"
+       id="path2" />
+  </g>
+</svg>
