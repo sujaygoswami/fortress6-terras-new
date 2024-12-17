@@ -9493,6 +9493,13 @@ html, body {
     cursor: pointer;
     display: block; }
 
+.terras img.state-black-and-white {
+  filter: grayscale(100%);
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s; }
+  .terras img.state-black-and-white.has-hover:hover {
+    filter: none; }
+
 .terras .site-bg-dark {
   background-color: var(--site-global-dark); }
 
@@ -9537,6 +9544,12 @@ html, body {
 .terras .section-gap-tyep-4 {
   margin-bottom: 165px; }
 
+.terras .section-gap-tyep-5 {
+  margin-bottom: 75px; }
+
+.terras .section-gap-tyep-6 {
+  margin-bottom: 100px; }
+
 .terras .global-card-content.view-1, .terras .inset-card-content.view-1 {
   padding: 50px; }
 
@@ -9550,6 +9563,14 @@ html, body {
 .terras .global-card-content.view-4, .terras .inset-card-content.view-4 {
   padding-top: 70px;
   padding-bottom: 55px; }
+
+.terras .global-card-content.view-5, .terras .inset-card-content.view-5 {
+  padding-top: 122px;
+  padding-bottom: 55px; }
+
+.terras .global-card-content.view-6, .terras .inset-card-content.view-6 {
+  padding-top: 60px;
+  padding-bottom: 90px; }
 
 .terras .grid-flex-v-align-center {
   align-items: center; }
@@ -9605,8 +9626,14 @@ html, body {
 .terras .element-gap.element-gap-4 {
   margin-bottom: 33px; }
 
+.terras .element-gap.element-gap-5 {
+  margin-bottom: 70px; }
+
 .terras .multi-column-grid-module.type-5-col > .my-row > .my-col {
   width: 20%; }
+
+.terras .inset-cotainer-tylpe-1 {
+  max-width: 1547px; }
 
 .terras .logo-stamp {
   pointer-events: none; }
@@ -9655,25 +9682,25 @@ html, body {
   font-size: 60px;
   line-height: 80px;
   letter-spacing: 1.2px;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .terras h4, .terras .h4 {
   font-size: 36px;
   line-height: 52px;
   letter-spacing: 0.72px;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .terras h5, .terras .h5 {
   font-size: 26px;
   line-height: 35px;
   letter-spacing: 0.52px;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .terras h6, .terras .h6 {
   font-size: 20px;
   line-height: normal;
   letter-spacing: 0.4px;
-  margin-bottom: 10px; }
+  margin-bottom: 15px; }
 
 .terras strong {
   font-weight: var(--site-primary-font-bold); }
@@ -9688,10 +9715,14 @@ html, body {
     font-size: 35px;
     letter-spacing: 0.7px;
     line-height: 50px; }
-  .terras p.sm-para {
+  .terras p.md-para {
     font-size: 20px;
     letter-spacing: 0px;
-    line-height: 35px; }
+    line-height: 40px; }
+  .terras p.xs-para {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 30px; }
 
 .terras .group-btn {
   display: flex;
@@ -9922,6 +9953,155 @@ html, body {
 .terras .team-member-video-teaser-module .team-member-video-teaser-snippet > .my-row > .my-col:nth-child(2n) {
   position: relative;
   top: -85px; }
+
+.terras .global-date-badge {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden; }
+  .terras .global-date-badge.pos-1 {
+    position: absolute;
+    right: 16px;
+    top: 24px; }
+  .terras .global-date-badge > div {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 3px; }
+    .terras .global-date-badge > div i {
+      font-size: 15px;
+      font-weight: var(--site-primary-font-bold);
+      font-style: normal;
+      line-height: normal; }
+
+.terras .global-logo-badge {
+  -webkit-border-radius: 29px;
+  -moz-border-radius: 29px;
+  -ms-border-radius: 29px;
+  border-radius: 29px;
+  overflow: hidden; }
+  .terras .global-logo-badge > .main-wrap {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 12px; }
+  .terras .global-logo-badge.pos-1 {
+    position: absolute;
+    left: 24px;
+    bottom: 21px; }
+
+.terras .global-carousel.no-counter .slider__counter {
+  display: none; }
+
+.terras .global-carousel.type-arrow-pagination-view-1 .global-carousel-slider-navigate-wrap {
+  margin-top: 37px; }
+
+.terras .global-carousel.type-arrow-pagination-view-1 .slider-arrow-holder {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  column-gap: 47px; }
+
+.terras .global-carousel.type-arrow-pagination-view-2 {
+  padding: 0 155px; }
+  .terras .global-carousel.type-arrow-pagination-view-2 .slick-track {
+    display: flex;
+    align-items: center; }
+  .terras .global-carousel.type-arrow-pagination-view-2 .slick-slide {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .terras .global-carousel.type-arrow-pagination-view-2 .slick-list {
+    margin-left: -10px;
+    margin-right: -10px; }
+  .terras .global-carousel.type-arrow-pagination-view-2 .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -17.5px; }
+    .terras .global-carousel.type-arrow-pagination-view-2 .slick-arrow.slick-prev {
+      left: 37px; }
+    .terras .global-carousel.type-arrow-pagination-view-2 .slick-arrow.slick-next {
+      right: 37px; }
+
+.terras .global-carousel .slider__counter {
+  font-size: 34px;
+  line-height: normal;
+  letter-spacing: 0.68px;
+  font-family: var(--site-secondary-font);
+  display: flex;
+  align-items: center;
+  column-gap: 20px; }
+  .terras .global-carousel .slider__counter span {
+    opacity: 0.4; }
+    .terras .global-carousel .slider__counter span i {
+      font-style: normal; }
+    .terras .global-carousel .slider__counter span:first-child {
+      opacity: 1; }
+
+.terras .global-carousel .slick-arrow {
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  font-size: 0px;
+  width: 47.85px;
+  height: 35.69px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 47.85px; }
+  .terras .global-carousel .slick-arrow.slick-prev {
+    background-image: url(../Images/left-indication-arrow-dark.svg); }
+  .terras .global-carousel .slick-arrow.slick-next {
+    background-image: url(../Images/right-indication-arrow-dark.svg); }
+
+.terras .interactive-map-module.view-1 {
+  padding-top: 90px;
+  padding-bottom: 70px; }
+
+.terras .interactive-map-module .the-main-map.pos-1 {
+  position: absolute;
+  right: 180px;
+  top: 0px; }
+
+.terras .interactive-map-module .pointer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1; }
+  .terras .interactive-map-module .pointer.current {
+    z-index: 2; }
+  .terras .interactive-map-module .pointer .pointer-info {
+    position: absolute;
+    left: -60px;
+    top: 24px;
+    width: 82px;
+    height: 44px;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    -ms-border-radius: 29px;
+    border-radius: 29px;
+    background-color: rgba(255, 255, 255, 0.74);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; }
+  .terras .interactive-map-module .pointer .trigger {
+    width: 36.96px;
+    height: 31.98px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 36.96px;
+    background-position: left top;
+    background-image: url(../Images/interactive-map-pointer-normal-state.svg); }
+    .terras .interactive-map-module .pointer .trigger.active {
+      background-image: url(../Images/site-pointer-icon.svg); }
+      .terras .interactive-map-module .pointer .trigger.active + .pointer-info {
+        display: grid; }
 
 /*! Vendor */
 /*!

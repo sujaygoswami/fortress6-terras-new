@@ -170,7 +170,102 @@ Fancybox.bind("[data-fancybox]", {
 jQuery('.team-member-video-teaser-snippet').each(function(){
  var HEIGHT = jQuery(this).height();
  jQuery(this).css('margin-bottom', - (HEIGHT / 2));
+ jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT / 2));
 });
+
+
+// global carousel
+jQuery('.global-carousel:not(.counter-hidden)').each(function(){
+
+
+  var $globalCarousel = jQuery(this);
+  
+  
+  if ($globalCarousel.length) {
+    var currentSlide;
+    var slidesCount;
+    var sliderCounter = document.createElement('div');
+    sliderCounter.classList.add('slider__counter');
+    
+    var updateSliderCounter = function(slick, currentIndex) {
+      currentSlide = slick.slickCurrentSlide() + 1;
+      slidesCount = slick.slideCount;
+      if(slidesCount >= 10){
+        $(sliderCounter).html('<span>'+'<i>'+'0'+'</i>'+'<i class="double-value">'+currentSlide+'</i>'+'</span>'+ '<span>'+'/'+'</span>' +'<span>'+slidesCount+'</span>');
+      }else{
+        $(sliderCounter).html('<span>'+'0'+currentSlide+'</span>'+ '<span>'+'/'+'</span>' +'<span>'+'0'+slidesCount+'</span>');
+      }
+      
+    };
+  
+    $globalCarousel.on('init', function(event, slick) {
+      $globalCarousel.append(sliderCounter);
+      updateSliderCounter(slick);
+    });
+  
+    $globalCarousel.on('afterChange', function(event, slick, currentSlide) {
+      updateSliderCounter(slick, currentSlide);
+    });
+  }
+  
+  });
+  
+  jQuery('.global-carousel-type-1').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+  jQuery('.global-carousel-type-2').slick({
+    infinite: true,
+    slidesToShow: 10,
+    slidesToScroll: 1,
+    draggable: false
+  });
+  jQuery('.global-carousel-type-3').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1
+  });
+
+  
+  jQuery('.type-arrow-pagination-view-1').each(function(){
+    jQuery(this).find('.slick-arrow').wrapAll('<div class="slider-arrow-holder"></div>');
+    jQuery(this).find('.slider__counter, .slider-arrow-holder').wrapAll('<div class="global-carousel-slider-navigate-wrap"></div>');
+    var PREVBUTTON = jQuery(this).find('.slick-prev');
+    jQuery(this).find('.slider__counter').detach().insertAfter(PREVBUTTON);
+  });
+  jQuery('.global-carousel-slider-navigate-wrap').each(function(){
+    var SLICKLIST = jQuery(this).parent().find('.slick-list');
+    jQuery(this).detach().insertAfter(SLICKLIST);
+  });
+
+  jQuery('.global-carousel').each(function(){
+    jQuery(this).on('afterChange', function(event, slick, currentSlide, nextSlide){
+      var DOUBLEVALUE = jQuery(this).find('.double-value').html();
+      var iNum = parseInt(DOUBLEVALUE);
+      if(iNum >= 10){
+        jQuery(this).find('.double-value').prev('i').hide();
+      }
+        console.log(iNum);
+    });
+  });
+
+  // interactive-map-module
+  jQuery('.interactive-map-module').each(function(){
+    var PARENT = jQuery(this);
+    var MINHEIGHT = jQuery(this).find('.the-main-map').height();
+    jQuery(this).css('min-height', MINHEIGHT);
+
+    jQuery(this).find('.pointer .trigger').click(function(){
+      jQuery(PARENT).find('.pointer .trigger').not(this).removeClass('active');
+      jQuery(PARENT).find('.pointer .trigger').not(this).parent().removeClass('current');
+      jQuery(this).toggleClass('active');
+      jQuery(this).parent().toggleClass('current');
+    });
+
+  });
+  
+ 
 
 
 });

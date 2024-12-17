@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87.909" height="82.126" viewBox="0 0 87.909 82.126">
+  <defs>
+    <filter id="Pfad_18" x="0" y="8.528" width="72.107" height="73.598" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.443"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Pfad_19" x="9.713" y="0" width="78.196" height="82.125" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_15727" data-name="Group 15727" transform="translate(-570.189 -24.4)">
+    <g transform="matrix(1, 0, 0, 1, 570.19, 24.4)" filter="url(#Pfad_18)">
+      <path id="Pfad_18-2" data-name="Pfad 18" d="M16.526,0,0,28.6H5.782L16.526,9.99l1.965,3.4-2.843,4.927h11.46Z" transform="translate(22.5 28.03)" fill="#ff211a"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 570.19, 24.4)" filter="url(#Pfad_19)">
+      <path id="Pfad_19-2" data-name="Pfad 19" d="M11.742,0,8.777,5.133l16.5,28.53H21.338l-1.962-3.4H3.952L0,37.125H33.2Z" transform="translate(32.21 19.5)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
