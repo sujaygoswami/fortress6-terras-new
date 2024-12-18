@@ -31,9 +31,17 @@ html, body{
 		
 
    .set-back{
-	   	& > img{
-	   		display: none;
-	   	}
+		& > img{
+			width: 100%;
+			height: auto;
+			opacity: 0;
+		}
+		&:not(.img-d-block){
+			& > img{
+				display: none;
+			}
+		}
+	   	
    }
 
 
@@ -63,6 +71,9 @@ html, body{
     .full-height{
     	height: 100%;
     }
+	.half-height{
+		height: 50%;
+	}
 	
 	.table{
 

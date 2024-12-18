@@ -1,5 +1,13 @@
 .terras{
 
+    footer.footer{
+        & > .main-wrap{
+            background-image: url(../Images/footer-bg.svg);
+            background-size: cover;
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+    }
 	
 	
 }

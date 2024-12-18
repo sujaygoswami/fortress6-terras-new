@@ -1,12 +1,16 @@
 .terras{
 
     header.header{
-        position: fixed;
+        position: absolute;
         z-index: 300;
         width: 100%;
         left: 0px;
         top: 0px;
         background-color: var(--site-global-grey);
+
+        &.scroll-up-visible{
+            position: fixed;
+        }
 
         .main-header-item-holder{
             height: var(--header-height);

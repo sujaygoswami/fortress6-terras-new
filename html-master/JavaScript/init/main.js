@@ -62,6 +62,26 @@ var checkMobile = function(){
 checkMobile();
 
 
+// scroll up done
+$(function(){
+  var lastScrollTop = 0, delta = 5;
+  $(window).scroll(function(){
+    var nowScrollTop = $(this).scrollTop();
+    if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
+      if (nowScrollTop > lastScrollTop){
+        
+      } else {
+        jQuery('header.header').addClass('scroll-up-visible');
+     }
+    lastScrollTop = nowScrollTop;
+    }
+  });
+});
+jQuery(window).scroll(function () {
+  if (jQuery(document).scrollTop() == 0) {
+    jQuery('header.header').removeClass('scroll-up-visible');
+  }
+});
 
 
 
@@ -112,7 +132,7 @@ jQuery( window ).on( "orientationchange", function( event ) {
 
 jQuery('.set-back').each(function(){
 
- var SETBACK = jQuery(this).find('img').attr('src');
+ var SETBACK = jQuery(this).find('>img').attr('src');
   jQuery(this).css('background-image', 'url(' + SETBACK + ')');
 
 });
