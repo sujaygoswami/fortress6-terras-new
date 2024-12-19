@@ -7,6 +7,89 @@
             background-position: left top;
             background-repeat: no-repeat;
         }
+
+        .main-footer-item-holder{
+            padding-top: 35px;
+            padding-bottom: 10px;
+        }
+
+        .site-logo-holder{
+            padding-top: 35px;
+        }
+
+        .footer-contact-info{
+            .global-iconic-link{
+                margin-bottom: 40px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .footer-menu{
+            .the-menu{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+
+                li{
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+        }
+
+        .terry-img{
+            position: absolute;
+            right: -65px;
+            top: 0px;
+        }
+        .terry-slogan{
+            position: absolute;
+            left: 28px;
+            top: 53px;
+            z-index: 2;
+        }
+
+        .footer-social{
+            padding-top: 107px;
+
+            .strip{
+                padding: 40px 45px;
+                background-color: var(--site-grey-type-3);
+                @include border-radius(40px);
+                display: flex;
+                align-items: center;
+                min-width: 435px;
+                column-gap: 36px;
+                position: relative;
+                z-index: 1;
+
+                
+
+                .strip-head{
+                    font-size: 26px;
+                    letter-spacing: 0.52px;
+                    line-height: normal;
+                    font-family: var(--site-secondary-font);
+                }
+
+                .strip-item{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 36px;
+                    margin-left: auto;
+                }
+            }
+        }
+
+        
+
+        .footer-copy-right-info{
+            padding: 15px 0;
+            border-top: 1px solid rgba($color: #3C4646, $alpha: 0.28);
+        }
+
     }
 	
 	
