@@ -175,11 +175,7 @@ jQuery('.banner-mini-slider-module .the-slider').slick({
   arrows: false
 });
 
-// cover-bg-content-module
-jQuery('.cover-bg-content-module').each(function(){
-  var CONTEXTHEIGHT = jQuery(this).find('.the-context > .main-wrap').height();
-  jQuery(this).css('min-height', CONTEXTHEIGHT);
-});
+
 
 // fancy box
 Fancybox.bind("[data-fancybox]", {
@@ -355,13 +351,28 @@ jQuery(window).resize(function(){
 
 
 // traingle-watermark-has
-jQuery('.traingle-watermark-has').each(function(){
+jQuery('.traingle-watermark-has:not(.left-positioned)').each(function(){
   var HEIGHT = jQuery(this).height();
   var WIDTH = jQuery(this).width();
   var CLONEMASKHEIGHT = jQuery(this).find('.the-mask-img img').height();
   var CLONEMASKWIDTH = jQuery(this).find('.the-mask-img img').width();
   jQuery(this).find('.mask-it').css('-webkit-mask-position-y', HEIGHT - CLONEMASKHEIGHT);
   jQuery(this).find('.mask-it').css('-webkit-mask-position-x', WIDTH - CLONEMASKWIDTH);
+});
+
+jQuery('.traingle-watermark-has.left-positioned').each(function(){
+  var HEIGHT = jQuery(this).height();
+  var WIDTH = jQuery(this).width();
+  var CLONEMASKHEIGHT = jQuery(this).find('.the-mask-img img').height();
+  var CLONEMASKWIDTH = jQuery(this).find('.the-mask-img img').width();
+  jQuery(this).find('.mask-it').css('-webkit-mask-position-y', HEIGHT - CLONEMASKHEIGHT);
+  jQuery(this).find('.mask-it').css('-webkit-mask-position-x', 0);
+});
+
+// cover-bg-content-module
+jQuery('.cover-bg-content-module').each(function(){
+  var CONTEXTHEIGHT = jQuery(this).find('.the-context > .main-wrap').height();
+  jQuery(this).css('min-height', CONTEXTHEIGHT);
 });
 
 
