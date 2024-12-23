@@ -238,9 +238,12 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     draggable: false
   });
   jQuery('.global-carousel-type-3').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    draggable: false,
+    centerMode: false,
+    initialSlide: 0
   });
 
   
@@ -293,7 +296,12 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
   });
 
   
-  
+  // global-absolute-item-parent
+  jQuery('.global-absolute-item-parent').each(function(){
+    var HEIGHT = jQuery(this).find('.global-absolute-item').height();
+    jQuery(this).css('padding-bottom', HEIGHT);
+  });
+  // global-absolute-item-parent
  
 
 

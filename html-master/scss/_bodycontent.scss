@@ -67,6 +67,17 @@
     .global-mx-padding{
         padding-left: 76px;
         padding-right: 76px;
+        &.only-left-padding{
+            padding-right: 0px !important;
+        }
+        &.only-right-padding{
+            padding-left: 0px !important;
+        }
+
+        &.added-container-fluid-padding{
+            padding-left: $global-mx-padding + $grid-gutter-width;
+            padding-right: $global-mx-padding + $grid-gutter-width;
+        }
     }
     .container, .container-fluid{
         padding-left: $grid-gutter-width;
@@ -117,6 +128,9 @@
     }
     .section-gap-tyep-8{
         margin-bottom: 65px;
+    }
+    .section-gap-tyep-9{
+        margin-bottom: 85px;
     }
     .section-top-gap-tyep-1{
         margin-top: 85px;
@@ -223,6 +237,21 @@
                 margin-bottom: 74px;
             }
         }
+
+        &.custom-row-lg-plus{
+            margin-left: -30px;
+            margin-right: -30px;
+            row-gap: 60px;
+
+            & > .my-col{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            &.has-margin-bottom{
+                margin-bottom: 60px;
+            }
+        }
     }
     .inset-container-type-1{
         max-width: 1487px;
@@ -232,6 +261,9 @@
     }
     .inset-container-type-3{
         max-width: 1248px;
+    }
+    .inset-container-type-3{
+        max-width: 1150px;
     }
     .element-gap{
         &:last-child{
@@ -724,6 +756,9 @@
 
     // cover-bg-content-module
     .cover-bg-content-module{
+        &.static-banner{
+            min-height: 625px;
+        }
         &.set-back{
             background-size: cover;
             background-repeat: no-repeat;
@@ -890,6 +925,17 @@
 
     // global-carousel
     .global-carousel{
+        &.view-upcoming-glimps-type-1{
+            .slick-list{
+                padding-right: 212px !important;
+            }
+            
+        }
+        &.slick-list-overflow-visible{
+            .slick-list{
+                overflow: visible;
+            }
+        }
         &.no-counter{
             .slider__counter{
                 display: none;
@@ -928,6 +974,15 @@
                 .global-carousel-slider-navigate-wrap{
                     margin-top: 130px;
                 }
+            }
+
+            &.pagination-pos-3{
+                .global-carousel-slider-navigate-wrap{
+                    padding-left: $global-mx-padding + $grid-gutter-width;
+                    padding-right: $global-mx-padding + $grid-gutter-width;
+                    margin-top: 100px;
+                }
+               
             }
         }
 
@@ -1296,5 +1351,138 @@
         }
     }
     // graph-module
+    
+    // has-oval-mask
+    .has-oval-mask{
+        .oval-masked-img{
+                -webkit-mask-image: url(../Images/image-oval-mask-type-1.svg);
+                mask-image: url(../Images/image-oval-mask-type-1.svg);
+                mask-repeat: no-repeat;
+        }
+    }
+    // has-oval-mask
+
+    // team-member-oval-info
+    .team-member-oval-info{
+        .position{
+            white-space: nowrap;
+        }
+        .member-dp{
+            margin-bottom: 40px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+    // team-member-oval-info
+
+    // global-absolute-item
+    .global-absolute-item{
+        position: absolute;
+        width: 100%;
+
+        &.pos-1{
+            left: 0px;
+            bottom: 0px;
+        }
+        
+
+        .type-1{
+            padding: 40px 50px;
+        }
+    }
+    // global-absolute-item
+
+    // speech-module
+    .speech-module{
+        .the-spoke-person{
+            text-align: center;
+        }
+        .the-speech{
+            display: flex;
+            justify-content: center;
+            font-size: 36px;
+            line-height: 60px;
+            letter-spacing: 0.72px;
+            font-family: var(--site-secondary-font);
+            text-align: center;
+        }
+        .speech-mark{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+
+            i{
+                width: 76px;
+                height: 105px;
+                @include border-radius(38px);
+                background-color: var(--site-primary-color);
+                color: white;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                font-size: 97px;
+                line-height: normal;
+                letter-spacing: 1.94px;
+                font-family: var(--site-secondary-font);
+            }
+        }
+    }
+    // speech-module
+
+    // site-accordion
+    .site-accordion{
+        .accordion-body{
+            border-bottom: 1px solid rgba($color: #1B2020, $alpha: 0.2);
+        }
+        .accordion-item{
+            &:last-child{
+                .accordion-body{
+                    border-color: transparent;
+                }
+            }
+        }
+        .accordion-header{
+
+            
+
+            button{
+                font-size: 20px;
+                line-height: 30px;
+                padding: 20px 160px 20px 0;
+                border-bottom: 1px solid rgba($color: #1B2020, $alpha: 0.2);
+                position: relative;
+                
+                &:not(.collapsed){
+
+                    &:after{
+                        transform: rotate(45deg);
+                        transform-origin: center center;
+                    }
+                    
+                }
+
+                &:after{
+                    content: ' ';
+                    width: 34.52px;
+                    height: 34.52px;
+                    background-image: url(../Images/plus-icon-dark.svg);
+                    background-repeat: no-repeat;
+                    background-position: left top;
+                    background-size: 34.52px;
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    margin-top: -17px;
+                    @include transition(all 0.3s ease 0s);
+                }
+            }
+        }
+    }
+    // site-accordion
 
 }
