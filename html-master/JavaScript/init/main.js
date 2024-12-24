@@ -302,6 +302,9 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     jQuery(this).css('padding-bottom', HEIGHT);
   });
   // global-absolute-item-parent
+
+
+  
  
 
 
@@ -381,6 +384,13 @@ jQuery('.traingle-watermark-has.left-positioned').each(function(){
 jQuery('.cover-bg-content-module').each(function(){
   var CONTEXTHEIGHT = jQuery(this).find('.the-context > .main-wrap').height();
   jQuery(this).css('min-height', CONTEXTHEIGHT);
+});
+
+
+// has-global-mask
+jQuery('.has-global-mask').each(function(){
+  var HIDDENMSUKHEIGHT = jQuery(this).find('.global-hidden-mask-img').height();
+  jQuery(this).find('.adapt-mask-height').height(HIDDENMSUKHEIGHT);
 });
 
 

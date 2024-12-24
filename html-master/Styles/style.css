@@ -9378,6 +9378,10 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top; }
+  .terras .default-set-back-rule-type-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; }
   .terras .container {
     position: relative; }
   .terras .tooltip {
@@ -9568,6 +9572,32 @@ html, body {
     cursor: pointer;
     display: block; }
 
+.terras .global-filter {
+  filter: blur(30px);
+  -webkit-filter: blur(30px); }
+
+.terras .has-global-mask .global-hidden-mask-img {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  pointer-events: none; }
+  .terras .has-global-mask .global-hidden-mask-img img {
+    width: 100%;
+    height: auto; }
+
+.terras .global-mask-it-type-1 {
+  mask-repeat: no-repeat;
+  mask-position: left bottom;
+  mask-size: contain; }
+  .terras .global-mask-it-type-1.lg-size {
+    -webkit-mask-image: url(../Images/Rectangle-blur-lg.svg);
+    mask-image: url(../Images/Rectangle-blur-lg.svg); }
+  .terras .global-mask-it-type-1.md-size {
+    -webkit-mask-image: url(../Images/Rectangle-blur-md.svg);
+    mask-image: url(../Images/Rectangle-blur-md.svg); }
+
 .terras .w-100 {
   width: 100%; }
 
@@ -9700,6 +9730,9 @@ html, body {
 .terras .section-gap-tyep-9 {
   margin-bottom: 85px; }
 
+.terras .section-gap-tyep-10 {
+  margin-bottom: 50px; }
+
 .terras .section-top-gap-tyep-1 {
   margin-top: 85px; }
 
@@ -9807,6 +9840,9 @@ html, body {
 .terras .inset-container-type-3 {
   max-width: 1150px; }
 
+.terras .inset-container-type-4 {
+  max-width: 1427px; }
+
 .terras .element-gap:last-child {
   margin-bottom: 0px !important; }
 
@@ -9837,6 +9873,9 @@ html, body {
 .terras .element-gap.element-gap-9 {
   margin-bottom: 60px; }
 
+.terras .element-gap.element-gap-10 {
+  margin-bottom: 220px; }
+
 .terras .multi-column-grid-module .my-col > .main-wrap {
   height: 100%; }
   .terras .multi-column-grid-module .my-col > .main-wrap > div {
@@ -9857,6 +9896,13 @@ html, body {
     bottom: -142px;
     display: grid;
     justify-content: center;
+    z-index: 10; }
+  .terras .logo-stamp.pos2 {
+    position: absolute;
+    right: 35px;
+    top: -100px;
+    display: grid;
+    justify-content: right;
     z-index: 10; }
 
 .terras .global-clone-content {
@@ -9927,12 +9973,20 @@ html, body {
     font-size: 50px;
     line-height: 80px;
     letter-spacing: 1px; }
+  .terras h2.md-less, .terras .md-less.h2 {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.8px; }
 
 .terras h4, .terras .h4 {
   font-size: 36px;
   line-height: 52px;
   letter-spacing: 0.72px;
   margin-bottom: 15px; }
+  .terras h4.md, .terras .md.h4 {
+    font-size: 30px;
+    line-height: 57px;
+    letter-spacing: 0.6px; }
 
 .terras h5, .terras .h5 {
   font-size: 26px;
@@ -10192,11 +10246,18 @@ html, body {
   .terras .cover-bg-content-module .the-context.alignment-view-up {
     align-items: start; }
 
+.terras .global-oval-icon-holder.absolute-pos-1 {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px; }
+
 .terras .global-oval-icon-holder.heading-type {
   display: flex;
   column-gap: 36px;
   row-gap: 36px;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .terras .global-oval-icon-holder > div {
   width: 70px;
@@ -10214,7 +10275,8 @@ html, body {
     -webkit-border-radius: 0px !important;
     -moz-border-radius: 0px !important;
     -ms-border-radius: 0px !important;
-    border-radius: 0px !important; }
+    border-radius: 0px !important;
+    max-width: 65% !important; }
 
 .terras .global-oval-icon-holder.view-2 > div {
   width: 123px;
@@ -10223,6 +10285,20 @@ html, body {
   -moz-border-radius: 67px;
   -ms-border-radius: 67px;
   border-radius: 67px; }
+
+.terras .global-oval-icon-holder.view-3 {
+  padding: 0 12px;
+  z-index: 2; }
+  .terras .global-oval-icon-holder.view-3.heading-type {
+    column-gap: 22px;
+    row-gap: 22px; }
+  .terras .global-oval-icon-holder.view-3 > div {
+    width: 75px;
+    height: 95px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    border-radius: 45px; }
 
 .terras .global-light-video-player.view-absolute {
   width: 100%;
@@ -10679,6 +10755,29 @@ html, body {
     margin-top: -17px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
+
+.terras .blur-caption {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px;
+  overflow: hidden;
+  height: 118px;
+  background-color: white;
+  filter: blur(30px);
+  -webkit-filter: blur(30px); }
+
+.terras .global-clone-img-element {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1; }
 
 .terras footer.footer > .main-wrap {
   background-image: url(../Images/footer-bg.svg);
