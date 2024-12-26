@@ -9663,6 +9663,14 @@ html, body {
     padding-left: 96px;
     padding-right: 96px; }
 
+.terras .global-mx-margin {
+  margin-left: 76px;
+  margin-right: 76px; }
+  .terras .global-mx-margin.only-left-margin {
+    margin-right: 0px !important; }
+  .terras .global-mx-margin.only-right-margin {
+    margin-left: 0px !important; }
+
 .terras .container, .terras .container-fluid, .terras .container-sm, .terras .container-md, .terras .container-lg, .terras .container-xl, .terras .container-xxl {
   padding-left: 20px;
   padding-right: 20px; }
@@ -10366,15 +10374,26 @@ html, body {
   -ms-border-radius: 29px;
   border-radius: 29px;
   overflow: hidden; }
+  .terras .global-logo-badge.view-2 > .main-wrap {
+    width: 165px;
+    height: 90px; }
+  .terras .global-logo-badge.view-2.bg-white {
+    background-color: rgba(255, 255, 255, 0.74) !important; }
+  .terras .global-logo-badge.bg-white {
+    background-color: rgba(255, 255, 255, 0.92) !important; }
   .terras .global-logo-badge > .main-wrap {
     display: grid;
     align-items: center;
     justify-content: center;
-    padding: 24px 12px; }
+    width: 180px;
+    height: 110px; }
   .terras .global-logo-badge.pos-1 {
     position: absolute;
     left: 24px;
     bottom: 21px; }
+
+.terras .global-carousel:not(.has-dots) .slick-dots {
+  display: none !important; }
 
 .terras .global-carousel.view-upcoming-glimps-type-1 .slick-list {
   padding-right: 212px !important; }
@@ -10465,6 +10484,40 @@ html, body {
   .terras .global-carousel .slick-arrow.slick-next {
     background-image: url(../Images/right-indication-arrow-dark.svg); }
 
+.terras .interactive-map-module.slider-functionality .map-holder > .pointer {
+  display: none; }
+
+.terras .interactive-map-module.slider-functionality .slick-dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none; }
+  .terras .interactive-map-module.slider-functionality .slick-dots li {
+    position: absolute;
+    margin: 0px;
+    padding: 0px; }
+    .terras .interactive-map-module.slider-functionality .slick-dots li button {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0px;
+      top: 0px;
+      z-index: 1;
+      opacity: 0;
+      border: none;
+      margin: 0px;
+      padding: 0px; }
+
+.terras .interactive-map-module .map-carousel-main {
+  width: 746px; }
+
+.terras .interactive-map-module .interactive-map-carousel-context-col > .main-wrap {
+  max-width: 550px; }
+
 .terras .interactive-map-module.view-1 {
   padding-top: 90px;
   padding-bottom: 70px; }
@@ -10476,6 +10529,14 @@ html, body {
   @media screen and (max-width: 1880px) {
     .terras .interactive-map-module .the-main-map.pos-1 {
       right: 20px; } }
+
+.terras .interactive-map-module .the-main-map.pos-2 {
+  position: absolute;
+  left: 244px;
+  top: 0px; }
+  @media screen and (max-width: 1880px) {
+    .terras .interactive-map-module .the-main-map.pos-2 {
+      left: 20px; } }
 
 .terras .interactive-map-module .pointer {
   position: absolute;

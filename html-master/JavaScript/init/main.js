@@ -191,6 +191,8 @@ jQuery('.team-member-video-teaser-snippet').each(function(){
 
 
 // global carousel
+jQuery('.global-carousel').each(function(){
+});
 jQuery('.global-carousel:not(.counter-hidden)').each(function(){
 
 
@@ -230,7 +232,9 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    dots: true
   });
+  
   jQuery('.global-carousel-type-2').slick({
     infinite: true,
     slidesToShow: 10,
@@ -259,6 +263,10 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
   });
 
   jQuery('.global-carousel').each(function(){
+
+
+
+
     jQuery(this).on('afterChange', function(event, slick, currentSlide, nextSlide){
       var DOUBLEVALUE = jQuery(this).find('.double-value').html();
       var iNum = parseInt(DOUBLEVALUE);
@@ -266,13 +274,27 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
         jQuery(this).find('.double-value').prev('i').hide();
       }
         console.log(iNum);
+
+      jQuery(this).parents('.interactive-map-module.slider-functionality').find('.slick-dots li').each(function(){
+        if (jQuery(this).hasClass('slick-active')) {
+          jQuery(this).find('.trigger').addClass('active');
+        }else{
+          jQuery(this).find('.trigger').removeClass('active');
+        }
+      });  
+        
     });
+
+   
+
+    
   });
 
   // interactive-map-module
   jQuery('.interactive-map-module').each(function(){
     var PARENT = jQuery(this);
     var MINHEIGHT = jQuery(this).find('.the-main-map').height();
+    var VIEW1 = jQuery(this).parent().find('.interactive-map-module.view-1');
     jQuery(this).css('min-height', MINHEIGHT);
 
     jQuery(this).find('.pointer .trigger').click(function(){
@@ -282,7 +304,66 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
       jQuery(this).parent().toggleClass('current');
     });
 
+
+    
+      jQuery(VIEW1).find('> .global-card-content').css('min-height', MINHEIGHT - 160);
+  
+
+    
+
   });
+
+
+
+  jQuery(this).find('.interactive-map-module.slider-functionality .pointer').each(function(){
+    var TOPARENTS = jQuery(this).parents('.interactive-map-module.slider-functionality');
+    var SLICKDOTSUL = jQuery(TOPARENTS).find('.slick-dots');
+    var SLICKDOTSLI = jQuery(TOPARENTS).find('.slick-dots li');
+    var MAPHOLDER = jQuery(TOPARENTS).find('.map-holder');
+    
+
+    var POINTERINDEX = jQuery(this).index();
+    jQuery(this).attr('pointer-index', POINTERINDEX + 1);
+    var RESULTEDINDEX = jQuery(this).attr('pointer-index');
+    jQuery(this).addClass('pointer-index' + RESULTEDINDEX);
+    jQuery(this).attr('data-pointer-index', 'pointer-index' + RESULTEDINDEX);
+
+    jQuery(this).parents(TOPARENTS).find('.slick-dots li').each(function(){
+      var SLICKDOTINDEX = jQuery(this).index();
+      jQuery(this).attr('pointer-index', SLICKDOTINDEX + 1);
+      var RESULTEDINDEX = jQuery(this).attr('pointer-index');
+      jQuery(this).addClass('pointer-index' + RESULTEDINDEX);
+      jQuery(this).attr('data-pointer-index', 'pointer-index' + RESULTEDINDEX);
+    });
+
+    jQuery(SLICKDOTSUL).detach().appendTo(MAPHOLDER);
+
+    var POINTERDATAINDEX = jQuery(this).attr('data-pointer-index');
+    var ATTRSTYLEPOSITION = jQuery(this).attr('style');
+    var POINTERHTML = jQuery(this).html();
+    
+    jQuery(this).parents(TOPARENTS).find('.slick-dots').find('.' + POINTERDATAINDEX).attr('style', ATTRSTYLEPOSITION);
+    jQuery(this).parents(TOPARENTS).find('.slick-dots').find('.' + POINTERDATAINDEX).append(POINTERHTML);
+
+    jQuery(SLICKDOTSLI).addClass('pointer');
+
+    
+
+    
+  });
+
+
+  jQuery('.global-carousel').each(function(){
+    jQuery(this).parents('.interactive-map-module.slider-functionality').find('.slick-dots li').each(function(){
+      if (jQuery(this).hasClass('slick-active')) {
+        jQuery(this).find('.trigger').addClass('active');
+      }else{
+        jQuery(this).find('.trigger').removeClass('active');
+      }
+    });
+  });
+
+    
 
   // header-menu-trigger
   jQuery('.header-menu-trigger').click(function(){
