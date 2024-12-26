@@ -62,6 +62,7 @@ var checkMobile = function(){
 checkMobile();
 
 
+
 // scroll up done
 $(function(){
   var lastScrollTop = 0, delta = 5;
@@ -82,6 +83,10 @@ $(function(){
 //     jQuery('header.header').removeClass('scroll-up-visible');
 //   }
 // });
+
+
+// global vars
+var HEADERHEIGHT = jQuery('header.header').height();
 
 
 
@@ -386,7 +391,14 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
 
 
   
- 
+ // page anchoring
+ jQuery(document).on('click', '.anchor-link', function (event) {
+  event.preventDefault();
+
+  jQuery('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - (HEADERHEIGHT + 20)
+  }, 100);
+});
 
 
 });

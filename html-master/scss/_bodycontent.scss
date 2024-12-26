@@ -412,7 +412,7 @@
     .blur-item{
         &.blur-type-1{
             filter: blur(30px);
-            backdrop-filter: blur(30px);
+            -webkit-filter: blur(30px);
 
             &.brightness-type-1{
                 filter: brightness(1.1);
@@ -595,6 +595,11 @@
         background-repeat: no-repeat;
         background-position: right 21px center;
         background-size: 34.83px;
+
+        &.down-arrow-btn{
+            background-image: url(../Images/site-btn-down-arrow-white.svg);
+            background-size: 25.98px;
+        }
        
 
         &.primary-color-btn{

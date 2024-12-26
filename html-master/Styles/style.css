@@ -9923,7 +9923,7 @@ html, body {
 
 .terras .blur-item.blur-type-1 {
   filter: blur(30px);
-  backdrop-filter: blur(30px); }
+  -webkit-filter: blur(30px); }
   .terras .blur-item.blur-type-1.brightness-type-1 {
     filter: brightness(1.1); }
 
@@ -10073,6 +10073,9 @@ html, body {
   background-repeat: no-repeat;
   background-position: right 21px center;
   background-size: 34.83px; }
+  .terras .site-btn.down-arrow-btn {
+    background-image: url(../Images/site-btn-down-arrow-white.svg);
+    background-size: 25.98px; }
   .terras .site-btn.primary-color-btn {
     background-color: var(--site-primary-color); }
   .terras .site-btn.outline-btn {
