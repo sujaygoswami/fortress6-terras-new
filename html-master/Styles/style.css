@@ -9693,6 +9693,12 @@ html, body {
   -ms-border-radius: 25px;
   border-radius: 25px; }
 
+.terras .global-border-radius-all-md-less {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
 .terras .global-border-radius-all-sm {
   -webkit-border-radius: 34px;
   -moz-border-radius: 34px;
@@ -9843,12 +9849,12 @@ html, body {
   max-width: 1200px; }
 
 .terras .inset-container-type-3 {
-  max-width: 1248px; }
-
-.terras .inset-container-type-3 {
   max-width: 1150px; }
 
 .terras .inset-container-type-4 {
+  max-width: 1296px; }
+
+.terras .inset-container-type-5 {
   max-width: 1427px; }
 
 .terras .element-gap:last-child {
@@ -9953,6 +9959,16 @@ html, body {
   column-gap: 36px;
   font-size: 50px;
   letter-spacing: 1px; }
+
+.terras .global-iconic-link.view-3 i {
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+
+.terras .global-iconic-link.view-3 a {
+  column-gap: 40px;
+  font-size: 39px;
+  letter-spacing: 0.78px; }
 
 .terras h1, .terras .h1, .terras h2, .terras .h2, .terras h3, .terras .h3, .terras h4, .terras .h4, .terras h5, .terras .h5, .terras h6, .terras .h6 {
   font-family: var(--site-secondary-font);
@@ -10842,6 +10858,27 @@ html, body {
   left: 0px;
   top: 0px;
   z-index: 1; }
+
+.terras .global-tip.pos-1 {
+  position: absolute;
+  left: -18px;
+  top: -7px;
+  z-index: 1; }
+
+.terras .global-tip .the-tip {
+  min-width: 35px;
+  height: 35px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  letter-spacing: 0.6px;
+  font-family: var(--site-secondary-font);
+  line-height: 35px; }
 
 .terras footer.footer > .main-wrap {
   background-image: url(../Images/footer-bg.svg);

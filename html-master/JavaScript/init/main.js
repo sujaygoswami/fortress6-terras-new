@@ -427,6 +427,8 @@ jQuery(window).load(function(){
 
   jQuery('.iconic-text-widget-module .module-header').matchHeight();
 
+  jQuery('.parallel-equal-height').matchHeight();
+
 
 
 
