@@ -9747,6 +9747,9 @@ html, body {
 .terras .section-gap-tyep-10 {
   margin-bottom: 50px; }
 
+.terras .section-gap-tyep-11 {
+  margin-bottom: 40px; }
+
 .terras .section-top-gap-tyep-1 {
   margin-top: 85px; }
 
@@ -10066,6 +10069,41 @@ html, body {
     letter-spacing: 0px;
     line-height: 30px; }
 
+.terras .entry li {
+  font-size: 25px;
+  line-height: 45px;
+  margin-bottom: 30px; }
+  .terras .entry li.para-gap-lg {
+    margin-bottom: 60px; }
+  .terras .entry li.lg-para {
+    font-size: 35px;
+    letter-spacing: 0.7px;
+    line-height: 50px; }
+  .terras .entry li.lg-para-less {
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 50px; }
+  .terras .entry li.lg-para-plus {
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height: 60px; }
+  .terras .entry li.sm-para {
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 35px; }
+  .terras .entry li.sm-para-less {
+    font-size: 19px;
+    letter-spacing: 0.38px;
+    line-height: 30px; }
+  .terras .entry li.sm-para-plus {
+    font-size: 22px;
+    letter-spacing: 0px;
+    line-height: 36px; }
+  .terras .entry li.xs-para {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 30px; }
+
 .terras .group-btn {
   display: flex;
   column-gap: 30px;
@@ -10092,6 +10130,10 @@ html, body {
   .terras .site-btn.down-arrow-btn {
     background-image: url(../Images/site-btn-down-arrow-white.svg);
     background-size: 25.98px; }
+  .terras .site-btn.reload-btn {
+    background-image: url(../Images/noun-reload-icon-white.svg);
+    background-size: 24.77px;
+    background-position: right 30px center; }
   .terras .site-btn.primary-color-btn {
     background-color: var(--site-primary-color); }
   .terras .site-btn.outline-btn {
@@ -10879,6 +10921,93 @@ html, body {
   letter-spacing: 0.6px;
   font-family: var(--site-secondary-font);
   line-height: 35px; }
+
+.terras .site-form-view-layout-1 .fieldwrap {
+  position: relative;
+  height: 72px;
+  border: 1.5px solid black;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border-radius: 50px; }
+  .terras .site-form-view-layout-1 .fieldwrap .dropdown {
+    height: 100%; }
+    .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-menu {
+      min-width: 100%;
+      border-color: black;
+      border-width: 1.5px; }
+    .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-item {
+      position: relative;
+      font-family: var(--site-secondary-font);
+      cursor: pointer; }
+      .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-item:active {
+        background-color: var(--bs-dropdown-link-hover-bg);
+        color: inherit; }
+      .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-item span {
+        position: relative;
+        z-index: 1; }
+      .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-item .hidden-check-radio {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer; }
+        .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-item .hidden-check-radio:checked + span {
+          color: white; }
+          .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-item .hidden-check-radio:checked + span + .visual-item {
+            background-color: black; }
+      .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-item .visual-item {
+        pointer-events: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%; }
+    .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-toggle {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: none;
+      margin: 0px;
+      padding: 0 65px 0 28px;
+      font-size: 22px;
+      letter-spacing: 0.44px;
+      font-family: var(--site-secondary-font);
+      position: relative;
+      text-align: left; }
+      .terras .site-form-view-layout-1 .fieldwrap .dropdown .dropdown-toggle:after {
+        border: none;
+        margin: 0px;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        background-image: url(../Images/down-arrow-dark.svg);
+        width: 28.21px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 28.21px;
+        margin-top: -7px; }
+  .terras .site-form-view-layout-1 .fieldwrap .main-field {
+    width: 100%;
+    height: 100%; }
+  .terras .site-form-view-layout-1 .fieldwrap.label-over-body-bg label {
+    background-color: var(--site-global-grey); }
+  .terras .site-form-view-layout-1 .fieldwrap.specific-width-type-1 {
+    width: 285px; }
+  .terras .site-form-view-layout-1 .fieldwrap label {
+    position: absolute;
+    left: 0px;
+    top: -12px;
+    padding: 0 15px;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: var(--site-primary-font-regular); }
 
 .terras footer.footer > .main-wrap {
   background-image: url(../Images/footer-bg.svg);

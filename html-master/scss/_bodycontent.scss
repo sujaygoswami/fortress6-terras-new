@@ -183,6 +183,11 @@
     .section-gap-tyep-10{
         margin-bottom: 50px;
     }
+
+    .section-gap-tyep-11{
+        margin-bottom: 40px;
+    }
+
     .section-top-gap-tyep-1{
         margin-top: 85px;
     }
@@ -593,6 +598,52 @@
         }
 
     }
+
+    .entry{
+        li{
+            font-size: 25px;
+            line-height: 45px;
+            margin-bottom: 30px;
+            &.para-gap-lg{
+                margin-bottom: 60px;
+            }
+            &.lg-para{
+                font-size: 35px;
+                letter-spacing: 0.7px;
+                line-height: 50px;
+            }
+            &.lg-para-less{
+                font-size: 30px;
+                letter-spacing: 0px;
+                line-height: 50px;
+            }
+            &.lg-para-plus{
+                font-size: 40px;
+                letter-spacing: 0px;
+                line-height: 60px;
+            }
+            &.sm-para{
+                font-size: 20px;
+                letter-spacing: 0px;
+                line-height: 35px;
+            }
+            &.sm-para-less{
+                font-size: 19px;
+                letter-spacing: 0.38px;
+                line-height: 30px;
+            }
+            &.sm-para-plus{
+                font-size: 22px;
+                letter-spacing: 0px;
+                line-height: 36px;
+            }
+            &.xs-para{
+                font-size: 16px;
+                letter-spacing: 0px;
+                line-height: 30px;
+            }
+        }
+    }
     // typography
 
     // site btn
@@ -620,6 +671,12 @@
         &.down-arrow-btn{
             background-image: url(../Images/site-btn-down-arrow-white.svg);
             background-size: 25.98px;
+        }
+
+        &.reload-btn{
+            background-image: url(../Images/noun-reload-icon-white.svg);
+            background-size: 24.77px;
+            background-position: right 30px center;
         }
        
 
@@ -1728,5 +1785,128 @@
         }
     }
     // global-tip
+
+    // site-form-view-layout-1
+    .site-form-view-layout-1{
+        .fieldwrap{
+            position: relative;
+            height: 72px;
+            border: 1.5px solid black;
+            @include border-radius(50px);
+
+            .dropdown{
+                height: 100%;
+                .dropdown-menu{
+                    min-width: 100%;
+                    border-color: black;
+                    border-width: 1.5px;
+                }
+                .dropdown-item{
+                    position: relative;
+                    font-family: var(--site-secondary-font);
+                    cursor: pointer;
+
+                    &:active{
+                        background-color: var(--bs-dropdown-link-hover-bg);
+                        color: inherit;
+                    }
+
+                    span{
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    .hidden-check-radio{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        left: 0px;
+                        top: 0px;
+                        z-index: 2;
+                        opacity: 0;
+                        cursor: pointer;
+
+                        
+
+                        &:checked{
+                            
+
+                            & + span{
+                                color: white;
+
+                                & + .visual-item{
+                                    background-color: black;
+                                }
+                            }
+                        }
+                    }
+                    .visual-item{
+                        pointer-events: none;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .dropdown-toggle{
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    border: none;
+                    margin: 0px;
+                    padding: 0 65px 0 28px;
+                    font-size: 22px;
+                    letter-spacing: 0.44px;
+                    font-family: var(--site-secondary-font);
+                    position: relative;
+                    text-align: left;
+
+                    &:after{
+                        border: none;
+                        margin: 0px;
+                        position: absolute;
+                        right: 30px;
+                        top: 50%;
+                        background-image: url(../Images/down-arrow-dark.svg);
+                        width: 28.21px;
+                        height: 15px;
+                        background-repeat: no-repeat;
+                        background-position: left top;
+                        background-size: 28.21px;
+                        margin-top: -7px;
+                    }
+                }
+            }
+
+            .main-field{
+                width: 100%;
+                height: 100%;
+            }
+
+            &.label-over-body-bg{
+                label{
+                    background-color: var(--site-global-grey);
+                }
+            }
+
+            &.specific-width-type-1{
+                width: 285px;
+            }
+
+            label{
+                position: absolute;
+                left: 0px;
+                top: -12px;
+                padding: 0 15px;
+                font-size: 20px;
+                line-height: normal;
+                font-weight: var(--site-primary-font-regular);
+            }
+        }
+    }
+    // site-form-view-layout-1
 
 }
