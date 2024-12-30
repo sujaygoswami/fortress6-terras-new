@@ -9299,6 +9299,7 @@ textarea.form-control-lg {
   --site-global-grey: #F2F2F2;
   --site-grey-type-2: #C6C6C6;
   --site-grey-type-3: #DCDEE2;
+  --site-grey-type-4: #898989;
   --site-primary-color: #FF211A; }
 
 :root {
@@ -10314,6 +10315,8 @@ html, body {
   z-index: 1; }
   .terras .cover-bg-content-module .the-context.alignment-view-up {
     align-items: start; }
+  .terras .cover-bg-content-module .the-context.alignment-view-end {
+    align-items: end; }
 
 .terras .global-oval-icon-holder.absolute-pos-1 {
   position: absolute;
@@ -10636,13 +10639,17 @@ html, body {
       .terras .interactive-map-module .pointer .trigger.active + .pointer-info {
         display: grid; }
 
+.terras .line-info-module.lg > .main-wrap {
+  font-size: 23px;
+  letter-spacing: 0.46px; }
+
 .terras .line-info-module > .main-wrap {
   display: flex;
   align-items: center;
   font-size: 20px;
   line-height: normal;
   letter-spacing: 0.4px;
-  color: var(--site-text-color-dark-ver-lighter);
+  color: var(--site-grey-type-4);
   column-gap: 17px;
   font-family: var(--site-secondary-font); }
   .terras .line-info-module > .main-wrap > div:last-child::after {

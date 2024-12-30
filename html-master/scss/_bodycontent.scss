@@ -939,6 +939,9 @@
             &.alignment-view-up{
                 align-items: start;
             }
+            &.alignment-view-end{
+                align-items: end;
+            }
         }
     }
     // cover-bg-content-module
@@ -1377,13 +1380,19 @@
 
     // line info module
     .line-info-module{
+        &.lg{
+            & > .main-wrap{
+                font-size: 23px;
+                letter-spacing: 0.46px;
+            }
+        }
         & > .main-wrap{
             display: flex;
             align-items: center;
             font-size: 20px;
             line-height: normal;
             letter-spacing: 0.4px;
-            color: var(--site-text-color-dark-ver-lighter);
+            color: var(--site-grey-type-4);
             column-gap: 17px;
             font-family: var(--site-secondary-font);
             & > div{
