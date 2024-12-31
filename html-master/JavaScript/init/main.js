@@ -427,6 +427,11 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
 });
 
 
+// integration label changes
+jQuery('.primary-color-btn, .outline-btn').addClass('site-btn');
+jQuery('.banner-text p').addClass('group-btn');
+
+
 });
 
 
