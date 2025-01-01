@@ -13,7 +13,9 @@
 
 // size
 :root{
-    --header-height: 103px
+    --header-height: 103px;
+    --header-height-mobile: 50px;
+    --mobile-header-top-bottom-gutter: 28px;
 }
 
 
@@ -42,4 +44,15 @@
 
 // special vars
 $global-mx-padding: 76px;
+$global-mx-padding-low-desktop: 50px;
 
+// grid brteak points clone framwork
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+// grid brteak points custom
+$lgDesktopEnds: 1600px;
+$lowResDesktopEnds: 1366px;

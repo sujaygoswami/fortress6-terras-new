@@ -1,0 +1,190 @@
+// from low resolution desktop
+@media screen and (max-width: ($lowResDesktopEnds - 1px)) {
+    .terras {
+
+        // basic
+        .container, .container-fluid{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .ms-auto{
+            &.ms-auto-till-lowdesktop-ends{
+                margin-left: inherit !important;
+                // &.global-mx-margin{
+                //     margin-left: $global-mx-padding-low-desktop !important;
+                // }
+            }
+        }
+        // basic
+
+        // header
+        header.header{
+            & > .container-fluid{
+                & > .main-header-item-holder{
+                    &.global-mx-padding{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+
+            .header-service-part{
+                column-gap: 15px;
+            }
+        }
+        // header
+
+        // interactive-map-module
+        .interactive-map-module{
+            // .append-reponsive-map-frame-type-2{
+            //     .the-main-map{
+            //         margin-top: 50px;
+            //     }
+            //     .global-carousel{
+            //         &.type-arrow-pagination-view-1{
+            //             .slider-arrow-holder{
+            //                 justify-content: left;
+            //             }
+            //         }
+            //     }
+            // }
+            &:not(.responsive-map-position-change-type-2).view-1{
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+            .the-main-map{
+                display: grid;
+                justify-content: center;
+                .map-holder{
+                    position: relative;
+                }
+                &.pos-1{
+                    position: relative;
+                    right: inherit;
+                    left: inherit;
+                }
+            }
+        }
+        // interactive-map-module
+        
+
+    }
+}
+
+
+// for tab mobile
+@media screen and (max-width: ($xl - 1px)) {
+    .terras {
+        padding-top: calc(var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter));
+
+        // basic
+        .global-border-radius-all{
+            @include border-radius (20px);
+        }
+
+        // header
+        header.header{
+            
+            .main-header-item-holder{
+                height: calc(var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter));
+            }
+        }
+        .site-logo-holder{
+            .logo-part{
+                padding: 0px;
+                border: none;
+                &.logo-caption{
+                    display: none;
+                }
+                &.primary-logo{
+                    img{
+                        max-width: 82px;
+                    }
+                }
+            }
+        }
+        .header-service-part{
+            .service-part{
+                &.global-iconic-link{
+                    i{
+                        img{
+                            max-width: 20px;
+                        }
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+                &.header-menu-trigger{
+                    .the-trigger{
+                        width: 31.63px;
+                        height: 21.31px;
+                        background-size: 31.63px;
+                    }
+                }
+            }
+        }
+        .site-essential-links{
+            ul{
+                font-size: 15px;
+                column-gap: 14px;
+
+                li{
+                    a{
+                        margin-right: 14px;
+                    }
+                }
+            }
+        }
+        .main-menu-expanded{
+            background-color: white;
+            background-image: none;
+            .menu-close{
+                .global-action-icon{
+                    width: 43px;
+                    height: 43px;
+                }
+            }
+            .menu-items{
+                height: calc(100vh - 210px);
+                ul{
+                    li{
+                        font-size: 26px;
+                        letter-spacing: 0.52px;
+                        margin-bottom: 30px;
+
+                        &.has-external-link{
+                            &  > a{
+                                &:after{
+                                    width: 33.25px;
+                                    height: 33.25px;
+                                    background-size: 33.25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .item-holder{
+                padding: 10px;
+
+                & > .main-wrap{
+                    padding: 15px 15px 30px 30px;
+                    min-width: inherit;
+                    width: 100%;
+                }
+            }
+        }
+        // header
+
+        // page-banner-module
+        .page-banner-module{
+            &.height-view-1{
+                height: calc(100vh - (var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter)));
+            }
+        }
+        // page-banner-module
+    }
+}
+// for tab mobile

@@ -22,7 +22,7 @@
 
         .menu-items{
             margin-bottom: 50px;
-            max-height: 67vh;
+            height: calc(100vh - 300px);
             overflow: auto;
             &:last-child{
                 margin-bottom: 0px;
@@ -135,7 +135,7 @@
         }
 
         .main-header-item-holder{
-            height: var(--header-height);
+            height: calc(var(--header-height) + var(--grid-gutter) * 2);
             display: flex;
             align-items: center;
         }

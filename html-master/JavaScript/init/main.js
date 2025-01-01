@@ -394,6 +394,16 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     });
   });
 
+
+  jQuery('.interactive-map-module.responsive-map-position-change-type-1').each(function(){
+    var APPENDTOFRAME = jQuery(this).find('.global-card-content .inset-card-content');
+    jQuery(this).find('.the-main-map').detach().appendTo(APPENDTOFRAME);
+  });
+
+  // jQuery('.interactive-map-module.responsive-map-position-change-type-2').each(function(){
+  //   var APPENDTOFRAME = jQuery(this).find('.global-card-content.append-reponsive-map-frame-type-2');
+  //   jQuery(this).find('.the-main-map').detach().appendTo(APPENDTOFRAME);
+  // });
     
 
   // header-menu-trigger
