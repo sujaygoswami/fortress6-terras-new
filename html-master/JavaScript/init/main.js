@@ -218,6 +218,10 @@ jQuery('.team-member-video-teaser-snippet').each(function(){
  var HEIGHT = jQuery(this).height();
  jQuery(this).css('margin-bottom', - (HEIGHT / 2));
  jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT / 2));
+ if ($(window).width() < 1200) {
+  jQuery(this).css('margin-bottom', - (HEIGHT / 2 + 130));
+ jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT / 2 + 130));
+ }
 });
 
 
@@ -270,7 +274,27 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     infinite: true,
     slidesToShow: 10,
     slidesToScroll: 1,
-    draggable: false
+    draggable: false,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          arrows: false,
+          slidesToShow: 4,
+          centerMode: true,
+          centerPadding: '90px',
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          slidesToShow: 4,
+          centerMode: true,
+          centerPadding: '50px',
+        }
+      }
+    ]
   });
   jQuery('.global-carousel-type-3').slick({
     infinite: false,
@@ -322,6 +346,7 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
   });
 
   // interactive-map-module
+  
   jQuery('.interactive-map-module').each(function(){
     var PARENT = jQuery(this);
     var MINHEIGHT = jQuery(this).find('.the-main-map').height();
@@ -442,6 +467,41 @@ jQuery('.primary-color-btn, .outline-btn').addClass('site-btn');
 jQuery('.banner-text p').addClass('group-btn');
 
 
+// responsive placements banner mini slider
+jQuery('.banner-mini-slider-module').each(function(){
+  var PARENT = jQuery(this).parents('.page-banner-module');
+
+  if ($(window).width() < 1200) {
+    jQuery(this).detach().insertAfter(PARENT);
+  }
+});
+
+// convert-to-mobile-slider-wrap
+jQuery('.convert-to-mobile-slider-wrap').each(function(){
+  var SLIDER = jQuery(this).find('.convert-to-mobile-slider');
+  if ($(window).width() < 1200) {
+    jQuery(SLIDER).removeClass('row default-row my-row jc-center');
+    jQuery(SLIDER).find('.my-col').addClass('item');
+    jQuery(SLIDER).slick({
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  }
+});
+
+
+
+
 });
 
 
@@ -529,6 +589,16 @@ jQuery('.has-global-mask').each(function(){
   jQuery(this).find('.adapt-mask-height').height(HIDDENMSUKHEIGHT);
 });
 
+
+// page-banner-module mobile view with mini slider
+jQuery('.page-banner-module.mobile-view-with-mini-slider').each(function(){
+  var HEIGHT = jQuery(this).height();
+  var MINISLIDERHEIGHT = jQuery(this).parent().find('.banner-mini-slider-module').height();
+
+  if ($(window).width() < 1200) {
+    jQuery(this).height(HEIGHT - (MINISLIDERHEIGHT + 12));
+  }
+});
 
 });
 
