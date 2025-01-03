@@ -9534,7 +9534,7 @@ html, body {
   column-gap: 26px; }
   .terras .site-logo-holder .logo-part {
     padding-right: 26px;
-    border-right: 1px solid #3C4646; }
+    border-right: 1px solid rgba(60, 70, 70, 0.49); }
     .terras .site-logo-holder .logo-part:last-child {
       border: none;
       padding-right: 0px; }
@@ -9782,13 +9782,6 @@ html, body {
   .terras .section-top-gap-tyep-2 {
     margin-top: 75px; } }
 
-.terras .global-card-content.mobile-view-pad-all, .terras .inset-card-content.mobile-view-pad-all {
-  padding: 50px; }
-
-.terras .global-card-content.mobile-view-pad-top-bottom, .terras .inset-card-content.mobile-view-pad-top-bottom {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-
 @media screen and (min-width: 1200px) {
   .terras .global-card-content.view-1, .terras .inset-card-content.view-1 {
     padding: 50px; }
@@ -10031,6 +10024,11 @@ html, body {
     line-height: 50px;
     letter-spacing: 0.8px; }
 
+.terras h3, .terras .h3 {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.8px; }
+
 .terras h4, .terras .h4 {
   font-size: 36px;
   line-height: 52px;
@@ -10104,36 +10102,37 @@ html, body {
   font-size: 25px;
   line-height: 45px;
   margin-bottom: 30px; }
-  .terras .entry li.para-gap-lg {
-    margin-bottom: 60px; }
-  .terras .entry li.lg-para {
-    font-size: 35px;
-    letter-spacing: 0.7px;
-    line-height: 50px; }
-  .terras .entry li.lg-para-less {
-    font-size: 30px;
-    letter-spacing: 0px;
-    line-height: 50px; }
-  .terras .entry li.lg-para-plus {
-    font-size: 40px;
-    letter-spacing: 0px;
-    line-height: 60px; }
-  .terras .entry li.sm-para {
-    font-size: 20px;
-    letter-spacing: 0px;
-    line-height: 35px; }
-  .terras .entry li.sm-para-less {
-    font-size: 19px;
-    letter-spacing: 0.38px;
-    line-height: 30px; }
-  .terras .entry li.sm-para-plus {
-    font-size: 22px;
-    letter-spacing: 0px;
-    line-height: 36px; }
-  .terras .entry li.xs-para {
-    font-size: 16px;
-    letter-spacing: 0px;
-    line-height: 30px; }
+  @media screen and (min-width: 1200px) {
+    .terras .entry li.para-gap-lg {
+      margin-bottom: 60px; }
+    .terras .entry li.lg-para {
+      font-size: 35px;
+      letter-spacing: 0.7px;
+      line-height: 50px; }
+    .terras .entry li.lg-para-less {
+      font-size: 30px;
+      letter-spacing: 0px;
+      line-height: 50px; }
+    .terras .entry li.lg-para-plus {
+      font-size: 40px;
+      letter-spacing: 0px;
+      line-height: 60px; }
+    .terras .entry li.sm-para {
+      font-size: 20px;
+      letter-spacing: 0px;
+      line-height: 35px; }
+    .terras .entry li.sm-para-less {
+      font-size: 19px;
+      letter-spacing: 0.38px;
+      line-height: 30px; }
+    .terras .entry li.sm-para-plus {
+      font-size: 22px;
+      letter-spacing: 0px;
+      line-height: 36px; }
+    .terras .entry li.xs-para {
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 30px; } }
 
 .terras .group-btn {
   display: flex;
@@ -11202,10 +11201,51 @@ html, body {
 @media screen and (max-width: 1199px) {
   .terras {
     padding-top: calc(var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter)); }
-    .terras .global-mx-padding.mobile-reset-global-mx-padding {
+    .terras .site-form-style-1 .field-rule {
+      font-size: 15px; }
+    .terras .site-form-style-1 .main-field {
+      width: 100%;
+      height: 47px;
+      padding: 0 25px; }
+      .terras .site-form-style-1 .main-field.has-field-iconic-item {
+        padding-right: 45px; }
+        .terras .site-form-style-1 .main-field.has-field-iconic-item .the-icon-item {
+          width: 38px;
+          height: 38px;
+          margin-top: -19px;
+          right: 5px; }
+          .terras .site-form-style-1 .main-field.has-field-iconic-item .the-icon-item.submit-icon {
+            background-size: 22.57px; }
+    .terras .mobile-mb-0 {
+      margin-bottom: 0px !important; }
+    .terras .mobile-jc-center {
+      justify-content: center; }
+    .terras .ms-auto.mobile-reset-ms-auto {
+      margin-left: initial !important; }
+    .terras .element-gap.mobile-element-gap-tiny {
+      margin-bottom: 5px; }
+    .terras .element-gap.mobile-element-gap-xs {
+      margin-bottom: 10px; }
+    .terras .element-gap.mobile-element-gap-sm {
+      margin-bottom: 30px; }
+    .terras .element-gap.mobile-element-gap-medium {
+      margin-bottom: 40px; }
+    .terras .mobile-full-height-remove.full-height {
+      height: auto; }
+    .terras .mobile-view-pad-all {
+      padding: 50px; }
+    .terras .mobile-view-pad-xs {
+      padding: 10px; }
+    .terras .mobile-view-pad-left-right {
+      padding-left: 50px;
+      padding-right: 50px; }
+    .terras .mobile-view-pad-top-bottom {
+      padding-top: 50px;
+      padding-bottom: 50px; }
+    .terras .mobile-reset-global-mx-padding {
       padding-left: 0px;
       padding-right: 0px; }
-    .terras .global-mx-padding.mobile-global-mx-padding {
+    .terras .mobile-global-mx-padding {
       padding-left: 20px;
       padding-right: 20px; }
     .terras .global-border-radius-all {
@@ -11213,17 +11253,34 @@ html, body {
       -moz-border-radius: 20px;
       -ms-border-radius: 20px;
       border-radius: 20px; }
+    .terras .global-border-radius-all-sm {
+      -webkit-border-radius: 14px;
+      -moz-border-radius: 14px;
+      -ms-border-radius: 14px;
+      border-radius: 14px; }
+    .terras .global-border-radius-topLeft-topRight {
+      -webkit-border-radius: 20px 20px 0 0;
+      -moz-border-radius: 20px 20px 0 0;
+      -ms-border-radius: 20px 20px 0 0;
+      border-radius: 20px 20px 0 0; }
     .terras .mobile-section-gap-default {
       margin-bottom: var(--mobile-row-gap-global); }
     .terras .mobile-section-gap-avg {
       margin-bottom: 40px; }
+    .terras .mobile-section-gap-md {
+      margin-bottom: 20px; }
+    .terras .my-row .half-height.half-height-mobile-50, .terras .default-row .half-height.half-height-mobile-50 {
+      height: auto; }
     .terras .my-row {
-      row-gap: var(--mobile-row-gap-global);
       margin-left: -5px;
       margin-right: -5px;
       row-gap: 15px; }
       .terras .my-row.default-row {
         row-gap: 15px; }
+      .terras .my-row.mobile-row-gap-as-col {
+        row-gap: 10px; }
+      .terras .my-row.mobile-row-gap-lg {
+        row-gap: 20px; }
       .terras .my-row > .my-col {
         padding-left: 5px;
         padding-right: 5px; }
@@ -11233,13 +11290,28 @@ html, body {
         margin-bottom: var(--mobile-row-gap-global); }
     .terras .mobile-text-center {
       text-align: center; }
+    .terras .line-info-module > .main-wrap {
+      font-size: 12px;
+      letter-spacing: 0.24px; }
     .terras h1, .terras .h1 {
       font-size: 36px;
       line-height: 45px;
       letter-spacing: 0.72px; }
+      .terras h1.special-lg, .terras .special-lg.h1 {
+        font-size: 77px;
+        line-height: 104px;
+        letter-spacing: 1.54px; }
     .terras h2, .terras .h2 {
       font-size: 25px;
       line-height: 35px;
+      letter-spacing: 0.5px; }
+      .terras h2.lg, .terras .lg.h2 {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.6px; }
+    .terras h3, .terras .h3 {
+      font-size: 20px;
+      line-height: 30px;
       letter-spacing: 0.5px; }
     .terras h4, .terras .h4 {
       font-size: 18px;
@@ -11253,7 +11325,11 @@ html, body {
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 0.32px; }
-    .terras p {
+      .terras h6.lg, .terras .lg.h6 {
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.36px; }
+    .terras p, .terras .entry li {
       font-size: 15px;
       line-height: 25px;
       letter-spacing: 0px;
@@ -11415,7 +11491,70 @@ html, body {
     .terras .interactive-map-module .pointer .trigger {
       width: 11.81px;
       height: 13.21px;
-      background-size: 11.81px; } }
+      background-size: 11.81px; }
+    .terras footer.footer .footer-social {
+      padding-top: 87px; }
+      .terras footer.footer .footer-social .strip {
+        padding: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        border-radius: 20px;
+        column-gap: 28px;
+        justify-content: center; }
+        .terras footer.footer .footer-social .strip .strip-item {
+          column-gap: 23px;
+          margin-left: inherit; }
+          .terras footer.footer .footer-social .strip .strip-item img {
+            max-width: 17px; }
+        .terras footer.footer .footer-social .strip .strip-head {
+          font-size: 15px;
+          letter-spacing: 0.3px; }
+    .terras footer.footer .terry-slogan {
+      top: 55px;
+      left: 5px; }
+      .terras footer.footer .terry-slogan img {
+        max-width: 96px; }
+    .terras footer.footer .terry-img {
+      right: -53px; }
+      .terras footer.footer .terry-img img {
+        max-width: 148px; }
+    .terras footer.footer .footer-social .strip {
+      min-width: 100%; }
+    .terras footer.footer .site-logo-holder {
+      display: block;
+      padding-top: 20px; }
+      .terras footer.footer .site-logo-holder .logo-part.logo-caption {
+        display: block;
+        border-top: 1px solid rgba(60, 70, 70, 0.49);
+        font-size: 11px;
+        line-height: normal;
+        padding-top: 10px;
+        margin-top: 10px;
+        text-align: center; }
+    .terras footer.footer .footer-contact-info .global-iconic-link {
+      margin-bottom: 5px; }
+    .terras footer.footer .main-footer-item-holder {
+      padding-top: 30px;
+      padding-bottom: 30px; }
+    .terras footer.footer .site-logo-holder .logo-part.primary-logo img {
+      max-width: 100%; }
+    .terras .global-iconic-link.view-2 i {
+      width: 30px;
+      height: 30px; }
+      .terras .global-iconic-link.view-2 i img {
+        max-width: 14px; }
+    .terras .global-iconic-link.view-2 a {
+      font-size: 19px;
+      letter-spacing: 0.38px;
+      column-gap: 9px; }
+    .terras .bredcrumb-module ul {
+      column-gap: 10px; }
+      .terras .bredcrumb-module ul li {
+        font-size: 16px;
+        letter-spacing: 0.32px; }
+        .terras .bredcrumb-module ul li a {
+          margin-right: 10px; } }
 
 /*! Vendor */
 /*!

@@ -275,6 +275,7 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     slidesToShow: 10,
     slidesToScroll: 1,
     draggable: false,
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1199,
@@ -283,6 +284,7 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
           slidesToShow: 4,
           centerMode: true,
           centerPadding: '90px',
+          draggable: true,
         }
       },
       {
@@ -292,6 +294,7 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
           slidesToShow: 4,
           centerMode: true,
           centerPadding: '50px',
+          draggable: true,
         }
       }
     ]
@@ -498,6 +501,9 @@ jQuery('.convert-to-mobile-slider-wrap').each(function(){
     });
   }
 });
+
+
+
 
 
 

@@ -249,13 +249,7 @@
 
     .global-card-content, .inset-card-content{
             
-        &.mobile-view-pad-all{
-            padding: 50px;
-        }
-        &.mobile-view-pad-top-bottom{
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
+        
 
         @media screen and (min-width: $xl) {
             &.view-1{
@@ -608,6 +602,13 @@
             letter-spacing: 0.8px;
         }
     }
+
+    h3{
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.8px;
+    }
+
     h4{
         font-size: 36px;
         line-height: 52px;
@@ -704,44 +705,49 @@
             font-size: 25px;
             line-height: 45px;
             margin-bottom: 30px;
-            &.para-gap-lg{
-                margin-bottom: 60px;
+
+            @media screen and (min-width: $xl) {
+                &.para-gap-lg{
+                    margin-bottom: 60px;
+                }
+                &.lg-para{
+                    font-size: 35px;
+                    letter-spacing: 0.7px;
+                    line-height: 50px;
+                }
+                &.lg-para-less{
+                    font-size: 30px;
+                    letter-spacing: 0px;
+                    line-height: 50px;
+                }
+                &.lg-para-plus{
+                    font-size: 40px;
+                    letter-spacing: 0px;
+                    line-height: 60px;
+                }
+                &.sm-para{
+                    font-size: 20px;
+                    letter-spacing: 0px;
+                    line-height: 35px;
+                }
+                &.sm-para-less{
+                    font-size: 19px;
+                    letter-spacing: 0.38px;
+                    line-height: 30px;
+                }
+                &.sm-para-plus{
+                    font-size: 22px;
+                    letter-spacing: 0px;
+                    line-height: 36px;
+                }
+                &.xs-para{
+                    font-size: 16px;
+                    letter-spacing: 0px;
+                    line-height: 30px;
+                }
             }
-            &.lg-para{
-                font-size: 35px;
-                letter-spacing: 0.7px;
-                line-height: 50px;
-            }
-            &.lg-para-less{
-                font-size: 30px;
-                letter-spacing: 0px;
-                line-height: 50px;
-            }
-            &.lg-para-plus{
-                font-size: 40px;
-                letter-spacing: 0px;
-                line-height: 60px;
-            }
-            &.sm-para{
-                font-size: 20px;
-                letter-spacing: 0px;
-                line-height: 35px;
-            }
-            &.sm-para-less{
-                font-size: 19px;
-                letter-spacing: 0.38px;
-                line-height: 30px;
-            }
-            &.sm-para-plus{
-                font-size: 22px;
-                letter-spacing: 0px;
-                line-height: 36px;
-            }
-            &.xs-para{
-                font-size: 16px;
-                letter-spacing: 0px;
-                line-height: 30px;
-            }
+
+
         }
     }
     // typography
