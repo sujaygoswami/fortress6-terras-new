@@ -147,8 +147,10 @@
         }
 
         &.added-container-fluid-padding{
+            @media screen and (min-width: $xl){
             padding-left: $global-mx-padding-low-desktop + $grid-gutter-width;
             padding-right: $global-mx-padding-low-desktop + $grid-gutter-width;
+            }
             @media screen and (min-width: $lgDesktopEnds){
                 padding-left: $global-mx-padding + $grid-gutter-width;
                 padding-right: $global-mx-padding + $grid-gutter-width;
@@ -808,6 +810,11 @@
     // traingle-watermark-has
     .traingle-watermark-has{
         &.traingle-view-1{
+            @media screen and (max-width: ($xl - 1px)) {
+                .mask-it{
+                    display: none;
+                }
+            }
             .the-mask-img{
                 position: absolute;
                 right: 0px;
@@ -836,6 +843,28 @@
                     mask-size: 32vw;
                 }
 
+                @media screen and (max-width: ($lgDesktopEnds - 1px)) {
+                    .the-mask-img{
+                        width: 42vw;
+                    }
+    
+                    .mask-it {
+                        mask-size: 42vw;
+                    }
+                }
+
+                @media screen and (max-width: ($xl - 1px)) {
+                    .the-mask-img{
+                        width: 60vw;
+                    }
+    
+                    .mask-it {
+                        mask-size: 60vw;
+                    }
+                }
+
+                
+
             }
             .the-mask-img{
                 position: absolute;
@@ -844,6 +873,7 @@
                 width: 22vw;
                 pointer-events: none;
                 opacity: 0;
+                
 
                 img{
                     width: 100%;
@@ -1091,6 +1121,7 @@
             display: grid;
             align-items: center;
             justify-content: center;
+            
 
             &.the-heading{
                 width: auto !important;
@@ -1264,6 +1295,17 @@
         &.view-upcoming-glimps-type-1{
             .slick-list{
                 padding-right: 212px !important;
+                @media screen and (max-width: ($md - 1px)) {
+                    padding-right: 138px !important;
+                }
+            }
+            
+        }
+        &.tab-mobile-slider-left-shifting-type-1{
+            .slick-list{
+                @media screen and (max-width: ($xl - 1px)) {
+                    padding-left: 30px;
+                }
             }
             
         }
@@ -1309,14 +1351,26 @@
             &.pagination-pos-2{
                 .global-carousel-slider-navigate-wrap{
                     margin-top: 130px;
+                    @media screen and (max-width: ($xl - 1px)) {
+                        margin-top: 75px;
+                    }
                 }
             }
 
             &.pagination-pos-3{
                 .global-carousel-slider-navigate-wrap{
-                    padding-left: $global-mx-padding + $grid-gutter-width;
-                    padding-right: $global-mx-padding + $grid-gutter-width;
+                    @media screen and (min-width: $xl){
+                        padding-left: $global-mx-padding-low-desktop + $grid-gutter-width;
+                        padding-right: $global-mx-padding-low-desktop + $grid-gutter-width;
+                    }
+                    @media screen and (min-width: $lgDesktopEnds){
+                        padding-left: $global-mx-padding + $grid-gutter-width;
+                        padding-right: $global-mx-padding + $grid-gutter-width;
+                    }
                     margin-top: 100px;
+                    @media screen and (max-width: ($xl - 1px)) {
+                        margin-top: 40px;
+                    }
                 }
                
             }
@@ -1699,9 +1753,11 @@
     .graph-module{
         display: grid;
         justify-content: right;
+        height: 339px;
         & > .main-wrap{
             display: flex;
             column-gap: 23px;
+            height: calc(100% - 7px);
 
             & > div{
                 
@@ -1722,19 +1778,19 @@
                     }
 
                     &.progress-height-1{
-                        height: 48px;
+                        height: 14%;
                     }
                     &.progress-height-2{
-                        height: 97px;
+                        height: 30%;
                     }
                     &.progress-height-3{
-                        height: 130px;
+                        height: 39%;
                     }
                     &.progress-height-4{
-                        height: 225px;
+                        height: 68%;
                     }
                     &.progress-height-5{
-                        height: 332px;
+                        height: 100%;
                     }
                     
                 }
@@ -1764,6 +1820,7 @@
                 -webkit-mask-image: url(../Images/image-oval-mask-type-1.svg);
                 mask-image: url(../Images/image-oval-mask-type-1.svg);
                 mask-repeat: no-repeat;
+                mask-size: 100%;
         }
     }
     // has-oval-mask
