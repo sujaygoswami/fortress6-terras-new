@@ -1,3 +1,8 @@
+// break point vars
+var $xl = 1200;
+// break point vars
+
+
 jQuery(document).ready(function(){
 
 
@@ -86,6 +91,8 @@ var checkMobile = function(){
 
 //Execute Check
 checkMobile();
+
+
 
 
 
@@ -218,7 +225,7 @@ jQuery('.team-member-video-teaser-snippet').each(function(){
  var HEIGHT = jQuery(this).height();
  jQuery(this).css('margin-bottom', - (HEIGHT / 2));
  jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT / 2));
- if ($(window).width() < 1200) {
+ if ($(window).width() < $xl) {
   jQuery(this).css('margin-bottom', - (HEIGHT / 2 + 130));
  jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT / 2 + 130));
  }
@@ -490,7 +497,7 @@ jQuery('.banner-text p').addClass('group-btn');
 jQuery('.banner-mini-slider-module').each(function(){
   var PARENT = jQuery(this).parents('.page-banner-module');
 
-  if ($(window).width() < 1200) {
+  if ($(window).width() < $xl) {
     jQuery(this).detach().insertAfter(PARENT);
   }
 });
@@ -498,7 +505,7 @@ jQuery('.banner-mini-slider-module').each(function(){
 // convert-to-mobile-slider-wrap
 jQuery('.convert-to-mobile-slider-wrap').each(function(){
   var SLIDER = jQuery(this).find('.convert-to-mobile-slider');
-  if ($(window).width() < 1200) {
+  if ($(window).width() < $xl) {
     jQuery(SLIDER).removeClass('row default-row my-row jc-center');
     jQuery(SLIDER).find('.my-col').addClass('item');
     jQuery(SLIDER).slick({
@@ -516,6 +523,18 @@ jQuery('.convert-to-mobile-slider-wrap').each(function(){
       ]
     });
   }
+});
+
+// switiching-column-tab-mobile
+jQuery('.switiching-column-tab-mobile').each(function(){
+var FIRSTCOLUMN = jQuery(this).find('.first-column');
+var MIDCOLUMN = jQuery(this).find('.mid-column');
+var LASTCOLUMN = jQuery(this).find('.last-column');
+
+if ($(window).width() < $xl) {
+  jQuery(this).find('.switch-column-berfore-last').detach().insertBefore(LASTCOLUMN);
+}
+
 });
 
 
@@ -626,7 +645,7 @@ jQuery('.page-banner-module.mobile-view-with-mini-slider').each(function(){
   var HEIGHT = jQuery(this).height();
   var MINISLIDERHEIGHT = jQuery(this).parent().find('.banner-mini-slider-module').height();
 
-  if ($(window).width() < 1200) {
+  if ($(window).width() < $xl) {
     jQuery(this).height(HEIGHT - (MINISLIDERHEIGHT + 12));
   }
 });

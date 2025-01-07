@@ -195,6 +195,11 @@
             padding-right: 30px;
         }
 
+        .mobile-global-mx-padding-xs {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
         .global-border-radius-all {
             @include border-radius (20px);
         }
@@ -242,6 +247,10 @@
 
             &.mobile-row-gap-lg{
                 row-gap: 20px;
+            }
+
+            &.mobile-row-gap-lg-double{
+                row-gap: 40px;
             }
 
             &>.my-col {
@@ -293,6 +302,12 @@
                 font-size: 30px;
                 line-height: 40px;
                 letter-spacing: 0.6px;
+            }
+
+            &.md-less{
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.36px;
             }
         }
         
@@ -893,6 +908,67 @@
             }
         }
         // global-absolute-item
+
+        // speech-module
+        .speech-module{
+            .the-speech{
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.4px;
+            }
+
+            .speech-mark{
+                margin-bottom: 14px;
+                i{
+                    width: 48px;
+                    height: 67px;
+                    @include border-radius(38px);
+
+                    img{
+                        max-width: 24px;
+                    }
+                }
+            }
+        }
+        // speech-module
+
+        // team-member-detail-group-module
+        .team-member-detail-group-module{
+            .global-light-video-player{
+                    max-width: 145px;
+                    margin: 0 auto;
+            }
+        }
+        // team-member-detail-group-module
+
+        // site-accordion
+        .site-accordion{
+            .accordion-header{
+                button{
+                    font-size: 15px;
+                    line-height: 25px;
+                    padding-right: 60px;
+                    &:after{
+                        width: 20px;
+                        height: 20px;
+                        background-size: 20px;
+                        margin-top: -10px;
+                        right: 25px;
+                    }
+                }
+            }
+        }
+        // site-accordion
+        // cover-bg-content-module
+        .cover-bg-content-module{
+            &.static-banner{
+                min-height: 500px;
+            }
+        }
+        // cover-bg-content-module
+        
+        
+        
        
 
 
