@@ -487,7 +487,9 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  lowResDesktopEnds: 1366px,
+  xxl: 1400px,
+  lgDesktopEnds: 1600px
 ) !default;
 // scss-docs-end grid-breakpoints
 

@@ -2,6 +2,44 @@
 
 
     // basic starts
+    a.global-area-external-link{
+        display: block;
+        position: relative;
+
+        &.pos-1{
+            .external-link-affected-area{
+                padding-right: 60px !important;
+                @media screen and (max-width: ($xl - 1px)) {
+                    padding-right: 50px !important;
+                }
+            }
+            &.tab-mobile-white-area-external-link-arrow{
+                
+                @media screen and (max-width: ($xl - 1px)) {
+                    &:after{
+                        background-image: url(../Images/external-link-arrow-dark.svg);
+                        width: 28.34px;
+                        height: 28.34px;
+                        background-size: 28.34px;
+                        right: 12px;
+                        bottom: 18px;
+                    }
+                }
+            }
+            &:after{
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+                content: ' ';
+                width: 56.14px;
+                height: 56.14px;
+                background-image: url(../Images/external-link-arrow-white.svg);
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: 56.14px;
+            }
+        }
+    }
     .page-iconic-link{
         text-decoration: underline;
         font-family: var(--site-secondary-font);
@@ -236,6 +274,10 @@
     
         .section-gap-tyep-11{
             margin-bottom: 40px;
+        }
+
+        .section-gap-tyep-12{
+            margin-bottom: 20px;
         }
     
         .section-top-gap-tyep-1{
@@ -1301,7 +1343,30 @@
             }
             
         }
+        @media screen and (max-width: ($xl - 1px)) {
+            &.mobile-slider-flow-visible{
+                .slick-list{
+                    overflow: visible;
+                }
+                
+                &.single-column-global-carousel{
+                    .slick-list{
+                        margin-left: -10px;
+                        margin-right: -10px;
+                        padding-right: 55px;
+
+                        .slick-slide{
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
         &.tab-mobile-slider-left-shifting-type-1{
+
+            
+            
             .slick-list{
                 @media screen and (max-width: ($xl - 1px)) {
                     padding-left: 30px;
