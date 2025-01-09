@@ -145,6 +145,9 @@
             &.mobile-element-gap-medium{
                 margin-bottom: 40px;
             }
+            &.element-gap-8{
+                margin-bottom: 15px;
+            }
         }
 
         .mobile-full-height-remove{
@@ -224,6 +227,9 @@
 
         .mobile-section-gap-avg {
             margin-bottom: 40px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
         }
 
         .mobile-section-gap-md {

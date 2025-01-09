@@ -12651,6 +12651,8 @@ html, body {
       margin-bottom: 30px; }
     .terras .element-gap.mobile-element-gap-medium {
       margin-bottom: 40px; }
+    .terras .element-gap.element-gap-8 {
+      margin-bottom: 15px; }
     .terras .mobile-full-height-remove.full-height {
       height: auto; }
     .terras .mobile-view-pad-all {
@@ -12702,6 +12704,8 @@ html, body {
       margin-bottom: var(--mobile-row-gap-global); }
     .terras .mobile-section-gap-avg {
       margin-bottom: 40px; }
+      .terras .mobile-section-gap-avg:last-child {
+        margin-bottom: 0px; }
     .terras .mobile-section-gap-md {
       margin-bottom: 20px; }
     .terras .my-row .half-height.half-height-mobile-50, .terras .default-row .half-height.half-height-mobile-50 {
