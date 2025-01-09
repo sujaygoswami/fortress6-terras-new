@@ -12705,8 +12705,10 @@ html, body {
       margin-bottom: var(--mobile-row-gap-global); }
     .terras .mobile-section-gap-avg {
       margin-bottom: 40px; }
+      .terras .mobile-section-gap-avg.section-gap-tyep-12 {
+        margin-bottom: 20px; }
       .terras .mobile-section-gap-avg:last-child {
-        margin-bottom: 0px; }
+        margin-bottom: 0px !important; }
     .terras .mobile-section-gap-md {
       margin-bottom: 20px; }
     .terras .my-row .half-height.half-height-mobile-50, .terras .default-row .half-height.half-height-mobile-50 {
