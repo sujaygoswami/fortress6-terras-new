@@ -11111,6 +11111,9 @@ html, body {
 .terras .pos-relative {
   position: relative; }
 
+.terras .section-gap-tyep-12 {
+  margin-bottom: 20px; }
+
 @media screen and (min-width: 1200px) {
   .terras .section-gap-tyep-1 {
     margin-bottom: 115px; }
@@ -11134,8 +11137,6 @@ html, body {
     margin-bottom: 50px; }
   .terras .section-gap-tyep-11 {
     margin-bottom: 40px; }
-  .terras .section-gap-tyep-12 {
-    margin-bottom: 20px; }
   .terras .section-top-gap-tyep-1 {
     margin-top: 85px; }
   .terras .section-top-gap-tyep-2 {
