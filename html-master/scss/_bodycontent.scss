@@ -2068,6 +2068,9 @@
 
     // site-form-view-layout-1
     .site-form-view-layout-1{
+        font-size: 22px;
+        letter-spacing: 0.44px;
+        font-family: var(--site-secondary-font);
         .fieldwrap{
             position: relative;
             height: 72px;
@@ -2101,6 +2104,11 @@
                     min-width: 100%;
                     border-color: black;
                     border-width: 1.5px;
+
+                    li{
+                        font-size: 22px;
+                        letter-spacing: 0.44px;
+                    }
                 }
                 .dropdown-item{
                     position: relative;
@@ -2220,6 +2228,7 @@
                 font-size: 20px;
                 line-height: normal;
                 font-weight: var(--site-primary-font-regular);
+                font-family: var(--site-primary-font);
             }
 
             .text-input{
@@ -2228,7 +2237,7 @@
                     background-color: transparent;
                     border: none;
                     margin: 0px;
-                    padding: 0 65px 0 28px;
+                    padding: 0 28px;
                     font-size: 22px;
                     letter-spacing: 0.44px;
                     font-family: var(--site-secondary-font);

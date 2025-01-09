@@ -111,6 +111,13 @@
 
         // basic
 
+        img{
+            &.tab-mobile-full-width-img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
         .mobile-mb-0{
             margin-bottom: 0px !important;
         }
@@ -236,9 +243,22 @@
             margin-right: -5px;
             row-gap: 15px;
 
+            
+
 
             &.default-row {
                 row-gap: 15px;
+
+                &.mobile-lg-grid{
+                    margin-left: -10px;
+                    margin-right: -10px;
+                    row-gap: 20px;
+    
+                    & > .my-col{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
             }
 
             &.mobile-row-gap-as-col{
@@ -276,6 +296,13 @@
             & > .main-wrap{
                 font-size: 12px;
                 letter-spacing: 0.24px;
+            }
+
+            &.lg{
+                & > .main-wrap{
+                    font-size: 15px;
+                    letter-spacing: 0.3px;
+                }
             }
         }
         // line info module
@@ -384,6 +411,13 @@
             &.down-arrow-btn{
                 background-size: 18px;
                 background-position: right 16px center;
+            }
+            &.reload-btn{
+                background-size: 17.81px;
+                background-position: right 15px center;
+            }
+            &.back-btn{
+                padding: 13px 20px 13px 64px;
             }
         }
 
@@ -601,6 +635,7 @@
 
         // cover-bg-content-module
         .cover-bg-content-module {
+           
             &.mobile-cover-area-depnds-content {
                 img {
                     &.set-back-item {
@@ -1073,7 +1108,13 @@
         .cover-bg-content-module{
             &.static-banner{
                 min-height: 500px;
+
+                &.layout-2{
+                    min-height: 670px;
+                }
             }
+
+            
         }
         // cover-bg-content-module
 
@@ -1092,6 +1133,74 @@
             }
         }
         // global-tip
+
+        // site-form-view-layout-1
+        .site-form-view-layout-1{
+            font-size: 15px;
+            letter-spacing: 0px;
+            .fieldwrap{
+                height: 42px;
+                &.height-view-2{
+                    height: 50px;
+                }
+
+                .main-field{
+                    &.has-iconic-btn-holder{
+                        .the-absolute-btn{
+                            width: 40px;
+                            height: 40px;
+                            background-size: 40px;
+                            margin-top: -20px;
+                            right: 5px;
+                        }
+                    }
+                }
+
+                .text-input{
+                    font-size: 15px;
+                    letter-spacing: 0px;
+                    padding: 0 15px;
+
+                    &.has-iconic-btn{
+                        padding-right: 60px;
+                    }
+                }
+                
+                label{
+                    font-size: 10px;
+                    padding: 0 8px;
+                    left: 5px;
+                    top: -7px;
+                }
+                &.specific-width-type-1, &.specific-width-type-2{
+                    width: 100%;
+                }
+
+                .dropdown{
+                    .dropdown-menu{
+                        li{
+                            font-size: 15px; 
+                            letter-spacing: 0px;
+                        }
+                    }
+                    .dropdown-toggle{
+                        font-size: 15px;
+                        padding-right: 35px;
+                        padding-left: 15px;
+                        &:after{
+                            width: 16.73px;
+                            height: 8.58px;
+                            background-size: 16.73px;
+                            margin-top: -4px;
+                            right: 14px;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        // site-form-view-layout-1
+        
         
         
         
@@ -1121,6 +1230,13 @@
 // for mobile only
 @media screen and (max-width: ($md - 1px)) {
     .terras {
+
+        img{
+            &.only-mobile-full-width-img{
+                width: 100%;
+                height: auto;
+            }
+        }
         // graph-module
         .graph-module{
             height: 134px;

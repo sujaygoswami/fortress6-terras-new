@@ -648,7 +648,7 @@ jQuery('.traingle-watermark-has.left-positioned').each(function(){
 });
 
 // cover-bg-content-module
-jQuery('.cover-bg-content-module').each(function(){
+jQuery('.cover-bg-content-module:not(.static-banner)').each(function(){
   var CONTEXTHEIGHT = jQuery(this).find('.the-context > .main-wrap').height();
   jQuery(this).css('min-height', CONTEXTHEIGHT);
 });
