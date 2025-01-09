@@ -12703,6 +12703,9 @@ html, body {
       border-radius: 20px 20px 0 0; }
     .terras .mobile-section-gap-default {
       margin-bottom: var(--mobile-row-gap-global); }
+    .terras .small-image-teaser-mobile {
+      max-width: 145px;
+      margin: 0 auto; }
     .terras .mobile-section-gap-avg {
       margin-bottom: 40px; }
       .terras .mobile-section-gap-avg.section-gap-tyep-12 {

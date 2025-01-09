@@ -225,6 +225,11 @@
             margin-bottom: var(--mobile-row-gap-global);
         }
 
+        .small-image-teaser-mobile{
+            max-width: 145px;
+            margin: 0 auto;
+        }
+
         .mobile-section-gap-avg {
             margin-bottom: 40px;
             &.section-gap-tyep-12{
