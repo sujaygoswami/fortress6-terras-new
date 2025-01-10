@@ -10997,9 +10997,13 @@ html, body {
   background-repeat: no-repeat;
   background-position: left top;
   border: none;
-  background-color: transparent;
+  background-color: var(--site-primary-color);
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%; }
   .terras .global-action-icon.close-icon-type-1 {
     background-image: url(../Images/close-icon-white-with-site-bg-primary.svg); }
   .terras .global-action-icon.search-icon-type-1 {
@@ -11823,7 +11827,8 @@ html, body {
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
-    display: block; }
+    display: block;
+    background-color: var(--site-primary-color); }
 
 @media screen and (max-width: 1880px) and (min-width: 1200px) {
   .terras .team-member-video-teaser-module .team-member-video-teaser-snippet > .my-row > .my-col {

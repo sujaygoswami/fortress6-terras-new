@@ -127,9 +127,10 @@
         background-repeat: no-repeat;
         background-position: left top;
         border: none;
-        background-color: transparent;
+        background-color: var(--site-primary-color);
         margin: 0px;
         padding: 0px;
+        @include border-radius(100%);
 
         &.close-icon-type-1{
             background-image: url(../Images/close-icon-white-with-site-bg-primary.svg);
@@ -1241,6 +1242,7 @@
                 background-position: left top;
                 background-size: cover;
                 display: block;
+                background-color: var(--site-primary-color);
             }
         }
     }
