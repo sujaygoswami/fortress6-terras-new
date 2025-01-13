@@ -10903,6 +10903,12 @@ html, body {
     cursor: pointer;
     display: block; }
 
+.terras .min-w-auto {
+  min-width: auto !important; }
+
+.terras .cur-pointer {
+  cursor: pointer; }
+
 .terras .email-icon i {
   width: 51px;
   height: 50.99px; }
@@ -10964,6 +10970,17 @@ html, body {
 .terras .page-iconic-link {
   text-decoration: underline;
   font-family: var(--site-secondary-font); }
+  .terras .page-iconic-link.dropdown-toggle.show p {
+    color: var(--site-primary-color); }
+  .terras .page-iconic-link.dropdown-toggle.show.icon-share::after {
+    background-image: url(../Images/share-icon-primary.svg); }
+  .terras .page-iconic-link:hover > p {
+    color: var(--site-primary-color); }
+  .terras .page-iconic-link p {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
   .terras .page-iconic-link.icon-share:after {
     width: 20px;
     height: 20px;
@@ -10979,7 +10996,8 @@ html, body {
     vertical-align: middle;
     margin-left: 14px;
     -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s; }
+    transition: all 0.3s ease 0s;
+    border: none; }
 
 .terras .global-filter {
   filter: blur(30px);
@@ -11222,6 +11240,14 @@ html, body {
 
 .terras .my-row.has-margin-bottom:last-child {
   margin-bottom: 0px !important; }
+
+.terras .my-row.tiny-row {
+  row-gap: 10px;
+  margin-left: -5px;
+  margin-right: -5px; }
+  .terras .my-row.tiny-row > .my-col {
+    padding-left: 5px;
+    padding-right: 5px; }
 
 .terras .my-row.default-row {
   row-gap: 20px; }
@@ -11496,6 +11522,8 @@ html, body {
   font-size: 25px;
   line-height: 45px;
   margin-bottom: 30px; }
+  .terras .entry li:last-child {
+    margin-bottom: 0px; }
   @media screen and (min-width: 1200px) {
     .terras .entry li.para-gap-lg {
       margin-bottom: 60px; }
