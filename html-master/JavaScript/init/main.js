@@ -513,6 +513,12 @@ jQuery('.banner-text p').addClass('group-btn');
 jQuery('.half-height').parent('.full-height').addClass('mobile-full-height-remove');
 jQuery('h1.special-lg').addClass('mb-0');
 jQuery('.content-link').addClass('site-btn primary-color-btn down-arrow-btn anchor-link');
+jQuery('.email-icon, .phone-icon').each(function(){
+  jQuery(this).addClass('service-part global-iconic-link view-3 text-white element-gap element-gap-4');
+  jQuery(this).find('> a').wrapInner('<span></span>');
+  jQuery(this).find('> a').prepend('<i></i>');
+});
+
 
 
 // responsive placements banner mini slider
@@ -559,6 +565,13 @@ if ($(window).width() < $xl) {
 
 });
 
+// parallel-equal-height
+jQuery('.parallel-equal-height').each(function(){
+  jQuery(this).parent('.inset-card-content').addClass('full-height');
+  jQuery(this).parents('.the-context').addClass('alignment-view-up');
+});
+// parallel-equal-height
+
 
 
 
@@ -591,9 +604,16 @@ jQuery(window).load(function(){
 
   jQuery('.iconic-text-widget-module .module-header').matchHeight();
 
-  jQuery('.parallel-equal-height').matchHeight();
+
 
   jQuery('.convert-to-mobile-slider .slick-slide').matchHeight();
+
+
+  if ($(window).width() >= $xl) {
+    jQuery('.parallel-equal-height').each(function(){
+      jQuery(this).parents('.has-full-height-adjusted-content').find('.parallel-equal-height').matchHeight({byRow: false});
+    });
+  };
 
 
 

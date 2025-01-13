@@ -2,6 +2,57 @@
 
 
     // basic starts
+
+    .email-icon{
+        i{
+            width: 51px;
+            height: 50.99px; 
+        }
+        &.text-white{
+            i{
+                background-image: url(../Images/alpha-icon-light.svg);
+            }
+        }
+        &:not(.text-white){
+            i{
+                background-image: url(../Images/alpha-icon-dark.svg);
+            }
+        }
+    }
+    .phone-icon{
+        i{
+            width: 47px;
+            height: 46.99px; 
+        }
+        &.text-white{
+            i{
+                background-image: url(../Images/phone-icon-light.svg);
+            }
+        }
+        &:not(.text-white){
+            i{
+                background-image: url(../Images/phone-icon-dark.svg);
+            }
+        }
+    }
+
+    .email-icon, .phone-icon{
+        i{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+        }
+
+        @media screen and (max-width: ($xl - 1px)) {
+            i{
+                width: 30px;
+                height: 29.99px;
+            }
+        }
+    }
+
+    
+
     a.global-area-external-link{
         display: block;
         position: relative;

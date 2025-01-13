@@ -10903,6 +10903,36 @@ html, body {
     cursor: pointer;
     display: block; }
 
+.terras .email-icon i {
+  width: 51px;
+  height: 50.99px; }
+
+.terras .email-icon.text-white i {
+  background-image: url(../Images/alpha-icon-light.svg); }
+
+.terras .email-icon:not(.text-white) i {
+  background-image: url(../Images/alpha-icon-dark.svg); }
+
+.terras .phone-icon i {
+  width: 47px;
+  height: 46.99px; }
+
+.terras .phone-icon.text-white i {
+  background-image: url(../Images/phone-icon-light.svg); }
+
+.terras .phone-icon:not(.text-white) i {
+  background-image: url(../Images/phone-icon-dark.svg); }
+
+.terras .email-icon i, .terras .phone-icon i {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top; }
+
+@media screen and (max-width: 1199px) {
+  .terras .email-icon i, .terras .phone-icon i {
+    width: 30px;
+    height: 29.99px; } }
+
 .terras a.global-area-external-link {
   display: block;
   position: relative; }
