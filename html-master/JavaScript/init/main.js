@@ -512,7 +512,7 @@ jQuery('.primary-color-btn, .outline-btn').addClass('site-btn');
 jQuery('.banner-text p').addClass('group-btn');
 jQuery('.half-height').parent('.full-height').addClass('mobile-full-height-remove');
 jQuery('h1.special-lg').addClass('mb-0');
-jQuery('.content-btn').addClass('site-btn primary-btn no-default-arrow down-arrow-icon-light anchor-link');
+jQuery('.content-link').addClass('site-btn primary-color-btn down-arrow-btn anchor-link');
 
 
 // responsive placements banner mini slider
