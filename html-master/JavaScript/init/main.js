@@ -574,20 +574,20 @@ jQuery('.parallel-equal-height').each(function(){
 
 
 // site-dropdown-module
-jQuery('.site-dropdown-module .hidden-check-radio').each(function(){
+// jQuery('.site-dropdown-module .hidden-check-radio').each(function(){
   
 
-  jQuery(this).click(function(){
-    if(jQuery(this).is(':checked')) {
-      var CHECKEDTEXT = jQuery(this).parent('.dropdown-item').find('span').text();
-      jQuery(this).parents('.site-dropdown-module').find('.dropdown-toggle').text(CHECKEDTEXT);
-   }
+//   jQuery(this).click(function(){
+//     if(jQuery(this).is(':checked')) {
+//       var CHECKEDTEXT = jQuery(this).parent('.dropdown-item').find('span').text();
+//       jQuery(this).parents('.site-dropdown-module').find('.dropdown-toggle').text(CHECKEDTEXT);
+//    }
    
-});
+// });
 
 
    
-});
+// });
 // site-dropdown-module
 
 
