@@ -421,6 +421,10 @@
             &.view-10{
                 padding: 80px 80px 40px 80px;
             }
+            &.view-11{
+                padding-top: 50px;
+                padding-bottom: 150px;
+            }
         }
         
     }
@@ -661,9 +665,9 @@
             display: flex;
             column-gap: 20px;
             align-items: center;
-            font-size: 22px;
+            font-size: 19px;
             line-height: normal;
-            letter-spacing: 0.44px;
+            letter-spacing: 0px;
             font-family: var(--site-secondary-font);
             font-weight: normal;
 
@@ -710,9 +714,9 @@
         font-weight: normal;
     }
     h1{
-        font-size: 81px;
-        line-height: 108px;
-        letter-spacing: 1.62px;
+        font-size: 65px;
+        line-height: 85px;
+        letter-spacing: 0px;
         margin-bottom: 20px;
 
         &.special-lg{
@@ -722,71 +726,71 @@
         }
     }
     h2{
-        font-size: 60px;
-        line-height: 80px;
-        letter-spacing: 1.2px;
+        font-size: 50px;
+        line-height: 70px;
+        letter-spacing: 0px;
         margin-bottom: 15px;
 
-        &.lg{
-            font-size: 74px;
-            line-height: 98px;
-            letter-spacing: 1.48px;
-        }
+        // &.lg{
+        //     font-size: 74px;
+        //     line-height: 98px;
+        //     letter-spacing: 1.48px;
+        // }
 
-        &.md{
-            font-size: 50px;
-            line-height: 80px;
-            letter-spacing: 1px;
-        }
-        &.md-less{
-            font-size: 40px;
-            line-height: 50px;
-            letter-spacing: 0.8px;
-        }
+        // &.md{
+        //     font-size: 50px;
+        //     line-height: 80px;
+        //     letter-spacing: 1px;
+        // }
+        // &.md-less{
+        //     font-size: 40px;
+        //     line-height: 50px;
+        //     letter-spacing: 0.8px;
+        // }
     }
 
     h3{
         font-size: 40px;
-        line-height: 50px;
-        letter-spacing: 0.8px;
+        line-height: 55px;
+        letter-spacing: 0px;
     }
 
     h4{
-        font-size: 36px;
-        line-height: 52px;
-        letter-spacing: 0.72px;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0px;
         margin-bottom: 15px;
 
-        &.md{
-            font-size: 30px;
-            line-height: 57px;
-            letter-spacing: 0.6px;
-        }
+        // &.md{
+        //     font-size: 30px;
+        //     line-height: 57px;
+        //     letter-spacing: 0.6px;
+        // }
     }
     h5{
-        font-size: 26px;
-        line-height: 35px;
-        letter-spacing: 0.52px;
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 0px;
         margin-bottom: 15px;
     }
     h6{
-        font-size: 20px;
-        line-height: normal;
-        letter-spacing: 0.4px;
+        font-size: 19px;
+        line-height: 28px;
+        letter-spacing: 0px;
         margin-bottom: 15px;
 
-        &.lg{
-            font-size: 29px;
-            line-height: normal;
-            letter-spacing: 0.58px;
-        }
+        // &.lg{
+        //     font-size: 29px;
+        //     line-height: normal;
+        //     letter-spacing: 0.58px;
+        // }
     }
     strong{
         font-weight: var(--site-primary-font-bold);
     }
     p{
-        font-size: 25px;
-        line-height: 45px;
+        font-size: 18px;
+        line-height: 35px;
         margin-bottom: 30px;
 
         @media screen and (min-width: $xl) {
@@ -794,40 +798,40 @@
                 margin-bottom: 60px;
             }
             &.lg-para{
-                font-size: 35px;
-                letter-spacing: 0.7px;
-                line-height: 50px;
-            }
-            &.lg-para-less{
-                font-size: 30px;
+                font-size: 25px;
+                line-height: 40px;
                 letter-spacing: 0px;
-                line-height: 50px;
             }
-            &.lg-para-plus{
-                font-size: 40px;
-                letter-spacing: 0px;
-                line-height: 60px;
-            }
+            // &.lg-para-less{
+            //     font-size: 30px;
+            //     letter-spacing: 0px;
+            //     line-height: 50px;
+            // }
+            // &.lg-para-plus{
+            //     font-size: 40px;
+            //     letter-spacing: 0px;
+            //     line-height: 60px;
+            // }
             &.sm-para{
-                font-size: 20px;
-                letter-spacing: 0px;
-                line-height: 35px;
-            }
-            &.sm-para-less{
-                font-size: 19px;
-                letter-spacing: 0.38px;
+                font-size: 18px;
                 line-height: 30px;
-            }
-            &.sm-para-plus{
-                font-size: 22px;
                 letter-spacing: 0px;
-                line-height: 36px;
             }
-            &.xs-para{
-                font-size: 16px;
-                letter-spacing: 0px;
-                line-height: 30px;
-            }
+            // &.sm-para-less{
+            //     font-size: 19px;
+            //     letter-spacing: 0.38px;
+            //     line-height: 30px;
+            // }
+            // &.sm-para-plus{
+            //     font-size: 22px;
+            //     letter-spacing: 0px;
+            //     line-height: 36px;
+            // }
+            // &.xs-para{
+            //     font-size: 16px;
+            //     letter-spacing: 0px;
+            //     line-height: 30px;
+            // }
     
         }
         
@@ -844,53 +848,14 @@
     .entry{
         
         li{
-            font-size: 25px;
-            line-height: 45px;
+            font-size: 18px;
+            line-height: 35px;
             margin-bottom: 30px;
             &:last-child{
                 margin-bottom: 0px;
             }
 
-            @media screen and (min-width: $xl) {
-                &.para-gap-lg{
-                    margin-bottom: 60px;
-                }
-                &.lg-para{
-                    font-size: 35px;
-                    letter-spacing: 0.7px;
-                    line-height: 50px;
-                }
-                &.lg-para-less{
-                    font-size: 30px;
-                    letter-spacing: 0px;
-                    line-height: 50px;
-                }
-                &.lg-para-plus{
-                    font-size: 40px;
-                    letter-spacing: 0px;
-                    line-height: 60px;
-                }
-                &.sm-para{
-                    font-size: 20px;
-                    letter-spacing: 0px;
-                    line-height: 35px;
-                }
-                &.sm-para-less{
-                    font-size: 19px;
-                    letter-spacing: 0.38px;
-                    line-height: 30px;
-                }
-                &.sm-para-plus{
-                    font-size: 22px;
-                    letter-spacing: 0px;
-                    line-height: 36px;
-                }
-                &.xs-para{
-                    font-size: 16px;
-                    letter-spacing: 0px;
-                    line-height: 30px;
-                }
-            }
+            
 
 
         }
@@ -907,11 +872,10 @@
     .site-btn{
         display: inline-block;
         padding: 19px 74px 19px 21px;
-        font-size: 22px;
+        font-size: 18px;
         line-height: normal;
         color: white;
-        font-family: var(--site-secondary-font);
-        font-weight: normal;
+        font-weight: var(--site-primary-font-bold);
         @include border-radius(50px);
         border: 1px solid transparent;
         background-image: url(../Images/next-arrow-type-1-white.svg);
@@ -1307,6 +1271,10 @@
 
     // global-light-video-player
     .global-light-video-player{
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
         & > img{
             width: 100%;
             height: auto;
@@ -1350,7 +1318,12 @@
     // team-member-video-teaser-module
     .team-member-video-teaser-module{
         .team-member-video-teaser-snippet{
+            
             & > .my-row{
+                margin-bottom: 60px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
                 & > .my-col{
                     @media screen and (max-width: 1880px) and (min-width: $xl) {
                         max-width: 20%;
@@ -1517,7 +1490,7 @@
 
             &.pagination-pos-2{
                 .global-carousel-slider-navigate-wrap{
-                    margin-top: 130px;
+                    margin-top: 80px;
                     @media screen and (max-width: ($xl - 1px)) {
                         margin-top: 75px;
                     }
@@ -1620,6 +1593,13 @@
     .interactive-map-module{
 
         &.slider-functionality{
+            .global-carousel{
+                &.type-arrow-pagination-view-1{
+                    .slider-arrow-holder{
+                        justify-content: center;
+                    }
+                }
+            }
             .map-holder{
                 & > .pointer{
                     display: none;
@@ -1658,16 +1638,15 @@
         .map-carousel-main{
             width: 450px;
             @media screen and (min-width: $lgDesktopEnds){
-                width: 746px;
+                width: 550px;
+                margin-right: 270px;
             }
             
         }
         .interactive-map-carousel-context-col{
             & > .main-wrap{
                 max-width: 100%;
-                @media screen and (min-width: $lgDesktopEnds){
-                    max-width: 550px;
-                }    
+                width: 100%;   
             }
             
         }
@@ -1847,7 +1826,7 @@
             padding: 0px;
             display: flex;
             column-gap: 18px;
-            font-size: 20px;
+            font-size: 15px;
             line-height: normal;
 
             li{
@@ -1887,9 +1866,9 @@
             li{
                 margin: 0px;
                 padding: 0px;
-                font-size: 34px;
+                font-size: 22px;
                 line-height: normal;
-                letter-spacing: 0.68px;
+                letter-spacing: 0px;
                 font-family: var(--site-secondary-font);
                 opacity: 0.27;
                 &.current{
@@ -2071,10 +2050,14 @@
     // site-accordion
     .site-accordion{
         .accordion-body{
-            border-bottom: 1px solid rgba($color: #1B2020, $alpha: 0.2);
+            border: none;
+            @include border-radius(20px);
+            margin-top: 10px;
         }
         .accordion-item{
+            margin-bottom: 10px;
             &:last-child{
+                margin-bottom: 0px;
                 .accordion-body{
                     border-color: transparent;
                 }
@@ -2087,9 +2070,11 @@
             button{
                 font-size: 20px;
                 line-height: 30px;
-                padding: 20px 160px 20px 0;
-                border-bottom: 1px solid rgba($color: #1B2020, $alpha: 0.2);
+                padding: 20px 60px 20px 20px;
+                border: none;
                 position: relative;
+                @include border-radius(20px !important);
+                background-color: white;
                 
                 &:not(.collapsed){
 
@@ -2102,16 +2087,16 @@
 
                 &:after{
                     content: ' ';
-                    width: 34.52px;
-                    height: 34.52px;
+                    width: 28.52px;
+                    height: 28.52px;
                     background-image: url(../Images/plus-icon-dark.svg);
                     background-repeat: no-repeat;
                     background-position: left top;
-                    background-size: 34.52px;
+                    background-size: 28.52px;
                     position: absolute;
-                    right: 15px;
+                    right: 24px;
                     top: 50%;
-                    margin-top: -17px;
+                    margin-top: -14px;
                     @include transition(all 0.3s ease 0s);
                 }
             }

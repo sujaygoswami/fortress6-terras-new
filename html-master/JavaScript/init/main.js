@@ -1,6 +1,7 @@
 // break point vars
 var $xl = 1200;
 var $lowResDesktopEnds = 1366;
+var $lgDesktopEnds = 1600;
 // break point vars
 
 // setCookie
@@ -103,9 +104,26 @@ checkMobile();
 
 
 // paralax
-if ($(window).width() >= $xl) {
-  jQuery('.paralaxed-item-type-1').parallaxed();
-}
+jQuery('.paralaxed-item-type-2').each(function(){
+  if ($(window).width() >= $lgDesktopEnds) {
+    jQuery(this).parallaxed({
+      speed: 0.5,
+    });
+  }else if ($(window).width() >= $xl) {
+    jQuery(this).parallaxed({
+      speed: 0.1,
+    });
+  }
+});
+jQuery('.paralaxed-item-type-1').each(function(){
+ if ($(window).width() >= $xl) {
+    jQuery(this).parallaxed({
+      speed: 1,
+    });
+  }
+});
+
+
 
 
 // scroll up done
@@ -234,12 +252,24 @@ Fancybox.bind("[data-fancybox]", {
 
 // team-member-video-teaser-snippet
 jQuery('.team-member-video-teaser-snippet').each(function(){
+
+  if ($(window).width() >= $xl) {
+    var cols = jQuery(this).find('> .my-col');
+    for(var i = 0; i < cols.length; i+=4) {
+      cols.slice(i, i+4).wrapAll('<div class="row my-row default-row jc-right"></div>');
+    }
+  }
+  if ($(window).width() < $xl) {
+    jQuery(this).find('> .my-col').wrapAll('<div class="row my-row default-row jc-right"></div>');
+  }
+  
+
  var HEIGHT = jQuery(this).height();
- jQuery(this).css('margin-bottom', - (HEIGHT / 2));
- jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT / 2));
+ jQuery(this).css('margin-bottom', - (HEIGHT - 280));
+ jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT - 280));
  if ($(window).width() < $xl) {
-  jQuery(this).css('margin-bottom', - (HEIGHT / 2 + 130));
- jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT / 2 + 130));
+  jQuery(this).css('margin-bottom', - (HEIGHT - 200));
+ jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT - 200));
  }
 });
 

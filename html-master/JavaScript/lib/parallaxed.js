@@ -96,7 +96,7 @@
 
     $.fn[namespace].defaults = {
         usetransform: true,
-        speed: 0.3,
+        speed: 0.1,
         start: 'visible',
         startoffsettop: 0,
         startoffsetleft: 0
