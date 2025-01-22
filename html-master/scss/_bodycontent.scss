@@ -3,6 +3,23 @@
 
     // basic starts
 
+    a{
+        &.global-page-external-link{
+            &:after{
+                content: ' ';
+                width: 13.68px;
+                height: 11.21px;
+                margin-left: 6px;
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: 13.68px;
+                background-image: url(../Images/global-small-external-link-arrow.svg);
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
     .min-w-auto{
         min-width: auto !important;
     }
@@ -450,6 +467,10 @@
     }
 
     .my-row{
+        row-gap: $grid-gutter-width;
+        &.has-margin-bottom{
+            margin-bottom: $grid-gutter-width;
+        }
         &.has-margin-bottom{
             &:last-child{
                 margin-bottom: 0px !important;
@@ -676,18 +697,15 @@
 
         &.view-2{
             i{
-                width: 64px;
-                height: 64px;
-                @include border-radius(100%);
                 display: grid;
                 justify-content: center;
                 align-items: center;
-                background-color: var(--site-global-dark);
+                
             }
             a{
                 column-gap: 36px;
-                font-size: 50px;
-                letter-spacing: 1px;
+                font-size: 45px;
+                letter-spacing: 0px;
             }
         }
 
@@ -869,7 +887,7 @@
         row-gap: 30px;
         align-items: center;
     }
-    .site-btn{
+    .site-btn, .btn{
         display: inline-block;
         padding: 19px 74px 19px 21px;
         font-size: 18px;
@@ -901,7 +919,7 @@
         }
        
 
-        &.primary-color-btn{
+        &.primary-color-btn, &.btn-primary{
             background-color: var(--site-primary-color);
         }
         &.outline-btn{
@@ -1788,8 +1806,8 @@
 
                         &.submit-icon{
                             background-image: url(../Images/send-icon-white-outline.svg);
-                            background-size: 31.41px;
-                            background-position: left 8.18px top 10.17px;
+                            background-size: 24.25px;
+                            background-position: center center;
                         }
                     }
                 
@@ -1797,8 +1815,7 @@
         }
 
         .field-rule{
-            font-family: var(--site-secondary-font);
-            font-size: 22px;
+            font-size: 19px;
             line-height: normal;
         }
 
@@ -1826,7 +1843,6 @@
             padding: 0px;
             display: flex;
             column-gap: 18px;
-            font-size: 15px;
             line-height: normal;
 
             li{
@@ -2158,6 +2174,15 @@
         font-size: 22px;
         letter-spacing: 0.44px;
         font-family: var(--site-secondary-font);
+        .actions{
+            margin-top: 25px;
+        }
+        & > h3{
+            margin-bottom: 25px;
+        }
+        .textarea-form-group{
+            height: auto !important;
+        }
         .fieldwrap{
             position: relative;
             height: 72px;
@@ -2309,7 +2334,7 @@
 
             label{
                 position: absolute;
-                left: 0px;
+                left: 15px;
                 top: -12px;
                 padding: 0 15px;
                 font-size: 20px;
@@ -2318,7 +2343,13 @@
                 font-family: var(--site-primary-font);
             }
 
-            .text-input{
+            .input{
+                height: 100%;
+            }
+
+            
+
+            .text-input, .form-control{
                     width: 100%;
                     height: 100%;
                     background-color: transparent;
@@ -2330,6 +2361,13 @@
                     font-family: var(--site-secondary-font);
                     position: relative;
                     text-align: left;
+
+                    &.xxlarge{
+                        height: 120px;
+                        resize: vertical;
+                        padding-top: 28px;
+                        padding-bottom: 28px;
+                    }
 
                     &.has-iconic-btn{
                         padding-right: 80px;

@@ -8,6 +8,28 @@
             background-repeat: no-repeat;
         }
 
+        .footer-social-connect-links-parent{
+            height: 68px;
+            display: grid;
+            align-items: center;
+        }
+
+        .footer-social-connect-links{
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+
+            a{
+                width: 50px;
+                height: 50px;
+                @include border-radius(100%);
+                background-color: white;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
         .main-footer-item-holder{
             padding-top: 35px;
             padding-bottom: 10px;
@@ -19,7 +41,7 @@
 
         .footer-contact-info{
             .global-iconic-link{
-                margin-bottom: 40px;
+                margin-bottom: 35px;
                 &:last-child{
                     margin-bottom: 0px;
                 }
@@ -27,13 +49,21 @@
         }
 
         .footer-menu{
+            .entry{
+                li{
+                    line-height: normal;
+                    margin-bottom: 15px;
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
             .the-menu{
                 list-style: none;
                 margin: 0px;
                 padding: 0px;
 
                 li{
-                    margin: 0px;
                     padding: 0px;
                 }
             }
@@ -41,29 +71,33 @@
 
         .terry-img{
             position: absolute;
-            right: -65px;
-            top: 0px;
+            right: -34px;
+            top: -82px;
+            z-index: 100;
         }
+
         .terry-slogan{
-            position: absolute;
-            left: 28px;
-            top: 53px;
-            z-index: 2;
+            padding-left: 15px;
         }
+       
 
         .footer-social{
-            padding-top: 107px;
+            padding-top: 0px;
 
             .strip{
-                padding: 40px 45px;
+                padding: 8px 10px;
                 background-color: var(--site-grey-type-3);
                 @include border-radius(40px);
                 display: flex;
                 align-items: center;
-                min-width: 435px;
-                column-gap: 36px;
+                column-gap: 20px;
+                min-width: 520px;
                 position: relative;
                 z-index: 1;
+
+                .strip-item{
+                    margin-left: auto;
+                }
 
                 
 
@@ -74,19 +108,14 @@
                     font-family: var(--site-secondary-font);
                 }
 
-                .strip-item{
-                    display: flex;
-                    align-items: center;
-                    column-gap: 36px;
-                    margin-left: auto;
-                }
+                
             }
         }
 
         
 
         .footer-copy-right-info{
-            padding: 15px 0;
+            padding: 50px 0;
             border-top: 1px solid rgba($color: #3C4646, $alpha: 0.28);
         }
 

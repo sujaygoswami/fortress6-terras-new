@@ -834,41 +834,37 @@
 
         // interactive-map-module
 
+       
+        
+
         // footer
         footer.footer{
-            .footer-social{
-                padding-top: 87px;
-                .strip{
-                    padding: 20px;
-                    @include border-radius(20px);
-                    column-gap: 28px;
-                    justify-content: center;
-                    .strip-item{
-                        column-gap: 23px;
-                        margin-left: inherit;
-                        img{
-                            max-width: 17px;
+            .footer-social-connect-links-parent{
+                height: auto;
+            }
+            .site-essential-links{
+                ul{
+                    column-gap: 5px;
+                    li{
+                        a{
+                            margin-right: 5px;
                         }
                     }
-                    .strip-head{
-                        font-size: 15px;
-                        letter-spacing: 0.3px;
-                    }
                 }
             }
-            .terry-slogan{
-                top: 55px;
-                left: 5px;
-                img{
-                    max-width: 96px;
+            .footer-social{
+                padding-top: 0px;
+                .strip{
+                    
+                    justify-content: center;
+                    
                 }
             }
+            
 
             .terry-img{
-                right: -53px;
-                img{
-                    max-width: 148px;
-                }
+                
+               
             }
             .footer-social{
                 .strip{
@@ -1144,6 +1140,10 @@
             letter-spacing: 0px;
             .fieldwrap{
                 height: 42px;
+                .text-input, .form-control{
+                    font-size: 14px;
+                    padding: 0 15px;
+                }
                 &.height-view-2{
                     height: 50px;
                 }
@@ -1172,9 +1172,9 @@
                 
                 label{
                     font-size: 10px;
-                    padding: 0 8px;
+                    padding: 8px;
                     left: 5px;
-                    top: -7px;
+                    top: -12px;
                 }
                 &.specific-width-type-1, &.specific-width-type-2{
                     width: 100%;

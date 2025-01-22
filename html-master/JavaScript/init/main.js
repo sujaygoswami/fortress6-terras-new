@@ -620,7 +620,12 @@ jQuery('.parallel-equal-height').each(function(){
 // });
 // site-dropdown-module
 
-
+// forms
+jQuery('.postcommentsform').each(function(){
+  jQuery(this).addClass('site-form-view-layout-1');
+  jQuery(this).find('.form-group').addClass('fieldwrap label-over-body-bg mb-5');
+  jQuery(this).find('textarea').parents('.form-group').addClass('textarea-form-group');
+});
 
 
 });
