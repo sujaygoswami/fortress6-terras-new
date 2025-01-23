@@ -11206,6 +11206,9 @@ html, body {
 .terras .pos-relative {
   position: relative; }
 
+.terras .section-row:last-child {
+  margin-bottom: 0; }
+
 .terras .section-gap-tyep-12 {
   margin-bottom: 20px; }
 
