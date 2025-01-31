@@ -166,6 +166,34 @@
         display: flex;
         column-gap: 26px;
 
+        &.layout-2{
+            column-gap: 18px;
+            align-items: center;
+            .logo-part{
+                padding-right: 0px;
+                border: none;
+            }
+
+            & > div{
+                padding: 0px;
+            }
+
+            .logo-caption{
+                span{
+                    background-color: var(--site-primary-color);
+                    color: white;
+                    font-family: var(--site-secondary-font);
+                    font-size: 22px;
+                    letter-spacing: 2.2px;
+                    text-transform: uppercase;
+                    @include border-radius(10px);
+                    padding: 3px 10px;
+                    display: inline-block;
+                    line-height: normal;
+                }
+            }
+        }
+
         .logo-part {
             padding-right: 26px;
             border-right: 1px solid rgba($color: #3C4646, $alpha: 0.49);
@@ -214,9 +242,27 @@
             display: flex;
             column-gap: 45px;
             align-items: center;
+
+            .service-head-tag{
+                font-family: var(--site-secondary-font);
+                letter-spacing: 0.4px;
+                font-size: 20px;
+                line-height: normal;
+            }
+
+            &.layout-2{
+                column-gap: 25px;
+
+                .global-iconic-link{
+                    margin-left: 5px;
+                }
+            }
         }
 
         .header-menu-trigger {
+            &.layout-2{
+                margin-left: 28px;
+            }
             .the-trigger {
                 width: 52.15px;
                 height: 35.14px;
