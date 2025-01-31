@@ -493,6 +493,9 @@
             .half-height{
                 height: calc(50% - 10px);
             }
+            .three-item-distribute-height{
+                height: calc(32.9% - 10px);
+            }
             &.has-margin-bottom{
                 margin-bottom: $grid-gutter-width;
             }
@@ -747,6 +750,11 @@
             font-size: 156px;
             line-height: normal;
             letter-spacing: 3.12px;
+
+            &.view-2{
+                font-size: 120px;
+                letter-spacing: 0px;
+            }
         }
     }
     h2{
@@ -1022,10 +1030,30 @@
     }
     // traingle-watermark-has
 
+
+    // special-collage-grid-layout
+    .special-collage-grid-layout{
+        .my-col{
+            &.lg-col{
+                width: 80%;
+                flex-grow: 1;
+            }
+            &.md-col{
+                width: 20%;
+                flex-grow: 1;
+            }
+        }
+    }
+    // special-collage-grid-layout
+
     // page-banner-module
     .page-banner-module{
+
+        
+
+
         &.height-view-1{
-            height: calc(100vh - (var(--header-height) + var(--grid-gutter)));
+            height: calc(100vh - (var(--header-height) + var(--grid-gutter) * 2));
         }
 
         .page-banner-video-item{
@@ -1188,6 +1216,11 @@
 
     // cover-bg-content-module
     .cover-bg-content-module{
+
+        &.min-height-negative{
+            min-height: inherit !important;
+        }
+
         &.static-banner{
             min-height: 625px;
 
