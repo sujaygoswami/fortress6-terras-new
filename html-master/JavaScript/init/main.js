@@ -666,6 +666,13 @@ jQuery(window).load(function(){
   };
 
 
+  jQuery('.job-card-module').each(function(){
+    jQuery(this).find('.job-context').matchHeight({byRow: false});
+  });
+
+  
+
+
 
 
 

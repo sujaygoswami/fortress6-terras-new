@@ -3,6 +3,16 @@
 
     // basic starts
 
+    .v-align-mid{
+        vertical-align: middle;
+    }
+    .v-align-top{
+        vertical-align: top;
+    }
+    .v-align-bottom{
+        vertical-align: bottom;
+    }
+
     a{
         &.global-page-external-link{
             &:after{
@@ -444,6 +454,9 @@
                 padding-top: 50px;
                 padding-bottom: 150px;
             }
+            &.view-12{
+                padding: 30px;
+            }
         }
         
     }
@@ -490,6 +503,12 @@
         }
         &.default-row{
             row-gap: $grid-gutter-width;
+            &.row-gap-lg{
+                row-gap: 30px;
+                &.has-margin-bottom{
+                    margin-bottom: 30px;
+                }
+            }
             .half-height{
                 height: calc(50% - 10px);
             }
@@ -588,7 +607,7 @@
                 margin-bottom: 25px;
             }
             &.element-gap-4{
-                margin-bottom: 33px;
+                margin-bottom: 35px;
             }
             &.element-gap-5{
                 margin-bottom: 70px;
@@ -736,6 +755,13 @@
     // global-iconic-link ends
 
     // typography
+    .head-tag{
+        padding: 8px 12px;
+        @include border-radius(10px);
+        display: inline-block;
+        line-height: normal;
+        letter-spacing: 2.2px;
+    }
     h1, h2, h3,h4,h5,h6{
         font-family: var(--site-secondary-font);
         font-weight: normal;
@@ -914,6 +940,17 @@
         background-repeat: no-repeat;
         background-position: right 21px center;
         background-size: 34.83px;
+
+        
+
+        &.only-placed-arrow-btn{
+            height: 60px;
+            width: 77px;
+            background-position: center center;
+            padding: 0px;
+            background-size: 28px;
+            border: none;
+        }
 
         &.down-arrow-btn{
             background-image: url(../Images/site-btn-down-arrow-white.svg);
@@ -1122,8 +1159,9 @@
             padding-top: 80px;
             padding-bottom: 80px;
 
+           
             .normal-text-element-module{
-                max-width: 70%;
+                max-width: 65%;
             }
             
         }
@@ -1216,6 +1254,14 @@
 
     // cover-bg-content-module
     .cover-bg-content-module{
+
+        .caption-with-link{
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            bottom: 0px;
+            padding: 50px 45px;
+        }
 
         &.min-height-negative{
             min-height: inherit !important;
@@ -2420,5 +2466,225 @@
         }
     }
     // site-form-view-layout-1
+
+    // site-iconic-flex-form
+    .site-iconic-flex-form{
+        & > .main-wrap{
+            display: flex;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .form-field{
+            height: 60px;
+            border-radius: 30px;
+            min-width: 275px;
+
+            .form-btn{
+                height: 100%;
+                line-height: 60px;
+                border-radius: 30px;
+                background-color: var(--site-primary-color);
+                color: white;
+                border: none;
+                text-align: left;
+                font-size: 19px;
+                font-weight: var(--site-primary-font-bold);
+                margin: 0px;
+                padding: 0 54px 0 22px;
+                background-repeat: no-repeat;
+                background-position: right 18px center;
+                background-size: 21.17px;
+
+                &.search-btn{   
+                    background-image: url(../Images/search-thin-icon-white.svg);
+                }
+            }
+
+            &.dark-bg{
+                color: white;
+
+                & *{
+                    color: white;
+                }
+            }
+        }
+
+        .dropdown-menu{
+            width: 100%;
+            border-radius: 30px;
+            width: 100%;
+            border: none;
+            background-color: var(--site-primary-color);
+            color: white;
+            overflow: hidden;
+            padding: 20px;
+
+            li{
+                padding: 10px 0;
+            }
+
+            .item-check-radio{
+                position: relative;
+                display: flex;
+                column-gap: 15px;
+                align-items: start;
+
+                .check-radio{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    left: 0px;
+                    top: 0px;
+                    margin: 0px;
+                    padding: 0px;
+                    cursor: pointer;
+                    opacity: 0;
+
+                    &:checked{
+                        & + .clone-check{
+                            background-color: white;
+                            background-image: url(../Images/tick-mark-icon-primary.svg);
+                        }
+                    }
+                }
+
+                .clone-check{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 5px;
+                    border: 2px solid;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: 10.37px;
+                }
+
+                label{
+                    font-size: 19px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .main-reactive-item{
+            border: none;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0 65px 0 20px;
+            font-size: 19px;
+            text-align: left;
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+            line-height: normal;
+            position: relative;
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border-radius: 30px;
+            overflow: hidden;
+            color: white;
+
+            &.show{
+                &:after{
+                    transform: rotate(180deg);
+                }
+            }
+
+            i{
+                position: relative;
+                top: -2px;
+            }
+
+            &:after{
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                margin: 0px;
+                margin-top: -5px;
+                pointer-events: none;
+                border: none;
+                background-repeat: no-repeat;
+                background-image: url(../Images/thin-dropdown-down-arrow-white.svg);
+                background-size: 18.07px;
+                background-position: left top;
+                width: 18.07px;
+                height: 10.04px;
+                transform-origin: center center;
+                @include transition(all 0.3s ease 0s);
+            }
+        }
+    }
+    // site-iconic-flex-form
+
+    // job-card-module
+    .job-card-module{
+        .job-card{
+            background-image: url(../Images/right-indication-arrow-dark.svg);
+            background-repeat: no-repeat;
+            background-position: right 30px bottom 30px;
+            background-size: 23.84px;
+        }
+        .client-logo{
+            img{
+                max-width: 100px;
+            }
+        }
+
+        .job-context{
+            p{
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .primary-info{
+            margin-bottom: 25px;
+        }
+
+        .footer-info{
+            & >.main-wrap{
+                display: flex;
+                column-gap: 35px;
+                row-gap: 35px;
+                align-items: center;
+            }
+
+            .info-box{
+                display: flex;
+                column-gap: 6px;
+                align-items: center;
+                font-size: 14px;
+                opacity: 0.5;
+                line-height: normal;
+
+                i{
+                    position: relative;
+                    top: -2px;
+                }
+            }
+        }
+    }
+    // job-card-module
+
+    // global-social-connect-links
+
+    .global-social-connect-links{
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+
+        a{
+            width: 86px;
+            height: 86px;
+            @include border-radius(100%);
+            background-color: white;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    // global-social-connect-links
 
 }
