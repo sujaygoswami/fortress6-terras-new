@@ -627,6 +627,20 @@ jQuery('.postcommentsform').each(function(){
   jQuery(this).find('textarea').parents('.form-group').addClass('textarea-form-group');
 });
 
+// site-iconic-flex-form
+jQuery(document).click(function(){
+
+  jQuery('.site-iconic-flex-form .form-field.light-bg .dropdown-toggle').each(function(){
+    if (jQuery(this).hasClass('show')) {
+      jQuery(this).parent('.dropdown').addClass('show');
+    }else{
+      jQuery(this).parent('.dropdown').removeClass('show');
+    }
+  });
+  
+});
+
+
 
 });
 

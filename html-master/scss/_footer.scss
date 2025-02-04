@@ -8,6 +8,16 @@
             background-repeat: no-repeat;
         }
 
+        .logo-stamp{
+            @include transition(all 0.3s ease 0s);
+            transform-origin: center center;
+            pointer-events: auto;
+
+            &:hover{
+                transform: rotate(14deg);
+            }
+        }
+
         .footer-social-connect-links-parent{
             height: 68px;
             display: grid;
