@@ -1,4 +1,5 @@
 // break point vars
+var $md = 768;
 var $xl = 1200;
 var $lowResDesktopEnds = 1366;
 var $lgDesktopEnds = 1600;
@@ -193,6 +194,14 @@ jQuery( window ).on( "orientationchange", function( event ) {
 });
 
 
+// only-tab-half-width
+
+if ($(window).width() < $xl && $(window).width() >= $md)  {
+  jQuery('.only-tab-half-width').parent().addClass('only-tab-half-width-parent');
+}
+
+
+
 
 
 
@@ -324,7 +333,7 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     slidesToShow: 10,
     slidesToScroll: 1,
     draggable: false,
-    cssEase: 'linear',
+    
     responsive: [
       {
         breakpoint: 1199,
@@ -333,7 +342,7 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
           slidesToShow: 4,
           centerMode: true,
           centerPadding: '90px',
-          draggable: true,
+          draggable: false,
         }
       },
       {
@@ -343,7 +352,7 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
           slidesToShow: 4,
           centerMode: true,
           centerPadding: '50px',
-          draggable: true,
+          draggable: false,
         }
       }
     ]
@@ -411,6 +420,17 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
    
 
     
+  });
+
+  // logo-carousel
+  jQuery('.global-flitcky-carousel').parents('section').addClass('overflow-hidden');
+  jQuery('.logo-carousel').flickity({
+    cellAlign: 'left',
+    contain: false,
+    freeScroll: true,
+    prevNextButtons: true,
+    pageDots: false,
+    wrapAround: true
   });
 
   // interactive-map-module
@@ -761,7 +781,7 @@ jQuery('.page-banner-module.mobile-view-with-mini-slider').each(function(){
   var MINISLIDERHEIGHT = jQuery(this).parent().find('.banner-mini-slider-module').height();
 
   if ($(window).width() < $xl) {
-    jQuery(this).height(HEIGHT - (MINISLIDERHEIGHT + 12));
+    jQuery(this).height(HEIGHT - (MINISLIDERHEIGHT + 12 + 20 + 20));
   }
 });
 

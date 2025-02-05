@@ -72,8 +72,8 @@
 
         .menu-items {
             margin-bottom: 50px;
-            height: calc(100vh - 300px);
-            overflow: auto;
+            // height: calc(100vh - 300px);
+            // overflow: auto;
             display: flex;
             flex-wrap: wrap;
 
@@ -149,16 +149,14 @@
         .item-holder {
             padding: 25px;
             height: 100vh;
+            overflow-y: auto;
 
             @media screen and (min-width: $lowResDesktopEnds) {
                 padding: 50px;
             }
 
 
-            &>.main-wrap {
-                max-height: 100vh;
-                overflow: auto;
-            }
+            
         }
     }
 

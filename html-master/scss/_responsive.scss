@@ -5,8 +5,8 @@
         // basic
         .container,
         .container-fluid {
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         .ms-auto {
@@ -25,8 +25,8 @@
             &>.container-fluid {
                 &>.main-header-item-holder {
                     &.global-mx-padding {
-                        padding-left: 10px;
-                        padding-right: 10px;
+                        padding-left: 0px;
+                        padding-right: 0px;
                     }
                 }
             }
@@ -81,6 +81,14 @@
     .terras {
         padding-top: calc(var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter));
 
+
+        // basic
+        main{
+            padding-top: 20px;
+        }
+        // basic
+
+
         // site-form-style-1
         .site-form-style-1{
             .field-rule{
@@ -107,6 +115,18 @@
             }
         }
         // site-form-style-1
+
+        // line-info-module
+        .line-info-module{
+            &.typo-2{
+                & > .main-wrap{
+                    font-family: var(--site-primary-font);
+                    font-weight: var(--site-primary-font-regular);
+                }
+            }
+        }
+        // line-info-module
+        
         
 
         // basic
@@ -231,7 +251,7 @@
         }
 
         .mobile-section-gap-avg {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             &.section-gap-tyep-12{
                 margin-bottom: 20px;
             }
@@ -489,8 +509,9 @@
         
 
         .main-menu-expanded {
+            background-position: left 45% top;
             background-color: white;
-            background-image: none;
+            background-size: 450%;
 
             .item-global-mx-padding{
                 padding-left: 15px;
@@ -546,13 +567,16 @@
                 }
 
                 .slick-dots {
-                    left: 118px;
+                    left: 0px;
                     column-gap: 10px;
                     row-gap: 10px;
+                    width: 100%;
+                    padding-left: 118px;
 
                     li {
+                        flex-grow: 1;
                         button {
-                            width: 15px;
+                            width: 100%;
                             height: 4px;
                         }
                     }
@@ -656,8 +680,8 @@
                 .slick-list {
                     margin-left: -8px;
                     margin-right: -8px;
-                    padding-right: 60px;
-                    padding-left: 16px;
+                    padding-right: 25px;
+                    padding-left: 25px;
                 }
 
                 .my-col {
@@ -1223,6 +1247,32 @@
 // from less lowsesktop to tab
 @media screen and (max-width: ($xl - 1px)) and (min-width: $md) {
     .terras {
+        // basic
+        .mobile-global-mx-padding{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .inset-container-type-1{
+            max-width: 500px;
+        }
+        .only-tab-half-width-parent{
+           
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+
+            &.mobile-full-height-remove{
+                &.full-height{
+                    height: 100%;
+                }
+            }
+
+            & > .only-tab-half-width{
+                width: calc(50% - 5px);
+                height: 100% !important;
+            }
+        }
+        // basic
         // graph-module
         .graph-module{
             height: 200px;

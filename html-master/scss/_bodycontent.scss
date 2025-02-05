@@ -954,6 +954,7 @@
         background-repeat: no-repeat;
         background-position: right 21px center;
         background-size: 34.83px;
+        text-align: left;
 
         
 
@@ -1456,6 +1457,66 @@
     }
     // team-member-video-teaser-module
 
+    // logo-carousel
+    .global-flitcky-carousel{
+        padding: 0 150px;
+        @media screen and (max-width: ($xl - 1px)) {
+            padding: 0px;
+
+            .flickity-button{
+                display: none;
+            }
+
+            .flickity-viewport{
+                overflow: inherit;
+            }
+        }
+        .flickity-button{
+            background-color: transparent;
+            margin: 0px;
+            padding: 0px;
+            border: none;
+            font-size: 0px;
+            width: 29.01px;
+            height: 21.7px;
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: 29.01px;
+
+            svg{
+                display: none;
+            }
+
+            &.previous{
+                background-image: url(../Images/left-indication-arrow-dark.svg);
+                left: 37px;
+            }
+            &.next{
+                background-image: url(../Images/right-indication-arrow-dark.svg);
+                right: 37px;
+            }
+        }
+        .flickity-slider{
+            display: flex;
+            align-items: center;
+        }
+
+        &.logo-carousel{
+            .item{
+                width: 10%;
+                text-align: center;
+                padding: 0 10px;
+
+                @media screen and (max-width: ($xl - 1px)) {
+                    width: 25%;
+                }
+            }
+        }
+        
+        
+    }
+    // logo-carousel
+
     // global-date-badge
     .global-date-badge{
         @include border-radius(20px);
@@ -1530,7 +1591,7 @@
             .slick-list{
                 padding-right: 212px !important;
                 @media screen and (max-width: ($md - 1px)) {
-                    padding-right: 138px !important;
+                    padding-right: 50px !important;
                 }
             }
             
@@ -1627,6 +1688,7 @@
                     margin-top: 100px;
                     @media screen and (max-width: ($xl - 1px)) {
                         margin-top: 40px;
+                        margin-left: -50px;
                     }
                 }
                
@@ -2022,6 +2084,8 @@
             display: flex;
             column-gap: 18px;
             line-height: normal;
+            flex-wrap: wrap;
+            row-gap: 10px;
 
             li{
                 margin: 0px;
