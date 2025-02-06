@@ -36,6 +36,105 @@ if ($(window).width() < 768) {
 });
 
 
+// notation
+var site = {}
+
+site.INTARACTIVEMODULEFUNCTION = function() {
+
+  jQuery('.interactive-map-module').each(function(){
+    var PARENT = jQuery(this);
+    var MINHEIGHT = jQuery(this).find('.the-main-map').height();
+    var VIEW1 = jQuery(this).parent().find('.interactive-map-module.view-1');
+    jQuery(this).css('min-height', MINHEIGHT);
+
+    jQuery(this).find('.pointer .trigger').click(function(){
+      jQuery(PARENT).find('.pointer .trigger').not(this).removeClass('active');
+      jQuery(PARENT).find('.pointer .trigger').not(this).parent().removeClass('current');
+      jQuery(this).toggleClass('active');
+      jQuery(this).parent().toggleClass('current');
+    });
+
+
+    
+      jQuery(VIEW1).find('> .global-card-content').css('min-height', MINHEIGHT - 160);
+  
+
+    
+
+  });
+
+
+
+  jQuery('.interactive-map-module.slider-functionality .pointer').each(function(){
+    var TOPARENTS = jQuery(this).parents('.interactive-map-module.slider-functionality');
+    var SLICKDOTSUL = jQuery(TOPARENTS).find('.slick-dots');
+    var SLICKDOTSLI = jQuery(TOPARENTS).find('.slick-dots li');
+    var MAPHOLDER = jQuery(TOPARENTS).find('.map-holder');
+    
+
+    var POINTERINDEX = jQuery(this).index();
+    jQuery(this).attr('pointer-index', POINTERINDEX + 1);
+    var RESULTEDINDEX = jQuery(this).attr('pointer-index');
+    jQuery(this).addClass('pointer-index' + RESULTEDINDEX);
+    jQuery(this).attr('data-pointer-index', 'pointer-index' + RESULTEDINDEX);
+
+    jQuery(this).parents(TOPARENTS).find('.slick-dots li').each(function(){
+      var SLICKDOTINDEX = jQuery(this).index();
+      jQuery(this).attr('pointer-index', SLICKDOTINDEX + 1);
+      var RESULTEDINDEX = jQuery(this).attr('pointer-index');
+      jQuery(this).addClass('pointer-index' + RESULTEDINDEX);
+      jQuery(this).attr('data-pointer-index', 'pointer-index' + RESULTEDINDEX);
+    });
+
+    jQuery(SLICKDOTSUL).detach().appendTo(MAPHOLDER);
+
+    var POINTERDATAINDEX = jQuery(this).attr('data-pointer-index');
+    var ATTRSTYLEPOSITION = jQuery(this).attr('style');
+    var POINTERHTML = jQuery(this).html();
+    
+    jQuery(this).parents(TOPARENTS).find('.slick-dots').find('.' + POINTERDATAINDEX).attr('style', ATTRSTYLEPOSITION);
+    jQuery(this).parents(TOPARENTS).find('.slick-dots').find('.' + POINTERDATAINDEX).append(POINTERHTML);
+
+    jQuery(SLICKDOTSLI).addClass('pointer');
+
+    
+
+    
+  });
+
+
+  jQuery('.global-carousel').each(function(){
+    jQuery(this).parents('.interactive-map-module.slider-functionality').find('.slick-dots li').each(function(){
+      if (jQuery(this).hasClass('slick-active')) {
+        jQuery(this).find('.trigger').addClass('active');
+      }else{
+        jQuery(this).find('.trigger').removeClass('active');
+      }
+    });
+  });
+
+
+  if ($(window).width() < $lowResDesktopEnds) {
+    jQuery('.interactive-map-module.responsive-map-position-change-type-1').each(function(){
+      var APPENDTOFRAME = jQuery(this).find('.global-card-content .inset-card-content');
+      jQuery(this).find('.the-main-map').detach().appendTo(APPENDTOFRAME);
+    });
+  };
+
+  if ($(window).width() < $xl) {
+    jQuery('.interactive-map-module.responsive-map-position-change-type-2').each(function(){
+      var APPENDTOFRAME = jQuery(this).find('.append-reponsive-map-frame-type-2');
+      jQuery(this).find('.the-main-map').detach().prependTo(APPENDTOFRAME);
+    });
+  };
+
+
+    
+
+
+};
+
+
 
 
 
@@ -124,19 +223,33 @@ jQuery('.paralaxed-item-type-1').each(function(){
   }
 });
 
+var controller = $.superscrollorama();
+jQuery('.paralax-pause-scroller.pause-scroller-type-1').each(function () {  
+  var PARENTS = jQuery(this);
+ 
+  var paralaxCard = TweenMax.to(
+    $(PARENTS).find('.slidings-tiles:nth-child(2n+1)'), .5, { css: { top: 0 } }
+  );
+  controller.pin(PARENTS, 900, { offset: -900, anim: paralaxCard });
+  
+});
+
 
 
 
 // scroll up done
 $(function(){
-  var lastScrollTop = 0, delta = 5;
+  var lastScrollTop = 0, delta = 50;
+  var HEADERHEIGHTFORHEADERVISIBLEFUNCTIONSCROLLUPDOWN = jQuery('header.header').height();
   $(window).scroll(function(){
     var nowScrollTop = $(this).scrollTop();
     if(Math.abs(lastScrollTop - nowScrollTop) >= delta){
       if (nowScrollTop > lastScrollTop){
+
+        jQuery('header.header').css('top', - HEADERHEIGHTFORHEADERVISIBLEFUNCTIONSCROLLUPDOWN);
         
       } else {
-        jQuery('header.header').addClass('scroll-up-visible');
+        jQuery('header.header').css('top', '0');
      }
     lastScrollTop = nowScrollTop;
     }
@@ -160,20 +273,12 @@ var HEADERHEIGHT = jQuery('header.header').height();
 
 
 
-// object notation
-var site = {}
 
 
 
-site.FIRSTLOOK = function() {
-
-    
 
 
-    
 
-
-};
 
 
 
@@ -249,7 +354,11 @@ jQuery('.banner-mini-slider-module .the-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
-  arrows: false
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  pauseOnFocus: false,
+  fade: true,
 });
 
 
@@ -259,28 +368,7 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 
-// team-member-video-teaser-snippet
-jQuery('.team-member-video-teaser-snippet').each(function(){
 
-  if ($(window).width() >= $xl) {
-    var cols = jQuery(this).find('> .my-col');
-    for(var i = 0; i < cols.length; i+=4) {
-      cols.slice(i, i+4).wrapAll('<div class="row my-row default-row jc-right"></div>');
-    }
-  }
-  if ($(window).width() < $xl) {
-    jQuery(this).find('> .my-col').wrapAll('<div class="row my-row default-row jc-right"></div>');
-  }
-  
-
- var HEIGHT = jQuery(this).height();
- jQuery(this).css('margin-bottom', - (HEIGHT - 280));
- jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT - 280));
- if ($(window).width() < $xl) {
-  jQuery(this).css('margin-bottom', - (HEIGHT - 200));
- jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT - 200));
- }
-});
 
 
 // global carousel
@@ -430,97 +518,99 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     freeScroll: true,
     prevNextButtons: true,
     pageDots: false,
-    wrapAround: true
+    wrapAround: true,
+    autoPlay: true,
+    autoPlay: 3000
   });
 
   // interactive-map-module
   
-  jQuery('.interactive-map-module').each(function(){
-    var PARENT = jQuery(this);
-    var MINHEIGHT = jQuery(this).find('.the-main-map').height();
-    var VIEW1 = jQuery(this).parent().find('.interactive-map-module.view-1');
-    jQuery(this).css('min-height', MINHEIGHT);
+  // jQuery('.interactive-map-module').each(function(){
+  //   var PARENT = jQuery(this);
+  //   var MINHEIGHT = jQuery(this).find('.the-main-map').height();
+  //   var VIEW1 = jQuery(this).parent().find('.interactive-map-module.view-1');
+  //   jQuery(this).css('min-height', MINHEIGHT);
 
-    jQuery(this).find('.pointer .trigger').click(function(){
-      jQuery(PARENT).find('.pointer .trigger').not(this).removeClass('active');
-      jQuery(PARENT).find('.pointer .trigger').not(this).parent().removeClass('current');
-      jQuery(this).toggleClass('active');
-      jQuery(this).parent().toggleClass('current');
-    });
+  //   jQuery(this).find('.pointer .trigger').click(function(){
+  //     jQuery(PARENT).find('.pointer .trigger').not(this).removeClass('active');
+  //     jQuery(PARENT).find('.pointer .trigger').not(this).parent().removeClass('current');
+  //     jQuery(this).toggleClass('active');
+  //     jQuery(this).parent().toggleClass('current');
+  //   });
 
 
     
-      jQuery(VIEW1).find('> .global-card-content').css('min-height', MINHEIGHT - 160);
+  //     jQuery(VIEW1).find('> .global-card-content').css('min-height', MINHEIGHT - 160);
   
 
     
 
-  });
+  // });
 
 
 
-  jQuery(this).find('.interactive-map-module.slider-functionality .pointer').each(function(){
-    var TOPARENTS = jQuery(this).parents('.interactive-map-module.slider-functionality');
-    var SLICKDOTSUL = jQuery(TOPARENTS).find('.slick-dots');
-    var SLICKDOTSLI = jQuery(TOPARENTS).find('.slick-dots li');
-    var MAPHOLDER = jQuery(TOPARENTS).find('.map-holder');
+  // jQuery('.interactive-map-module.slider-functionality .pointer').each(function(){
+  //   var TOPARENTS = jQuery(this).parents('.interactive-map-module.slider-functionality');
+  //   var SLICKDOTSUL = jQuery(TOPARENTS).find('.slick-dots');
+  //   var SLICKDOTSLI = jQuery(TOPARENTS).find('.slick-dots li');
+  //   var MAPHOLDER = jQuery(TOPARENTS).find('.map-holder');
     
 
-    var POINTERINDEX = jQuery(this).index();
-    jQuery(this).attr('pointer-index', POINTERINDEX + 1);
-    var RESULTEDINDEX = jQuery(this).attr('pointer-index');
-    jQuery(this).addClass('pointer-index' + RESULTEDINDEX);
-    jQuery(this).attr('data-pointer-index', 'pointer-index' + RESULTEDINDEX);
+  //   var POINTERINDEX = jQuery(this).index();
+  //   jQuery(this).attr('pointer-index', POINTERINDEX + 1);
+  //   var RESULTEDINDEX = jQuery(this).attr('pointer-index');
+  //   jQuery(this).addClass('pointer-index' + RESULTEDINDEX);
+  //   jQuery(this).attr('data-pointer-index', 'pointer-index' + RESULTEDINDEX);
 
-    jQuery(this).parents(TOPARENTS).find('.slick-dots li').each(function(){
-      var SLICKDOTINDEX = jQuery(this).index();
-      jQuery(this).attr('pointer-index', SLICKDOTINDEX + 1);
-      var RESULTEDINDEX = jQuery(this).attr('pointer-index');
-      jQuery(this).addClass('pointer-index' + RESULTEDINDEX);
-      jQuery(this).attr('data-pointer-index', 'pointer-index' + RESULTEDINDEX);
-    });
+  //   jQuery(this).parents(TOPARENTS).find('.slick-dots li').each(function(){
+  //     var SLICKDOTINDEX = jQuery(this).index();
+  //     jQuery(this).attr('pointer-index', SLICKDOTINDEX + 1);
+  //     var RESULTEDINDEX = jQuery(this).attr('pointer-index');
+  //     jQuery(this).addClass('pointer-index' + RESULTEDINDEX);
+  //     jQuery(this).attr('data-pointer-index', 'pointer-index' + RESULTEDINDEX);
+  //   });
 
-    jQuery(SLICKDOTSUL).detach().appendTo(MAPHOLDER);
+  //   jQuery(SLICKDOTSUL).detach().appendTo(MAPHOLDER);
 
-    var POINTERDATAINDEX = jQuery(this).attr('data-pointer-index');
-    var ATTRSTYLEPOSITION = jQuery(this).attr('style');
-    var POINTERHTML = jQuery(this).html();
+  //   var POINTERDATAINDEX = jQuery(this).attr('data-pointer-index');
+  //   var ATTRSTYLEPOSITION = jQuery(this).attr('style');
+  //   var POINTERHTML = jQuery(this).html();
     
-    jQuery(this).parents(TOPARENTS).find('.slick-dots').find('.' + POINTERDATAINDEX).attr('style', ATTRSTYLEPOSITION);
-    jQuery(this).parents(TOPARENTS).find('.slick-dots').find('.' + POINTERDATAINDEX).append(POINTERHTML);
+  //   jQuery(this).parents(TOPARENTS).find('.slick-dots').find('.' + POINTERDATAINDEX).attr('style', ATTRSTYLEPOSITION);
+  //   jQuery(this).parents(TOPARENTS).find('.slick-dots').find('.' + POINTERDATAINDEX).append(POINTERHTML);
 
-    jQuery(SLICKDOTSLI).addClass('pointer');
-
-    
+  //   jQuery(SLICKDOTSLI).addClass('pointer');
 
     
-  });
+
+    
+  // });
 
 
-  jQuery('.global-carousel').each(function(){
-    jQuery(this).parents('.interactive-map-module.slider-functionality').find('.slick-dots li').each(function(){
-      if (jQuery(this).hasClass('slick-active')) {
-        jQuery(this).find('.trigger').addClass('active');
-      }else{
-        jQuery(this).find('.trigger').removeClass('active');
-      }
-    });
-  });
+  // jQuery('.global-carousel').each(function(){
+  //   jQuery(this).parents('.interactive-map-module.slider-functionality').find('.slick-dots li').each(function(){
+  //     if (jQuery(this).hasClass('slick-active')) {
+  //       jQuery(this).find('.trigger').addClass('active');
+  //     }else{
+  //       jQuery(this).find('.trigger').removeClass('active');
+  //     }
+  //   });
+  // });
 
 
-  if ($(window).width() < $lowResDesktopEnds) {
-    jQuery('.interactive-map-module.responsive-map-position-change-type-1').each(function(){
-      var APPENDTOFRAME = jQuery(this).find('.global-card-content .inset-card-content');
-      jQuery(this).find('.the-main-map').detach().appendTo(APPENDTOFRAME);
-    });
-  }
+  // if ($(window).width() < $lowResDesktopEnds) {
+  //   jQuery('.interactive-map-module.responsive-map-position-change-type-1').each(function(){
+  //     var APPENDTOFRAME = jQuery(this).find('.global-card-content .inset-card-content');
+  //     jQuery(this).find('.the-main-map').detach().appendTo(APPENDTOFRAME);
+  //   });
+  // };
 
-  if ($(window).width() < $xl) {
-    jQuery('.interactive-map-module.responsive-map-position-change-type-2').each(function(){
-      var APPENDTOFRAME = jQuery(this).find('.append-reponsive-map-frame-type-2');
-      jQuery(this).find('.the-main-map').detach().prependTo(APPENDTOFRAME);
-    });
-  }
+  // if ($(window).width() < $xl) {
+  //   jQuery('.interactive-map-module.responsive-map-position-change-type-2').each(function(){
+  //     var APPENDTOFRAME = jQuery(this).find('.append-reponsive-map-frame-type-2');
+  //     jQuery(this).find('.the-main-map').detach().prependTo(APPENDTOFRAME);
+  //   });
+  // };
   
 
 
@@ -674,7 +764,7 @@ jQuery(document).click(function(){
 // load
 jQuery(window).load(function(){
 
-
+  site.INTARACTIVEMODULEFUNCTION();
 
 
 // match height
@@ -783,6 +873,30 @@ jQuery('.page-banner-module.mobile-view-with-mini-slider').each(function(){
   if ($(window).width() < $xl) {
     jQuery(this).height(HEIGHT - (MINISLIDERHEIGHT + 12 + 20 + 20));
   }
+});
+
+
+// team-member-video-teaser-snippet
+jQuery('.team-member-video-teaser-snippet').each(function(){
+
+  if ($(window).width() >= $xl) {
+    var cols = jQuery(this).find('> .my-col');
+    for(var i = 0; i < cols.length; i+=4) {
+      cols.slice(i, i+4).wrapAll('<div class="row my-row default-row jc-right"></div>');
+    }
+  }
+  if ($(window).width() < $xl) {
+    jQuery(this).find('> .my-col').wrapAll('<div class="row my-row default-row jc-right"></div>');
+  }
+  
+
+ var HEIGHT = jQuery(this).height();
+ jQuery(this).css('margin-bottom', - (HEIGHT - 280));
+ jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT - 280));
+ if ($(window).width() < $xl) {
+  jQuery(this).css('margin-bottom', - (HEIGHT - 200));
+ jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT - 200));
+ }
 });
 
 });

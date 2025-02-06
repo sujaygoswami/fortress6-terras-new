@@ -55,6 +55,16 @@
                 &:last-child{
                     margin-bottom: 0px;
                 }
+
+                i{
+                    @include transition(all 0.3s ease 0s);
+                }
+
+                // &:hover{
+                //     i{
+                //         background-color: var(--site-primary-color);
+                //     }
+                // }
             }
         }
 
