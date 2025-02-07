@@ -91,6 +91,27 @@ extra
 ===
 1) 16 hrs extra for implementing the water mark for all contents in desktop and responsive
 
+2) new tab design 10hrs extra
+
+
+TAB design given after project done CR
+===============================================
+
+https://app.asana.com/0/1209272406360585/1209334535758550
+
+Tablet-Ansicht: 
+https://xd.adobe.com/view/6914d29e-7480-4473-9457-5f5f98cd1285-3c47/
+(sind auch ein paar Kommentare zum besseren Verständnis drin)
+
+Offene Datei zum Download: 
+https://we.tl/t-Ps9ojui7eM
+
+For now, you can leave the font sizes as you currently have them set in the development environment for tablets (don't take them from XD) and implement the layout that way.
+If at the end something needs to be adjusted again in the font sizes for tablets, I will create a style guide.
+
+
+
+
 
 
 ######################################################
