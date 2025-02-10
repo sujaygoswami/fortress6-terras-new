@@ -2,6 +2,25 @@
 
 
     // basic starts
+    .global-tag{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+        &.pos-1{
+            position: absolute;
+            top: 0px;
+            margin-top: -17.5px;
+        }
+        .the-tag{
+            padding: 7px 19px;
+            @include border-radius(20px);
+
+             & *{
+                line-height: normal;
+             }
+        }
+    }
     .global-icon-hovered-primary{
         .hovered-parent{
             @include transition(all 0.3s ease 0s);
@@ -351,6 +370,16 @@
     .desktop-invert-row-resolution-type-1{
         flex-direction: row-reverse;
     }
+
+    .text-primary{
+        color: var(--site-primary-color) !important;
+    }
+
+    .bg-primary{
+        background-color: var(--site-primary-color) !important;
+    }
+
+
     .global-mx-padding{
         padding-left: $global-mx-padding-low-desktop;
         padding-right: $global-mx-padding-low-desktop;
@@ -579,6 +608,15 @@
                     margin-bottom: 30px;
                 }
             }
+
+            &.row-gap-lg-plus{
+                row-gap: 45px;
+                &.has-margin-bottom{
+                    margin-bottom: 45px;
+                }
+            }
+
+            
             .half-height{
                 height: calc(50% - 10px);
             }
@@ -1013,6 +1051,20 @@
         background-size: 34.83px;
         text-align: left;
 
+        &.transparent-bg-color-btn{
+            background-color: transparent;
+            width: 23.84px;
+            height: 17.78px;
+            background-size: 23.84px;
+            padding: 0px;
+            border: none;
+            background-position: left top;
+
+            &.has-dark-arrow{
+                background-image: url(../Images/right-indication-arrow-dark.svg);
+            }
+        }
+
         
 
         &.only-placed-arrow-btn{
@@ -1165,7 +1217,9 @@
             height: calc(100vh - (var(--header-height) + var(--grid-gutter) * 3));
         }
 
-        .page-banner-video-item{
+        
+
+        .page-banner-video-item, .page-banner-img-item{
             position: relative;
             height: 100%;
             width: 100%;
@@ -1327,12 +1381,35 @@
     // cover-bg-content-module
     .cover-bg-content-module{
 
+        .operlap-context{
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+
+            &.overlap-pos-1{
+                bottom: 0px;
+                left: 0px;
+                padding: 35px;
+            }
+        }
+
         .caption-with-link{
             position: absolute;
             width: 100%;
             left: 0px;
             bottom: 0px;
             padding: 50px 45px;
+
+            .global-tag{
+                & + *{
+                    margin-top: 7px;
+                }
+            }
+
+            &.caption-view-2{
+                padding: 25px 30px;
+                background-color: white;
+            }
         }
 
         &.min-height-negative{
@@ -2495,6 +2572,19 @@
             font-family: var(--site-secondary-font);
             line-height: 35px;
         }
+
+        &.view-2{
+            &.pos-1{
+                left: -12px;
+                top: 14px;
+            }
+            .the-tip{
+                min-width: 24px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 18px;
+            }
+        }
     }
     // global-tip
 
@@ -2882,7 +2972,7 @@
             width: 100%;
             height: 100%;
             margin: 0px;
-            padding: 0 65px 0 20px;
+            padding: 0 20px 0 20px;
             font-size: 19px;
             text-align: left;
             display: flex;
@@ -2895,6 +2985,24 @@
             border-radius: 30px;
             overflow: hidden;
             color: white;
+
+            .text-input{
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: transparent;
+                font-size: 19px;
+
+
+                &::placeholder{
+                    opacity: 1;
+                    color: inherit;
+                }
+            }
+
+            &.dropdown-toggle{
+                padding-right: 65px;
+            }
 
             &.show{
                 &:after{
