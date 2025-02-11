@@ -916,7 +916,7 @@ jQuery('.has-global-mask').each(function(){
 
 
 // team-member-video-teaser-snippet
-jQuery('.team-member-video-teaser-snippet').each(function(){
+jQuery('.team-member-video-teaser-snippet:not(.stand-alone)').each(function(){
 
   if ($(window).width() >= $xl) {
     var cols = jQuery(this).find('> .my-col');

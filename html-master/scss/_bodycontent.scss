@@ -615,6 +615,12 @@
                     margin-bottom: 45px;
                 }
             }
+            &.row-gap-extra-large{
+                row-gap: 62px;
+                &.has-margin-bottom{
+                    margin-bottom: 62px;
+                }
+            }
 
             
             .half-height{
@@ -697,6 +703,9 @@
     }
     .inset-container-type-6{
         max-width: 1030px;
+    }
+    .inset-container-type-7{
+        max-width: 1370px;
     }
 
     .element-gap{
@@ -858,6 +867,32 @@
                 column-gap: 40px;
                 font-size: 39px;
                 letter-spacing: 0.78px;
+            }
+        }
+
+        &.view-4{
+            i{
+                
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                
+            }
+            a{
+                column-gap: 23px;
+                font-size: 19px;
+                letter-spacing: 0px;
+                font-family: var(--site-primary-font);
+                font-weight: var(--site-primary-font-regular);
+            }
+        }
+    }
+    .global-iconic-link-wrap{
+        .global-iconic-link{
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0px;
             }
         }
     }
@@ -2466,7 +2501,7 @@
     .site-accordion{
         .accordion-body{
             border: none;
-            @include border-radius(0 0 20px 20px);
+            @include border-radius(0px);
             margin-top: 0px;
             padding: 0 20px 20px 20px;
             background-color: white;
@@ -2478,6 +2513,8 @@
         }
         .accordion-item{
             margin-bottom: 10px;
+            @include border-radius(20px);
+            overflow: hidden;
             &:last-child{
                 margin-bottom: 0px;
                 .accordion-body{
@@ -2495,11 +2532,11 @@
                 padding: 20px 60px 20px 20px;
                 border: none;
                 position: relative;
-                @include border-radius(20px !important);
+                @include border-radius(0px !important);
                 background-color: white;
                 
                 &:not(.collapsed){
-                    @include border-radius(20px 20px 0 0 !important);
+                    @include border-radius(0px !important);
                     &:after{
                         transform: rotate(45deg);
                         transform-origin: center center;
@@ -3081,6 +3118,10 @@
                     position: relative;
                     top: -2px;
                 }
+
+                &.no-opech{
+                    opacity: 1;
+                }
             }
         }
     }
@@ -3152,5 +3193,32 @@
         }
     }
     // filter-tag-module
+
+    // stand-alone-contact-info-module
+    .stand-alone-contact-info-module{
+        display: flex;
+        column-gap: 45px;
+        row-gap: 45px;
+        justify-content: center;
+
+        .dp{
+            width: 190px;
+            height: 270px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+            background-image: url(../Images/oval-contact-dp-bg.svg);
+            display: grid;
+            align-items: end;
+            justify-content: center;
+            overflow: hidden;
+            @include border-radius(100px);
+            
+            img{
+                max-height: 190px;
+            }
+        }
+    }
+    // stand-alone-contact-info-module
 
 }

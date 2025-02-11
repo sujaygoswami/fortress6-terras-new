@@ -11427,6 +11427,10 @@ html, body {
       row-gap: 45px; }
       .terras .my-row.default-row.row-gap-lg-plus.has-margin-bottom {
         margin-bottom: 45px; }
+    .terras .my-row.default-row.row-gap-extra-large {
+      row-gap: 62px; }
+      .terras .my-row.default-row.row-gap-extra-large.has-margin-bottom {
+        margin-bottom: 62px; }
     .terras .my-row.default-row .half-height {
       height: calc(50% - 10px); }
     .terras .my-row.default-row .three-item-distribute-height {
@@ -11479,6 +11483,9 @@ html, body {
 
 .terras .inset-container-type-6 {
   max-width: 1030px; }
+
+.terras .inset-container-type-7 {
+  max-width: 1370px; }
 
 .terras .element-gap {
   margin-bottom: 25px; }
@@ -11588,6 +11595,24 @@ html, body {
   column-gap: 40px;
   font-size: 39px;
   letter-spacing: 0.78px; }
+
+.terras .global-iconic-link.view-4 i {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 25px; }
+
+.terras .global-iconic-link.view-4 a {
+  column-gap: 23px;
+  font-size: 19px;
+  letter-spacing: 0px;
+  font-family: var(--site-primary-font);
+  font-weight: var(--site-primary-font-regular); }
+
+.terras .global-iconic-link-wrap .global-iconic-link {
+  margin-bottom: 20px; }
+  .terras .global-iconic-link-wrap .global-iconic-link:last-child {
+    margin-bottom: 0px; }
 
 .terras .head-tag {
   padding: 8px 12px;
@@ -12647,10 +12672,10 @@ html, body {
 
 .terras .site-accordion .accordion-body {
   border: none;
-  -webkit-border-radius: 0 0 20px 20px;
-  -moz-border-radius: 0 0 20px 20px;
-  -ms-border-radius: 0 0 20px 20px;
-  border-radius: 0 0 20px 20px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
   margin-top: 0px;
   padding: 0 20px 20px 20px;
   background-color: white; }
@@ -12659,7 +12684,12 @@ html, body {
     padding-top: 20px; }
 
 .terras .site-accordion .accordion-item {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden; }
   .terras .site-accordion .accordion-item:last-child {
     margin-bottom: 0px; }
     .terras .site-accordion .accordion-item:last-child .accordion-body {
@@ -12671,16 +12701,16 @@ html, body {
   padding: 20px 60px 20px 20px;
   border: none;
   position: relative;
-  -webkit-border-radius: 20px !important;
-  -moz-border-radius: 20px !important;
-  -ms-border-radius: 20px !important;
-  border-radius: 20px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  border-radius: 0px !important;
   background-color: white; }
   .terras .site-accordion .accordion-header button:not(.collapsed) {
-    -webkit-border-radius: 20px 20px 0 0 !important;
-    -moz-border-radius: 20px 20px 0 0 !important;
-    -ms-border-radius: 20px 20px 0 0 !important;
-    border-radius: 20px 20px 0 0 !important; }
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    border-radius: 0px !important; }
     .terras .site-accordion .accordion-header button:not(.collapsed):after {
       transform: rotate(45deg);
       transform-origin: center center; }
@@ -13090,6 +13120,8 @@ html, body {
   .terras .job-card-module .footer-info .info-box i {
     position: relative;
     top: -2px; }
+  .terras .job-card-module .footer-info .info-box.no-opech {
+    opacity: 1; }
 
 .terras .global-social-connect-links {
   display: flex;
@@ -13142,6 +13174,29 @@ html, body {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 30px; }
+
+.terras .stand-alone-contact-info-module {
+  display: flex;
+  column-gap: 45px;
+  row-gap: 45px;
+  justify-content: center; }
+  .terras .stand-alone-contact-info-module .dp {
+    width: 190px;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    background-image: url(../Images/oval-contact-dp-bg.svg);
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    overflow: hidden;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    border-radius: 100px; }
+    .terras .stand-alone-contact-info-module .dp img {
+      max-height: 190px; }
 
 .terras footer.footer > .main-wrap {
   background-image: url(../Images/footer-bg.svg);
