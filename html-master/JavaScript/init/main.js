@@ -509,6 +509,31 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     ]
   });
 
+  jQuery('.global-carousel-type-4').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    draggable: false,
+    centerMode: false,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1199,
+        settings: {
+          
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
   
   jQuery('.type-arrow-pagination-view-1').each(function(){
     jQuery(this).find('.slick-arrow').wrapAll('<div class="slider-arrow-holder"></div>');

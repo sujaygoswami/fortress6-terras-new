@@ -947,13 +947,13 @@
         // global-iconic-link
         .global-iconic-link{
             &.view-3{
-                a{
+                a, .main-item{
                     font-size: 18px;
                     letter-spacing: 0.36px;
                     column-gap: 17px;
                 }
             }
-            a{
+            a, .main-item{
                 font-size: 15px;
                 line-height: normal;
                 letter-spacing: 0.3px;
@@ -975,7 +975,7 @@
                         max-width: 14px;
                     }
                 }
-                a{
+                a, .main-item{
                     font-size: 19px;
                     letter-spacing: 0.38px;
                     column-gap: 9px;
@@ -1533,7 +1533,7 @@
         // global-iconic-link
         .global-iconic-link{
             &.view-2{
-                a{
+                a, .main-item{
                     font-size: 32px;
                     column-gap: 15px;
                 }
