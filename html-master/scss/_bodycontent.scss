@@ -1841,6 +1841,18 @@
 
     // global-carousel
     .global-carousel{
+        .item{
+            &:last-child{
+                .member-dp{
+                    &.has-oval-mask{
+                        .oval-masked-img{
+                            -webkit-mask-image: url(../Images/Oval-no-cut-team.svg);
+                            mask-image: url(../Images/Oval-no-cut-team.svg);
+                        }
+                    }
+                }
+            }
+        }
         &.multi-item-grid-type-1{
             .slick-list{
                 margin-left: -7px;
@@ -2264,7 +2276,6 @@
             letter-spacing: 0.4px;
             color: var(--site-grey-type-4);
             column-gap: 17px;
-            font-family: var(--site-secondary-font);
             & > div{
                 &:last-child{
                     &::after{

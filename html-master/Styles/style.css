@@ -10862,10 +10862,13 @@ html, body {
       padding-bottom: 30px; }
       .terras .main-menu-expanded .menu-items .item-part:first-child {
         border-left: 0px; }
+      .terras .main-menu-expanded .menu-items .item-part.site-nav > ul > li > a {
+        width: 250px; }
       .terras .main-menu-expanded .menu-items .item-part.site-nav ul {
         list-style: none;
         margin: 0px;
-        padding: 0px; }
+        padding: 0px;
+        position: relative; }
         .terras .main-menu-expanded .menu-items .item-part.site-nav ul li {
           margin: 0 0 45px 0;
           padding: 0px;
@@ -10873,6 +10876,32 @@ html, body {
           line-height: normal;
           letter-spacing: 0.72px;
           font-family: var(--site-secondary-font); }
+          .terras .main-menu-expanded .menu-items .item-part.site-nav ul li:hover > a {
+            color: var(--site-primary-color); }
+            .terras .main-menu-expanded .menu-items .item-part.site-nav ul li:hover > a + .sub-item-trigger i {
+              color: var(--site-primary-color); }
+          .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu {
+            display: flex;
+            align-items: center; }
+            .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu:hover ul.submenu {
+              opacity: 1;
+              pointer-events: auto; }
+            .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu .sub-item-trigger {
+              pointer-events: none; }
+              .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu .sub-item-trigger i {
+                display: inline-block;
+                vertical-align: bottom;
+                font-size: 35px;
+                line-height: normal;
+                -webkit-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s; }
+            .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu {
+              position: absolute;
+              left: 350px;
+              top: 0px;
+              opacity: 0;
+              pointer-events: none;
+              min-height: 100%; }
           .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-external-link > a:after {
             content: ' ';
             width: 36.68px;
@@ -12241,6 +12270,10 @@ html, body {
     left: 24px;
     bottom: 21px; }
 
+.terras .global-carousel .item:last-child .member-dp.has-oval-mask .oval-masked-img {
+  -webkit-mask-image: url(../Images/Oval-no-cut-team.svg);
+  mask-image: url(../Images/Oval-no-cut-team.svg); }
+
 .terras .global-carousel.multi-item-grid-type-1 .slick-list {
   margin-left: -7px;
   margin-right: -7px; }
@@ -12513,8 +12546,7 @@ html, body {
   line-height: normal;
   letter-spacing: 0.4px;
   color: var(--site-grey-type-4);
-  column-gap: 17px;
-  font-family: var(--site-secondary-font); }
+  column-gap: 17px; }
   .terras .line-info-module > .main-wrap > div:last-child::after {
     display: none; }
   .terras .line-info-module > .main-wrap > div:last-child span {

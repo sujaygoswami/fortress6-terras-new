@@ -87,10 +87,18 @@
                 }
 
                 &.site-nav {
+                    & > ul{
+                        & > li{
+                            & > a{
+                                width: 250px;
+                            }
+                        }
+                    }
                     ul {
                         list-style: none;
                         margin: 0px;
                         padding: 0px;
+                        position: relative;
 
                         li {
                             margin: 0 0 45px 0;
@@ -99,6 +107,60 @@
                             line-height: normal;
                             letter-spacing: 0.72px;
                             font-family: var(--site-secondary-font);
+                            
+
+                            &:hover{
+                                & > a{
+                                    color: var(--site-primary-color);
+
+                                    & + .sub-item-trigger{
+                                        i{
+                                            color: var(--site-primary-color);
+                                        }
+                                    }
+                                }
+
+                               
+                            }
+
+                            &.has-sub-menu{
+                                display: flex;
+                                align-items: center;
+                                
+                                &:hover{
+                                    ul.submenu{
+                                        opacity: 1;
+                                        pointer-events: auto;
+                                    }
+                                }
+                              
+                                
+
+                                .sub-item-trigger{
+                                    
+                                    pointer-events: none;
+                                    
+
+                                    i{
+                                        display: inline-block;
+                                        vertical-align: bottom;
+                                        font-size: 35px;
+                                        line-height: normal;
+                                        @include transition(all 0.3s ease 0s);
+                                    }
+                                }
+
+                                ul{
+                                    &.submenu{
+                                        position: absolute;
+                                        left: 350px;
+                                        top: 0px;
+                                        opacity: 0;
+                                        pointer-events: none;
+                                        min-height: 100%;
+                                    }
+                                }
+                            }
 
                             &.has-external-link {
                                 &>a {
@@ -121,17 +183,10 @@
                                 margin-bottom: 0px;
                             }
 
-                            // &.active{
-                            //     & > a{
-                            //         color: var(--site-primary-color);
-                            //     }
-                            // }
 
                             a {
                                 display: inline-block;
-                                // &:hover{
-                                //     color: var(--site-primary-color);
-                                // }
+                                
                             }
                         }
                     }
