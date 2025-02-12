@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'icomoon-check-primary';
+    src:  url('../Fonts/icomoon-check-primary/icomoon.eot?1cdchf');
+    src:  url('../Fonts/icomoon-check-primary/icomoon.eot?1cdchf#iefix') format('embedded-opentype'),
+      url('../Fonts/icomoon-check-primary/icomoon.ttf?1cdchf') format('truetype'),
+      url('../Fonts/icomoon-check-primary/icomoon.woff?1cdchf') format('woff'),
+      url('../Fonts/icomoon-check-primary/icomoon.svg?1cdchf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  @font-face {
+    font-family: 'icomoon-share-primary';
+    src:  url('../Fonts/icomoon-share-primary/icomoon.eot?iz3ax1');
+    src:  url('../Fonts/icomoon-share-primary/icomoon.eot?iz3ax1#iefix') format('embedded-opentype'),
+      url('../Fonts/icomoon-share-primary/icomoon.ttf?iz3ax1') format('truetype'),
+      url('../Fonts/icomoon-share-primary/icomoon.woff?iz3ax1') format('woff'),
+      url('../Fonts/icomoon-share-primary/icomoon.svg?iz3ax1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+ 
+  
+  .icon-noun-check-primary:before {
+    content: "\e900";
+  }
+  .icon-share-icon-primary:before {
+    content: "\e900";
+  }
+
+  
