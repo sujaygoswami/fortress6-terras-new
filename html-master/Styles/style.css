@@ -11811,12 +11811,97 @@ html, body {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   border-radius: 50px;
-  border: 1px solid transparent;
   background-image: url(../Images/next-arrow-type-1-white.svg);
   background-repeat: no-repeat;
   background-position: right 21px center;
   background-size: 34.83px;
-  text-align: left; }
+  text-align: left;
+  position: relative; }
+  .terras .site-btn.animating-right-direction-arrow-btn, .terras .btn.animating-right-direction-arrow-btn {
+    position: relative;
+    background-image: none;
+    overflow: hidden; }
+    .terras .site-btn.animating-right-direction-arrow-btn i, .terras .btn.animating-right-direction-arrow-btn i {
+      position: absolute;
+      width: 28px;
+      height: 100%;
+      content: ' ';
+      right: 27px;
+      top: 0px;
+      background-image: url(../Images/next-arrow-type-1-white.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 28px;
+      z-index: 1;
+      pointer-events: none;
+      transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+      opacity: 1; }
+      @media screen and (max-width: 1199px) {
+        .terras .site-btn.animating-right-direction-arrow-btn i, .terras .btn.animating-right-direction-arrow-btn i {
+          width: 23.85px;
+          background-size: 23.85px;
+          right: 16px; } }
+    .terras .site-btn.animating-right-direction-arrow-btn em, .terras .btn.animating-right-direction-arrow-btn em {
+      position: absolute;
+      width: 28px;
+      height: 100%;
+      content: ' ';
+      right: 70px;
+      top: 0px;
+      background-image: url(../Images/next-arrow-type-1-white.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 28px;
+      z-index: 1;
+      pointer-events: none;
+      transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+      opacity: 0; }
+      @media screen and (max-width: 1199px) {
+        .terras .site-btn.animating-right-direction-arrow-btn em, .terras .btn.animating-right-direction-arrow-btn em {
+          width: 23.85px;
+          background-size: 23.85px;
+          right: 60px; } }
+    .terras .site-btn.animating-right-direction-arrow-btn:hover i, .terras .btn.animating-right-direction-arrow-btn:hover i {
+      right: -28px;
+      opacity: 0; }
+    .terras .site-btn.animating-right-direction-arrow-btn:hover em, .terras .btn.animating-right-direction-arrow-btn:hover em {
+      opacity: 1;
+      right: 27px; }
+    @media screen and (max-width: 1199px) {
+      .terras .site-btn.animating-right-direction-arrow-btn:hover i, .terras .btn.animating-right-direction-arrow-btn:hover i {
+        right: -25px; }
+      .terras .site-btn.animating-right-direction-arrow-btn:hover em, .terras .btn.animating-right-direction-arrow-btn:hover em {
+        right: 16px; } }
+    .terras .site-btn.animating-right-direction-arrow-btn span, .terras .btn.animating-right-direction-arrow-btn span {
+      z-index: 1;
+      position: relative; }
+    .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn {
+      background-image: none; }
+      .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i {
+        background-image: url(../Images/prev-arrow-type-1-white.svg);
+        right: inherit;
+        left: 27px; }
+        @media screen and (max-width: 1199px) {
+          .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i {
+            left: 16px; } }
+      .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em {
+        background-image: url(../Images/prev-arrow-type-1-white.svg);
+        right: inherit;
+        left: 70px; }
+        @media screen and (max-width: 1199px) {
+          .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em {
+            left: 60px; } }
+      .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover i, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover i {
+        left: -28px; }
+      .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover em, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover em {
+        left: 27px; }
+      @media screen and (max-width: 1199px) {
+        .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover i, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover i {
+          left: -25px; }
+        .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover em, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover em {
+          left: 16px; } }
+  .terras .site-btn.primary-color-btn, .terras .site-btn.btn-primary, .terras .btn.primary-color-btn, .terras .btn.btn-primary {
+    background-color: var(--site-primary-color); }
   .terras .site-btn.transparent-bg-color-btn, .terras .btn.transparent-bg-color-btn {
     background-color: transparent;
     width: 23.84px;
@@ -11845,11 +11930,9 @@ html, body {
     background-image: url(../Images/prev-arrow-type-1-white.svg);
     background-position: left 21px center;
     padding: 19px 21px 19px 74px; }
-  .terras .site-btn.primary-color-btn, .terras .site-btn.btn-primary, .terras .btn.primary-color-btn, .terras .btn.btn-primary {
-    background-color: var(--site-primary-color); }
   .terras .site-btn.outline-btn, .terras .btn.outline-btn {
     background-color: rgba(0, 0, 0, 0.1);
-    border-color: white;
+    border: 1px solid white;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px); }
 
