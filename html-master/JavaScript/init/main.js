@@ -746,6 +746,7 @@ jQuery('.email-icon, .phone-icon').each(function(){
 // convert-to-mobile-slider-wrap
 jQuery('.convert-to-mobile-slider-wrap').each(function(){
   var SLIDER = jQuery(this).find('.convert-to-mobile-slider');
+  jQuery(this).parents('section').addClass('overflow-hidden');
   if ($(window).width() < $xl) {
     jQuery(SLIDER).removeClass('row default-row my-row jc-center');
     jQuery(SLIDER).find('.my-col').addClass('item');

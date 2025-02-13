@@ -72,8 +72,6 @@
 
         .menu-items {
             margin-bottom: 50px;
-            // height: calc(100vh - 300px);
-            // overflow: auto;
             display: flex;
             flex-wrap: wrap;
 
@@ -101,7 +99,7 @@
                         position: relative;
 
                         li {
-                            margin: 0 0 45px 0;
+                            margin: 0 0 15px 0;
                             padding: 0px;
                             font-size: 20px;
                             line-height: normal;
@@ -158,6 +156,29 @@
                                         opacity: 0;
                                         pointer-events: none;
                                         min-height: 100%;
+
+                                        & > li{
+                                            font-size: 16px;
+
+                                            &.has-external-link{
+                                                & > a{
+                                                    position: relative;
+                                                    padding-right: 25px;
+                                                    display: block;
+                                                    width: 250px;
+                                                    &:after{
+                                                        width: 23.91px;
+                                                        height: 20.83px;
+                                                        background-size: 23.91px;
+                                                        position: absolute;
+                                                        right: 0px;
+                                                        top: 0px;
+                                                        margin-left: 0px;
+                                                        font-size: 25px;
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -165,16 +186,18 @@
                             &.has-external-link {
                                 &>a {
                                     &:after {
-                                        content: ' ';
+                                        content: "\e900";
                                         width: 36.68px;
                                         height: 30px;
-                                        background-image: url(../Images/external-link-arrow-dark.svg);
+                                        // background-image: url(../Images/external-link-arrow-dark.svg);
                                         background-repeat: no-repeat;
                                         background-position: left top;
                                         background-size: 36.68px;
                                         display: inline-block;
                                         margin-left: 14px;
                                         vertical-align: bottom;
+                                        font-family: 'icomoon-external-link-primary';
+                                        font-size: 35px;
                                     }
                                 }
                             }
@@ -203,11 +226,17 @@
 
         .item-holder {
             padding: 25px;
-            height: 100vh;
-            overflow-y: auto;
+           
 
             @media screen and (min-width: $lowResDesktopEnds) {
                 padding: 50px;
+            }
+
+
+            .menu-items-wrap{
+                max-height: 80vh;
+                overflow-x: hidden;
+                overflow-y: auto;
             }
 
 
@@ -320,12 +349,32 @@
             .the-trigger {
                 width: 52.15px;
                 height: 35.14px;
-                background-image: url(../Images/menu-trigger-icon.svg);
+                // background-image: url(../Images/menu-trigger-icon.svg);
                 background-repeat: no-repeat;
                 background-position: left top;
                 background-size: 52.15px;
                 cursor: pointer;
                 display: block;
+                font-family: 'icomoon-menu-hambg';
+                font-size: 35px;
+                line-height: normal;
+
+                @media screen and (max-width: ($xl - 1px)) {
+                    font-size: 21px;
+                }
+
+
+                .icon-menu-trigger-icon .path1:before {
+                    color: var(--site-primary-color);
+                  }
+                  .icon-menu-trigger-icon .path2:before {
+                    margin-left: -1.484375em;
+                    color: var(--site-global-dark);
+                  }
+                  .icon-menu-trigger-icon .path3:before {
+                    margin-left: -1.484375em;
+                    color: var(--site-global-dark);
+                  }
             }
         }
     }

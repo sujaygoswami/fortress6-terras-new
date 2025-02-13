@@ -10870,7 +10870,7 @@ html, body {
         padding: 0px;
         position: relative; }
         .terras .main-menu-expanded .menu-items .item-part.site-nav ul li {
-          margin: 0 0 45px 0;
+          margin: 0 0 15px 0;
           padding: 0px;
           font-size: 20px;
           line-height: normal;
@@ -10902,17 +10902,34 @@ html, body {
               opacity: 0;
               pointer-events: none;
               min-height: 100%; }
+              .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li {
+                font-size: 16px; }
+                .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li.has-external-link > a {
+                  position: relative;
+                  padding-right: 25px;
+                  display: block;
+                  width: 250px; }
+                  .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li.has-external-link > a:after {
+                    width: 23.91px;
+                    height: 20.83px;
+                    background-size: 23.91px;
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    margin-left: 0px;
+                    font-size: 25px; }
           .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-external-link > a:after {
-            content: ' ';
+            content: "\e900";
             width: 36.68px;
             height: 30px;
-            background-image: url(../Images/external-link-arrow-dark.svg);
             background-repeat: no-repeat;
             background-position: left top;
             background-size: 36.68px;
             display: inline-block;
             margin-left: 14px;
-            vertical-align: bottom; }
+            vertical-align: bottom;
+            font-family: 'icomoon-external-link-primary';
+            font-size: 35px; }
           .terras .main-menu-expanded .menu-items .item-part.site-nav ul li:last-child {
             margin-bottom: 0px; }
           .terras .main-menu-expanded .menu-items .item-part.site-nav ul li a {
@@ -10920,12 +10937,14 @@ html, body {
     .terras .main-menu-expanded .menu-items:last-child {
       margin-bottom: 0px; }
   .terras .main-menu-expanded .item-holder {
-    padding: 25px;
-    height: 100vh;
-    overflow-y: auto; }
+    padding: 25px; }
     @media screen and (min-width: 1366px) {
       .terras .main-menu-expanded .item-holder {
         padding: 50px; } }
+    .terras .main-menu-expanded .item-holder .menu-items-wrap {
+      max-height: 80vh;
+      overflow-x: hidden;
+      overflow-y: auto; }
 
 .terras .site-logo-holder {
   display: flex;
@@ -11001,12 +11020,25 @@ html, body {
   .terras header.header .header-menu-trigger .the-trigger {
     width: 52.15px;
     height: 35.14px;
-    background-image: url(../Images/menu-trigger-icon.svg);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 52.15px;
     cursor: pointer;
-    display: block; }
+    display: block;
+    font-family: 'icomoon-menu-hambg';
+    font-size: 35px;
+    line-height: normal; }
+    @media screen and (max-width: 1199px) {
+      .terras header.header .header-menu-trigger .the-trigger {
+        font-size: 21px; } }
+    .terras header.header .header-menu-trigger .the-trigger .icon-menu-trigger-icon .path1:before {
+      color: var(--site-primary-color); }
+    .terras header.header .header-menu-trigger .the-trigger .icon-menu-trigger-icon .path2:before {
+      margin-left: -1.484375em;
+      color: var(--site-global-dark); }
+    .terras header.header .header-menu-trigger .the-trigger .icon-menu-trigger-icon .path3:before {
+      margin-left: -1.484375em;
+      color: var(--site-global-dark); }
 
 .terras .global-tag {
   display: flex;
@@ -13270,7 +13302,6 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left top;
-    background-image: url(../Images/oval-contact-dp-bg.svg);
     display: grid;
     align-items: end;
     justify-content: center;
@@ -13705,7 +13736,8 @@ html, body {
       margin-left: -8px;
       margin-right: -8px;
       padding-right: 25px;
-      padding-left: 25px; }
+      padding-left: 25px;
+      overflow: visible; }
     .terras .convert-to-mobile-slider-wrap .convert-to-mobile-slider .my-col {
       padding-left: 8px !important;
       padding-right: 8px !important; }
@@ -18637,8 +18669,41 @@ https://flickity.metafizzy.co
   font-style: normal;
   font-display: block; }
 
+@font-face {
+  font-family: 'icomoon-external-link-primary';
+  src: url("../Fonts/icomoon-external-link-primary/icomoon.eot?u43zjg");
+  src: url("../Fonts/icomoon-external-link-primary/icomoon.eot?u43zjg#iefix") format("embedded-opentype"), url("../Fonts/icomoon-external-link-primary/icomoon.ttf?u43zjg") format("truetype"), url("../Fonts/icomoon-external-link-primary/icomoon.woff?u43zjg") format("woff"), url("../Fonts/icomoon-external-link-primary/icomoon.svg?u43zjg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+@font-face {
+  font-family: 'icomoon-menu-hambg';
+  src: url("../Fonts/icomoon-menu-hambg/icomoon.eot?bkfhe8");
+  src: url("../Fonts/icomoon-menu-hambg/icomoon.eot?bkfhe8#iefix") format("embedded-opentype"), url("../Fonts/icomoon-menu-hambg/icomoon.ttf?bkfhe8") format("truetype"), url("../Fonts/icomoon-menu-hambg/icomoon.woff?bkfhe8") format("woff"), url("../Fonts/icomoon-menu-hambg/icomoon.svg?bkfhe8#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+.icon-menu-trigger-icon .path1:before {
+  content: "\e900";
+  color: #ff211a; }
+
+.icon-menu-trigger-icon .path2:before {
+  content: "\e901";
+  margin-left: -1.484375em;
+  color: #1b2020; }
+
+.icon-menu-trigger-icon .path3:before {
+  content: "\e902";
+  margin-left: -1.484375em;
+  color: #1b2020; }
+
 .icon-noun-check-primary:before {
   content: "\e900"; }
 
 .icon-share-icon-primary:before {
+  content: "\e900"; }
+
+.icon-external-link-primary:before {
   content: "\e900"; }
