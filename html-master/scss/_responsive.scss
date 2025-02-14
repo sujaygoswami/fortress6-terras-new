@@ -132,6 +132,8 @@
 
         // basic
 
+        
+
         img{
             &.tab-mobile-full-width-img{
                 width: 100%;
@@ -273,6 +275,8 @@
             }
         }
 
+        
+
         .my-row {
             margin-left: -5px;
             margin-right: -5px;
@@ -280,9 +284,27 @@
 
             
 
+            
+
 
             &.default-row {
                 row-gap: 15px;
+
+                &.special-collage-grid-layout{
+                    row-gap: 20px;
+                    .normal-text-element-module{
+                        img{
+                            max-width: 160px;
+                        }
+                    }
+                }
+
+               
+                    .distributing-height-tab-mobile-normal{
+                        min-height: 190px;
+                        height: auto;
+                    }
+                
 
                 &.mobile-lg-grid{
                     margin-left: -10px;
@@ -326,6 +348,24 @@
             text-align: center;
         }
 
+        // filter-tag-module
+        .filter-tag-module{
+            & > .main-wrap{
+                font-size: 15px;
+                column-gap: 10px;
+                row-gap: 15px;
+
+                span{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        // filter-tag-module
+        
+
+       
+
         // line info module
         .line-info-module{
             & > .main-wrap{
@@ -352,6 +392,12 @@
                 font-size: 77px;
                 line-height: 104px;
                 letter-spacing: 1.54px;
+
+                &.view-2{
+                    font-size: 77px;
+                    line-height: 104px;
+                    letter-spacing: 1.54px;
+                }
             }
         }
 
@@ -437,11 +483,16 @@
 
 
         // site-btn
-        .site-btn {
+        .site-btn, .btn {
             font-size: 15px;
-            padding: 13px 64px 13px 20px;
+            padding: 14px 64px 14px 20px;
             background-size: 24.17px;
             background-position: right 16px center;
+
+            &.only-placed-arrow-btn{
+                width: 60px;
+                height: 45px;
+            }
 
             &.down-arrow-btn{
                 background-size: 18px;
@@ -562,6 +613,96 @@
 
         // header
 
+        // site-iconic-flex-form
+        .site-iconic-flex-form{
+            &.layout-2{
+                .form-field{
+                    height: 45px;
+                }
+            }
+            .dropdown-menu{
+                .item-check-radio{
+                    label{
+                        font-size: 15px;
+                        line-height: normal;
+                    }
+                }
+            }
+            .form-field{
+                height: 45px;
+
+                .form-btn{
+                    font-size: 15px;
+                    background-size: 17px;
+                    background-position: right 16px center;
+                    padding-left: 16px;
+                    padding-right: 50px;
+                }
+            }
+            .main-reactive-item{
+                font-size: 15px;
+
+                .text-input{
+                    font-size: 15px;
+                }
+
+                i{
+                    img{
+                        max-width: 18px;
+                    }
+
+                    &.tab-mobile-height-img{
+                        img{
+                            max-width: 12px;
+                        }
+                    }
+                }
+            }
+            &.responsive-view-type-1{
+                & > .main-wrap{
+                    row-gap: 15px;
+                }
+                .form-field{
+                    min-width: inherit;
+                    width: 100%;
+                }
+            }
+        }
+        // site-iconic-flex-form
+
+        // job-card-module
+        .job-card-module{
+            .job-card{
+                background-size: 18.85px;
+                background-position: right 25px bottom 25px;
+            }
+            .client-logo{
+                img{
+                    max-width: 55px;
+                }
+            }
+
+            .footer-info{
+                & > .main-wrap{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    row-gap: 10px;
+                    column-gap: 15px;
+                }
+                .info-box{
+                    column-gap: 15px;
+                    i{
+                        width: 16px;
+                        img{
+                            max-width: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        // job-card-module
+        
+
         // page-banner-module
         .page-banner-module {
             &+.banner-mini-slider-module {
@@ -668,8 +809,26 @@
 
         // logo-stamp
 
+        // global-social-connect-links
+        .global-social-connect-links{
+            a{
+                width: 55px;
+                height: 55px;
+
+                img{
+                    max-width: 25px;
+                }
+            }
+        }
+        // global-social-connect-links
+        
+
         // cover-bg-content-module
         .cover-bg-content-module {
+
+            .caption-with-link{
+                padding: 15px;
+            }
            
             &.mobile-cover-area-depnds-content {
                 img {
@@ -1168,9 +1327,30 @@
                 font-size: 22px;
                 letter-spacing: 0.44px;
                 line-height: 28px;
+
+                img{
+                    max-width: 15px;
+                }
             }
         }
         // global-tip
+
+        // global-sticker
+        .global-sticker{
+            &.pos-1{
+                &.responsive-view-1{
+                    position: static;
+                    width: 100%;
+                    display: grid;
+                    justify-content: center;
+
+                    img{
+                        max-width: 142px;
+                    }
+                }
+            }
+        }
+        // global-sticker
 
         // site-form-view-layout-1
         .site-form-view-layout-1{
@@ -1633,6 +1813,16 @@
             height: 134px;
         }
         // graph-module
+
+        // page-banner-module
+        .page-banner-module {
+            &.height-view-1{
+                &.mobile-height-view-2{
+                    height: calc(100vh - (var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter) + 40px));
+                }
+            }
+        }
+        // page-banner-module
 
         // footer
         footer.footer{

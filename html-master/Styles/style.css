@@ -11800,6 +11800,20 @@ html, body {
   row-gap: 30px;
   align-items: center; }
 
+.terras .site-btn-whole-area:hover .site-btn.animating-right-direction-arrow-btn i, .terras .site-btn-whole-area:hover .btn.animating-right-direction-arrow-btn i {
+  right: -28px;
+  opacity: 0; }
+
+.terras .site-btn-whole-area:hover .site-btn.animating-right-direction-arrow-btn em, .terras .site-btn-whole-area:hover .btn.animating-right-direction-arrow-btn em {
+  opacity: 1;
+  right: 27px; }
+
+@media screen and (max-width: 1199px) {
+  .terras .site-btn-whole-area:hover .site-btn.animating-right-direction-arrow-btn i, .terras .site-btn-whole-area:hover .btn.animating-right-direction-arrow-btn i {
+    right: -25px; }
+  .terras .site-btn-whole-area:hover .site-btn.animating-right-direction-arrow-btn em, .terras .site-btn-whole-area:hover .btn.animating-right-direction-arrow-btn em {
+    right: 16px; } }
+
 .terras .site-btn, .terras .btn {
   display: inline-block;
   padding: 19px 74px 19px 21px;
@@ -11989,13 +12003,13 @@ html, body {
   mask-size: 22vw;
   mask-repeat: no-repeat; }
 
-.terras .special-collage-grid-layout .my-col.lg-col {
-  width: 80%;
-  flex-grow: 1; }
-
-.terras .special-collage-grid-layout .my-col.md-col {
-  width: 20%;
-  flex-grow: 1; }
+@media screen and (min-width: 1200px) {
+  .terras .special-collage-grid-layout .my-col.lg-col {
+    width: 80%;
+    flex-grow: 1; }
+  .terras .special-collage-grid-layout .my-col.md-col {
+    width: 20%;
+    flex-grow: 1; } }
 
 .terras .page-banner-module.height-view-1 {
   height: calc(100vh - (var(--header-height) + var(--grid-gutter) * 3)); }
@@ -12129,8 +12143,9 @@ html, body {
     padding: 25px 30px;
     background-color: white; }
 
-.terras .cover-bg-content-module.min-height-negative {
-  min-height: inherit !important; }
+@media screen and (min-width: 1200px) {
+  .terras .cover-bg-content-module.min-height-negative {
+    min-height: inherit !important; } }
 
 .terras .cover-bg-content-module.static-banner {
   min-height: 625px; }
@@ -12253,7 +12268,6 @@ html, body {
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: 1;
     display: grid;
     align-items: center;
     justify-content: center; }
@@ -13145,7 +13159,6 @@ html, body {
   min-width: 275px; }
   .terras .site-iconic-flex-form .form-field .form-btn {
     height: 100%;
-    line-height: 60px;
     border-radius: 30px;
     background-color: var(--site-primary-color);
     color: white;
@@ -13303,24 +13316,26 @@ html, body {
 .terras .job-card-module .primary-info {
   margin-bottom: 25px; }
 
-.terras .job-card-module .footer-info > .main-wrap {
-  display: flex;
-  column-gap: 35px;
-  row-gap: 35px;
-  align-items: center; }
-
-.terras .job-card-module .footer-info .info-box {
-  display: flex;
-  column-gap: 6px;
-  align-items: center;
-  font-size: 14px;
-  opacity: 0.5;
-  line-height: normal; }
-  .terras .job-card-module .footer-info .info-box i {
-    position: relative;
-    top: -2px; }
-  .terras .job-card-module .footer-info .info-box.no-opech {
-    opacity: 1; }
+.terras .job-card-module .footer-info {
+  padding-right: 25px; }
+  .terras .job-card-module .footer-info > .main-wrap {
+    display: flex;
+    column-gap: 35px;
+    row-gap: 35px;
+    align-items: center;
+    flex-wrap: wrap; }
+  .terras .job-card-module .footer-info .info-box {
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+    font-size: 14px;
+    opacity: 0.5;
+    line-height: normal; }
+    .terras .job-card-module .footer-info .info-box i {
+      position: relative;
+      top: -2px; }
+    .terras .job-card-module .footer-info .info-box.no-opech {
+      opacity: 1; }
 
 .terras .global-social-connect-links {
   display: flex;
@@ -13631,6 +13646,13 @@ html, body {
       row-gap: 15px; }
       .terras .my-row.default-row {
         row-gap: 15px; }
+        .terras .my-row.default-row.special-collage-grid-layout {
+          row-gap: 20px; }
+          .terras .my-row.default-row.special-collage-grid-layout .normal-text-element-module img {
+            max-width: 160px; }
+        .terras .my-row.default-row .distributing-height-tab-mobile-normal {
+          min-height: 190px;
+          height: auto; }
         .terras .my-row.default-row.mobile-lg-grid {
           margin-left: -10px;
           margin-right: -10px;
@@ -13653,6 +13675,13 @@ html, body {
         margin-bottom: var(--mobile-row-gap-global); }
     .terras .mobile-text-center {
       text-align: center; }
+    .terras .filter-tag-module > .main-wrap {
+      font-size: 15px;
+      column-gap: 10px;
+      row-gap: 15px; }
+      .terras .filter-tag-module > .main-wrap span {
+        padding-top: 5px;
+        padding-bottom: 5px; }
     .terras .line-info-module > .main-wrap {
       font-size: 12px;
       letter-spacing: 0.24px; }
@@ -13667,6 +13696,10 @@ html, body {
         font-size: 77px;
         line-height: 104px;
         letter-spacing: 1.54px; }
+        .terras h1.special-lg.view-2, .terras .special-lg.view-2.h1 {
+          font-size: 77px;
+          line-height: 104px;
+          letter-spacing: 1.54px; }
     .terras h2, .terras .h2 {
       font-size: 25px;
       line-height: 35px;
@@ -13696,18 +13729,21 @@ html, body {
       font-size: 20px;
       line-height: 27px;
       letter-spacing: 0.4px; }
-    .terras .site-btn {
+    .terras .site-btn, .terras .btn {
       font-size: 15px;
-      padding: 13px 64px 13px 20px;
+      padding: 14px 64px 14px 20px;
       background-size: 24.17px;
       background-position: right 16px center; }
-      .terras .site-btn.down-arrow-btn {
+      .terras .site-btn.only-placed-arrow-btn, .terras .btn.only-placed-arrow-btn {
+        width: 60px;
+        height: 45px; }
+      .terras .site-btn.down-arrow-btn, .terras .btn.down-arrow-btn {
         background-size: 18px;
         background-position: right 16px center; }
-      .terras .site-btn.reload-btn {
+      .terras .site-btn.reload-btn, .terras .btn.reload-btn {
         background-size: 17.81px;
         background-position: right 15px center; }
-      .terras .site-btn.back-btn {
+      .terras .site-btn.back-btn, .terras .btn.back-btn {
         padding: 13px 20px 13px 64px; }
     .terras header.header .main-header-item-holder {
       height: calc(var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter)); }
@@ -13754,6 +13790,48 @@ html, body {
         .terras .main-menu-expanded .item-holder > .main-wrap {
           min-width: inherit;
           width: 100%; }
+    .terras .site-iconic-flex-form.layout-2 .form-field {
+      height: 45px; }
+    .terras .site-iconic-flex-form .dropdown-menu .item-check-radio label {
+      font-size: 15px;
+      line-height: normal; }
+    .terras .site-iconic-flex-form .form-field {
+      height: 45px; }
+      .terras .site-iconic-flex-form .form-field .form-btn {
+        font-size: 15px;
+        background-size: 17px;
+        background-position: right 16px center;
+        padding-left: 16px;
+        padding-right: 50px; }
+    .terras .site-iconic-flex-form .main-reactive-item {
+      font-size: 15px; }
+      .terras .site-iconic-flex-form .main-reactive-item .text-input {
+        font-size: 15px; }
+      .terras .site-iconic-flex-form .main-reactive-item i img {
+        max-width: 18px; }
+      .terras .site-iconic-flex-form .main-reactive-item i.tab-mobile-height-img img {
+        max-width: 12px; }
+    .terras .site-iconic-flex-form.responsive-view-type-1 > .main-wrap {
+      row-gap: 15px; }
+    .terras .site-iconic-flex-form.responsive-view-type-1 .form-field {
+      min-width: inherit;
+      width: 100%; }
+    .terras .job-card-module .job-card {
+      background-size: 18.85px;
+      background-position: right 25px bottom 25px; }
+    .terras .job-card-module .client-logo img {
+      max-width: 55px; }
+    .terras .job-card-module .footer-info > .main-wrap {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 10px;
+      column-gap: 15px; }
+    .terras .job-card-module .footer-info .info-box {
+      column-gap: 15px; }
+      .terras .job-card-module .footer-info .info-box i {
+        width: 16px; }
+        .terras .job-card-module .footer-info .info-box i img {
+          max-width: 16px; }
     .terras .page-banner-module + .banner-mini-slider-module {
       position: static;
       padding: 0px;
@@ -13811,6 +13889,13 @@ html, body {
       right: 10px; }
       .terras .logo-stamp.pos2.mobile-view-1 img {
         max-width: 147px; }
+    .terras .global-social-connect-links a {
+      width: 55px;
+      height: 55px; }
+      .terras .global-social-connect-links a img {
+        max-width: 25px; }
+    .terras .cover-bg-content-module .caption-with-link {
+      padding: 15px; }
     .terras .cover-bg-content-module.mobile-cover-area-depnds-content img.set-back-item {
       display: none; }
     .terras .cover-bg-content-module .the-context.alignment-view-up.alignment-view-up-responsive-reset-to-center {
@@ -14037,6 +14122,15 @@ html, body {
       font-size: 22px;
       letter-spacing: 0.44px;
       line-height: 28px; }
+      .terras .global-tip .the-tip img {
+        max-width: 15px; }
+    .terras .global-sticker.pos-1.responsive-view-1 {
+      position: static;
+      width: 100%;
+      display: grid;
+      justify-content: center; }
+      .terras .global-sticker.pos-1.responsive-view-1 img {
+        max-width: 142px; }
     .terras .site-form-view-layout-1 {
       font-size: 15px;
       letter-spacing: 0px; }
@@ -14237,6 +14331,8 @@ html, body {
     text-align: center; }
   .terras .graph-module {
     height: 134px; }
+  .terras .page-banner-module.height-view-1.mobile-height-view-2 {
+    height: calc(100vh - (var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter) + 40px)); }
   .terras footer.footer .site-logo-holder {
     display: block;
     padding-top: 20px; }

@@ -738,6 +738,9 @@ jQuery('.email-icon, .phone-icon').each(function(){
   jQuery(this).find('> a').wrapInner('<span></span>');
   jQuery(this).find('> a').prepend('<i></i>');
 });
+jQuery('.site-btn:not(.down-arrow-btn):not(.reload-btn)').addClass('animating-right-direction-arrow-btn');
+jQuery('.site-btn.animating-right-direction-arrow-btn').wrapInner('<span></span>');
+jQuery('.site-btn.animating-right-direction-arrow-btn').append('<em></em><i></i>');
 
 
 
@@ -808,6 +811,28 @@ jQuery('.parallel-equal-height').each(function(){
 // });
 // site-dropdown-module
 
+
+
+// filter-sorting-module
+// jQuery('.filter-sorting-module .check-radio').each(function(){
+  
+
+//   jQuery(this).click(function(){
+//     if(jQuery(this).is(':checked')) {
+//       var CHECKEDTEXT = jQuery(this).parent('.item-check-radio').find('label').text();
+//       jQuery(this).parents('.dropdown').find('.dropdown-toggle span').text(CHECKEDTEXT);
+//    }
+   
+// });
+
+
+   
+// });
+// filter-sorting-module
+
+
+
+
 // forms
 jQuery('.postcommentsform').each(function(){
   jQuery(this).addClass('site-form-view-layout-1');
@@ -844,6 +869,9 @@ if ($(window).width() < $xl && $(window).width() >= $md)  {
 if ($(window).width() >= $xl)  {
   site.MAINMENUSUBMENUFUNCTION();
 }
+
+
+
 
 
 
