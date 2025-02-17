@@ -83,7 +83,7 @@
 
 
         // basic
-        main{
+        .page-main-title{
             padding-top: 20px;
         }
         
@@ -672,10 +672,7 @@
 
         // job-card-module
         .job-card-module{
-            .job-card{
-                background-size: 18.85px;
-                background-position: right 25px bottom 25px;
-            }
+            
             .client-logo{
                 img{
                     max-width: 55px;
@@ -712,6 +709,7 @@
 
                 .main-slider-holder {
                     padding: 10px;
+                    padding-right: 20px;
                 }
 
                 .slick-dots {
@@ -773,9 +771,15 @@
                     .group-btn {
                         flex-direction: column;
                         row-gap: 15px;
+                        display: inline-block;
 
                         .site-btn {
-                            width: 100%;
+                            display: block;
+                            padding-right: 50px;
+                            margin-bottom: 15px;
+                            &:last-child{
+                                margin-bottom: 0px;
+                            }
                         }
                     }
                 }

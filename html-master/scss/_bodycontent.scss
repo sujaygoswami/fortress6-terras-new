@@ -1126,9 +1126,40 @@
         row-gap: 30px;
         align-items: center;
     }
+
+
+    .site-btn-whole-area{
+        .pos-absolute-type-1{
+            position: absolute !important;
+            right: 30px;
+            bottom: 30px;
+            @media screen and (max-width: ($xl - 1px)) {
+                right: 25px;
+                bottom: 25px;
+            }
+        }
+    }
+
+    
     .site-btn-whole-area:hover{
         .site-btn, .btn{
             &.animating-right-direction-arrow-btn{
+
+                &.transparent-bg-color-btn{
+                    i{
+                        right: -24px;
+                    }
+
+                    em{
+                        right: 0px;
+                    }
+
+                    @media screen and (max-width: ($xl - 1px)) {
+                        i{
+                            right: -19px;
+                        }
+                    }
+                }
                 
                    
     
@@ -1175,6 +1206,13 @@
             position: relative;
             background-image: none;
             overflow: hidden;
+            &.has-dark-arrow{
+
+                i, em{
+                    background-image: url(../Images/next-arrow-type-1-dark.svg);
+                }
+                    
+            }
             &:after{
                 // position: absolute;
                 // width: 100%;
@@ -1325,9 +1363,54 @@
             padding: 0px;
             border: none;
             background-position: left top;
+            &.animating-right-direction-arrow-btn{
+                span{
+                    display: none;
+                }
 
-            &.has-dark-arrow{
-                background-image: url(../Images/right-indication-arrow-dark.svg);
+                i, em{
+                    width: 23.84px;
+                    background-size: 23.84px;
+                }
+
+                i{
+                    right: 0px;
+                    
+                }
+                em{
+                    right: 24px;
+                }
+
+                &:hover{
+
+                    i{
+                        right: -24px;
+                    }
+
+                    em{
+                        right: 0px;
+                    }
+                    
+                }
+
+                @media screen and (max-width: ($xl - 1px)) {
+                    i, em{
+                        width: 18.3px;
+                        background-size: 18.3px;
+                    }
+
+                    em{
+                        right: 19px;
+                    }
+
+                    &:hover{
+
+                        i{
+                            right: -19px;
+                        }
+                        
+                    }
+                }
             }
         }
 
@@ -1677,6 +1760,10 @@
             &.caption-view-2{
                 padding: 25px 30px;
                 background-color: white;
+
+                @media screen and (max-width: ($xl - 1px)) {
+                    padding: 16px 20px;
+                }
             }
         }
 
@@ -2021,6 +2108,24 @@
     // global logo badge
 
     // global-carousel
+    .interactive-map-module{
+        &.slider-functionality{
+            .global-carousel{
+                    &.single-column-global-carousel{
+                        .slick-list{
+                            margin-left: -10px;
+                            margin-right: -10px;
+                            
+    
+                            .slick-slide{
+                                padding-left: 10px;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+            }
+        }
+    }
     .global-carousel{
         .item{
             &:last-child{
@@ -2061,9 +2166,7 @@
         }
         @media screen and (max-width: ($xl - 1px)) {
             &.mobile-slider-flow-visible{
-                .slick-list{
-                    overflow: visible;
-                }
+                
                 
                 &.single-column-global-carousel{
                     .slick-list{
@@ -2111,10 +2214,16 @@
                
     
                 &.slick-prev{
-                    background-image: url(../Images/left-indication-arrow-white.svg);
+                    // background-image: url(../Images/left-indication-arrow-white.svg);
+                    &:after, &:before{
+                        background-image: url(../Images/left-indication-arrow-white.svg);
+                    }
                 }
                 &.slick-next{
-                    background-image: url(../Images/right-indication-arrow-white.svg);
+                    // background-image: url(../Images/right-indication-arrow-white.svg);
+                    &:after, &:before{
+                        background-image: url(../Images/right-indication-arrow-white.svg);
+                    }
                 }
             }
         }
@@ -2220,12 +2329,79 @@
             background-repeat: no-repeat;
             background-position: left top;
             background-size: 29.01px;
+            position: relative;
+
+            &:before{
+                content: ' ';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: cover;
+                transition: all .8s cubic-bezier(.86,0,.07,1);
+                opacity: 1;
+                pointer-events: none;
+            }
+            &:after{
+                content: ' ';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                background-repeat: no-repeat;
+                background-position: left top;
+                background-size: cover;
+                transition: all .8s cubic-bezier(.86,0,.07,1);
+                opacity: 0;
+                pointer-events: none;
+            }
+            
 
             &.slick-prev{
-                background-image: url(../Images/left-indication-arrow-dark.svg);
+                // background-image: url(../Images/left-indication-arrow-dark.svg);
+                &:before, &:after{
+                    background-image: url(../Images/left-indication-arrow-dark.svg);
+                }
+                &:before{
+                    right: 0px;
+                }
+                &:after{
+                    right: -150%;
+                }
+                &:hover{
+                    &:before{
+                        opacity: 0;
+                        right: 100%;
+                    }
+                    &:after{
+                        opacity: 1;
+                        right: 0px;
+                    }
+                }
             }
             &.slick-next{
-                background-image: url(../Images/right-indication-arrow-dark.svg);
+                // background-image: url(../Images/right-indication-arrow-dark.svg);
+                &:before, &:after{
+                    background-image: url(../Images/right-indication-arrow-dark.svg);
+                }
+                &:before{
+                    left: 0px;
+                }
+                &:after{
+                    left: -150%;
+                }
+                &:hover{
+                    &:before{
+                        opacity: 0;
+                        left: 100%;
+                    }
+                    &:after{
+                        opacity: 1;
+                        left: 0px;
+                    }
+                }
             }
         }
     }
@@ -3345,12 +3521,7 @@
 
     // job-card-module
     .job-card-module{
-        .job-card{
-            background-image: url(../Images/right-indication-arrow-dark.svg);
-            background-repeat: no-repeat;
-            background-position: right 30px bottom 30px;
-            background-size: 23.84px;
-        }
+       
         .client-logo{
             img{
                 max-width: 100px;

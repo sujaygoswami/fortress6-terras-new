@@ -13,6 +13,21 @@
         background-repeat: no-repeat;
         display: none;
 
+        .menu-items{
+            transform-origin: top;
+            will-change: transform;
+            transition-delay: 0.3s;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(.125,.49,.295,1);
+            transform: scale(1, 0.6);
+        }
+
+        &.expanded{
+            .menu-items{
+                transform: scale(1);
+            }
+        }
+
         .menu-close {
             margin-bottom: 30px;
 
@@ -358,6 +373,22 @@
                 font-family: 'icomoon-menu-hambg';
                 font-size: 35px;
                 line-height: normal;
+                .icon-menu-trigger-icon{
+                    .path1, .path2, .path3{
+                        &:before{
+                            @include transition(all 0.3s ease 0s);
+                        }
+                    }
+                }
+                &:hover{
+                    .icon-menu-trigger-icon{
+                        .path2, .path3{
+                            &:before{
+                                color: var(--site-primary-color);
+                            }
+                        }
+                    }
+                }
 
                 @media screen and (max-width: ($xl - 1px)) {
                     font-size: 21px;
