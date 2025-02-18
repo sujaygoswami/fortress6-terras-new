@@ -616,11 +616,14 @@
                     margin-bottom: 45px;
                 }
             }
-            &.row-gap-extra-large{
-                row-gap: 62px;
-                &.has-margin-bottom{
-                    margin-bottom: 62px;
+            &.row-gap-extra-large-desktop{
+                @media screen and (min-width: $xl) {
+                    row-gap: 62px;
+                    &.has-margin-bottom{
+                        margin-bottom: 62px;
+                    } 
                 }
+                
             }
 
             
@@ -1085,7 +1088,10 @@
     
                 li{
                     position: relative;
-                    padding-left: 40px;
+                    padding-left: 27px;
+                    @media screen and (min-width: $xl) {
+                        padding-left: 40px;
+                    }
     
                     &:before{
                         position: absolute;
@@ -1094,6 +1100,10 @@
                         position: absolute;
                         left: 0px;
                         color: var(--site-primary-color);
+                        font-size: 11px;
+                        @media screen and (min-width: $xl) {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -1541,6 +1551,7 @@
 
     // special-collage-grid-layout
     .special-collage-grid-layout{
+       
         .my-col{
 
             @media screen and (min-width: $xl) {
@@ -1880,13 +1891,30 @@
 
         &.view-4{
             &.heading-type{
-                column-gap: 24px;
-                row-gap: 24px;
+                column-gap: 14px;
+                row-gap: 14px;
+                @media screen and (min-width: $xl) {
+                    column-gap: 24px;
+                    row-gap: 24px;
+                }
             }
             & > div{
-                width: 62px;
-                height: 80px;
+                width: 50px;
+                height: 66px;
                 @include border-radius(45px);
+
+                img{
+                    max-width: 33px;
+                }
+
+                @media screen and (min-width: $xl) {
+                    width: 62px;
+                    height: 80px;
+
+                    img{
+                        max-width: 43px;
+                    }
+                }
             }
         }
     }
@@ -3643,6 +3671,7 @@
         column-gap: 45px;
         row-gap: 45px;
         justify-content: center;
+        flex-wrap: wrap;
 
         .dp{
             width: 190px;
@@ -3658,6 +3687,7 @@
             
             img{
                 max-height: 190px;
+                max-width: 165px;
             }
         }
     }

@@ -189,6 +189,19 @@ site.PAGEBANNERWITHMINISLIDERRESPONSIVEPLACEMENTFORTABONLY = function() {
   
   };
 
+  // get-tab-mopbile-auto-distribute-height
+  site.COLLAGEGETDISTRIBUTEHEIGHT = function() {
+
+    jQuery('.get-tab-mopbile-auto-distribute-height').each(function(){
+      var HEIGHT = jQuery(this).parents('.special-collage-grid-layout').find('.distributing-height-tab-mobile-normal').height();
+      jQuery(this).height(HEIGHT);
+    });
+
+   
+  
+  };
+  // get-tab-mopbile-auto-distribute-height
+
 
 
 
@@ -256,6 +269,15 @@ var checkMobile = function(){
 //Execute Check
 checkMobile();
 
+// basic-content-carousel
+jQuery('.basic-content-carousel').parents('section').addClass('overflow-hidden');
+
+// start notation declare
+
+// mobile
+if ($(window).width() < $xl) {
+  
+}
 
 
 // paralax
@@ -603,6 +625,8 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     autoPlay: 3000
   });
 
+  
+
   // interactive-map-module
   
   // jQuery('.interactive-map-module').each(function(){
@@ -736,7 +760,7 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
 // integration label changes
 jQuery('.primary-color-btn, .outline-btn').addClass('site-btn');
 jQuery('.banner-text p').addClass('group-btn');
-jQuery('.half-height').parent('.full-height').addClass('mobile-full-height-remove');
+jQuery('.half-height:not(.keep-half-height-tab-mobile)').parent('.full-height').addClass('mobile-full-height-remove');
 jQuery('h1.special-lg').addClass('mb-0');
 jQuery('.content-link').addClass('site-btn primary-color-btn down-arrow-btn anchor-link');
 jQuery('.email-icon, .phone-icon').each(function(){
@@ -860,7 +884,10 @@ jQuery(document).click(function(){
 });
 
 
-
+// for tab mobile function declare
+if ($(window).width() < $xl) {
+  
+}
 // for mobile only function declare
 if ($(window).width() < $md) {
   site.PAGEBANNERWITHMINISLIDERRESPONSIVE();
