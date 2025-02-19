@@ -189,6 +189,26 @@ site.PAGEBANNERWITHMINISLIDERRESPONSIVEPLACEMENTFORTABONLY = function() {
   
   };
 
+  // menu items sub menu hover
+  site.RESPONSIVESUBMENUFUNCTION = function() {
+
+    jQuery('header.header .main-menu-expanded .site-nav li.has-sub-menu .sub-item-trigger').click(function(){
+      jQuery(this).parent().find('.submenu').addClass('sub-open');
+      jQuery(this).parents('.main-menu-expanded').addClass('mobile-sub-menu-open');
+    });
+
+    jQuery('header.header .main-menu-expanded .back-link-to-parent-menu').click(function(){
+      jQuery(this).parents('.main-menu-expanded').removeClass('mobile-sub-menu-open');
+      jQuery(this).parents('.main-menu-expanded').find('.submenu').removeClass('sub-open');
+    });
+
+
+    
+
+   
+  
+  };
+
   // get-tab-mopbile-auto-distribute-height
   site.COLLAGEGETDISTRIBUTEHEIGHT = function() {
 
@@ -731,10 +751,12 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
     
     jQuery('.main-menu-expanded').show();
   });
-  jQuery('.menu-close').click(function(){
+  jQuery('.menu-close .global-action-icon').click(function(){
     jQuery('.main-menu-expanded').removeClass('slideInDown');
     jQuery('.main-menu-expanded').addClass('slideOutUp');
     jQuery('.main-menu-expanded').removeClass('expanded');
+    jQuery('.main-menu-expanded').removeClass('mobile-sub-menu-open');
+    jQuery('.main-menu-expanded').find('.submenu').removeClass('sub-open');
   });
 
   
@@ -886,7 +908,7 @@ jQuery(document).click(function(){
 
 // for tab mobile function declare
 if ($(window).width() < $xl) {
-  
+  site.RESPONSIVESUBMENUFUNCTION();
 }
 // for mobile only function declare
 if ($(window).width() < $md) {

@@ -10892,9 +10892,10 @@ html, body {
           .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu {
             display: flex;
             align-items: center; }
-            .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu:hover ul.submenu {
-              opacity: 1;
-              pointer-events: auto; }
+            @media screen and (min-width: 1200px) {
+              .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu:hover ul.submenu {
+                opacity: 1;
+                pointer-events: auto; } }
             .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu .sub-item-trigger {
               pointer-events: none; }
               .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu .sub-item-trigger i {
@@ -10912,13 +10913,21 @@ html, body {
               pointer-events: none;
               min-height: 100%; }
               .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li {
+                list-style: none;
+                margin: 0px !important;
+                padding: 0px !important; }
+                .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li > ul {
+                  list-style: none;
+                  margin: 0px !important;
+                  padding: 0px !important; }
+              .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu li {
                 font-size: 16px; }
-                .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li.has-external-link > a {
+                .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu li.has-external-link > a {
                   position: relative;
                   padding-right: 25px;
                   display: block;
                   width: 250px; }
-                  .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li.has-external-link > a:after {
+                  .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu li.has-external-link > a:after {
                     width: 23.91px;
                     height: 20.83px;
                     background-size: 23.91px;
@@ -13761,7 +13770,8 @@ html, body {
         margin-bottom: 0px !important; }
     .terras .mobile-section-gap-md {
       margin-bottom: 20px; }
-    .terras .my-row .half-height:not(.keep-half-height-tab-mobile).half-height-mobile-50, .terras .default-row .half-height:not(.keep-half-height-tab-mobile).half-height-mobile-50 {
+    .terras .my-row .half-height:not(.keep-half-height-tab-mobile).half-height-mobile-50,
+    .terras .default-row .half-height:not(.keep-half-height-tab-mobile).half-height-mobile-50 {
       height: auto; }
     .terras .my-row {
       margin-left: -5px;
@@ -13851,7 +13861,8 @@ html, body {
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 0.32px; }
-    .terras p, .terras .entry li {
+    .terras p,
+    .terras .entry li {
       font-size: 15px;
       line-height: 25px;
       letter-spacing: 0px;
@@ -13878,47 +13889,133 @@ html, body {
         padding: 13px 20px 13px 64px; }
     .terras header.header .main-header-item-holder {
       height: calc(var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter)); }
-    .terras .site-logo-holder .logo-part {
+    .terras header.header .site-logo-holder.layout-2 {
+      column-gap: 7px; }
+      .terras header.header .site-logo-holder.layout-2 .logo-caption span {
+        letter-spacing: 1px;
+        font-size: 10px;
+        padding: 3px;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle; }
+    .terras header.header .site-logo-holder .logo-part {
       padding: 0px;
       border: none; }
-      .terras .site-logo-holder .logo-part.logo-caption {
+      .terras header.header .site-logo-holder .logo-part.logo-caption {
         display: none; }
-      .terras .site-logo-holder .logo-part.primary-logo img {
+      .terras header.header .site-logo-holder .logo-part.primary-logo img {
         max-width: 82px; }
-    .terras .header-service-part .service-part.global-iconic-link i img {
+    .terras header.header .header-service-part.layout-2 {
+      column-gap: 14px; }
+      .terras header.header .header-service-part.layout-2 .global-iconic-link {
+        margin-left: 0px; }
+      .terras header.header .header-service-part.layout-2 .service-part.global-iconic-link i img {
+        max-width: 17px; }
+        .terras header.header .header-service-part.layout-2 .service-part.global-iconic-link i img.mobile-sm {
+          max-width: 8px; }
+    .terras header.header .header-service-part .service-part.global-iconic-link i img {
       max-width: 20px; }
-    .terras .header-service-part .service-part.global-iconic-link span {
+    .terras header.header .header-service-part .service-part.global-iconic-link span {
       display: none; }
-    .terras .header-service-part .service-part.header-menu-trigger .the-trigger {
+    .terras header.header .header-service-part .service-part.header-menu-trigger.layout-2 {
+      margin-left: 4px; }
+    .terras header.header .header-service-part .service-part.header-menu-trigger .the-trigger {
       width: 31.63px;
       height: 21.31px;
       background-size: 31.63px; }
-    .terras .main-menu-expanded {
+    .terras header.header .main-menu-expanded {
       background-position: left 45% top;
       background-color: white;
       background-size: 450%; }
-      .terras .main-menu-expanded .item-global-mx-padding {
+      .terras header.header .main-menu-expanded.mobile-sub-menu-open .menu-close .back-link-to-parent-menu {
+        opacity: 1;
+        pointer-events: auto; }
+      .terras header.header .main-menu-expanded.mobile-sub-menu-open .item-holder .menu-items-wrap {
+        max-height: inherit;
+        overflow: inherit; }
+      .terras header.header .main-menu-expanded .item-global-mx-padding {
         padding-left: 15px;
         padding-right: 15px; }
-      .terras .main-menu-expanded .global-item-part {
+      .terras header.header .main-menu-expanded .global-item-part {
         border: none; }
-        .terras .main-menu-expanded .global-item-part.lg-part {
+        .terras header.header .main-menu-expanded .global-item-part.lg-part {
           width: 100%; }
-        .terras .main-menu-expanded .global-item-part.sm-part {
+        .terras header.header .main-menu-expanded .global-item-part.sm-part {
           width: 100%; }
-      .terras .main-menu-expanded .menu-close .global-action-icon {
-        width: 43px;
-        height: 43px; }
-      .terras .main-menu-expanded .menu-items .item-part {
+      .terras header.header .main-menu-expanded .menu-close {
+        position: fixed;
+        z-index: 200;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        padding: 25px;
+        display: flex;
+        align-items: center; }
+        .terras header.header .main-menu-expanded .menu-close .back-link-to-parent-menu {
+          font-size: 15px;
+          font-weight: var(--site-primary-font-bold);
+          padding-left: 40px;
+          background-image: url(../Images/left-indication-arrow-dark.svg);
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-size: 20.49px;
+          cursor: pointer;
+          opacity: 0;
+          pointer-events: none;
+          -webkit-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s; }
+        .terras header.header .main-menu-expanded .menu-close .global-action-icon {
+          width: 43px;
+          height: 43px; }
+      .terras header.header .main-menu-expanded .menu-items .item-part {
         border: none;
         border-bottom: 1px solid var(--site-grey-type-2);
         padding-left: 0px;
         padding-right: 0px; }
-        .terras .main-menu-expanded .menu-items .item-part:last-child {
+        .terras header.header .main-menu-expanded .menu-items .item-part:last-child {
           border-bottom: none; }
-      .terras .main-menu-expanded .item-holder {
+        .terras header.header .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu .sub-item-trigger {
+          pointer-events: auto; }
+        .terras header.header .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu {
+          position: fixed;
+          left: calc(100% + 50px);
+          top: 0px;
+          width: calc(100% + 50px);
+          height: 100vh;
+          z-index: 100;
+          background: white;
+          opacity: 1;
+          pointer-events: auto;
+          padding: 115px 0 0 0;
+          background-position: left 45% top;
+          background-color: white;
+          background-size: 450%;
+          background-image: url(../Images/main-menu-bg.svg);
+          -webkit-transition: all 0.5s ease 0s;
+          transition: all 0.5s ease 0s;
+          margin: -25px;
+          margin-top: -90px; }
+          .terras header.header .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li {
+            list-style: none;
+            margin: 0px !important;
+            padding: 0px !important; }
+            .terras header.header .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li > ul {
+              list-style: none;
+              margin: 0px !important;
+              padding: 0px !important;
+              max-height: 80vh;
+              overflow-y: auto; }
+          .terras header.header .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu li {
+            padding: 0 25px; }
+            .terras header.header .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu li.has-external-link > a {
+              width: 100%; }
+          .terras header.header .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu.sub-open {
+            left: 0px; }
+      .terras header.header .main-menu-expanded .item-holder {
         padding: 25px; }
-        .terras .main-menu-expanded .item-holder > .main-wrap {
+        .terras header.header .main-menu-expanded .item-holder .menu-items-wrap {
+          padding-top: 65px; }
+        .terras header.header .main-menu-expanded .item-holder > .main-wrap {
           min-width: inherit;
           width: 100%; }
     .terras .site-iconic-flex-form.layout-2 .form-field {
@@ -14150,9 +14247,11 @@ html, body {
         font-size: 15px;
         letter-spacing: 0px;
         column-gap: 15px; }
-        .terras .global-iconic-link.view-5 a i, .terras .global-iconic-link.view-5 .main-item i {
+        .terras .global-iconic-link.view-5 a i,
+        .terras .global-iconic-link.view-5 .main-item i {
           width: 20px; }
-          .terras .global-iconic-link.view-5 a i img, .terras .global-iconic-link.view-5 .main-item i img {
+          .terras .global-iconic-link.view-5 a i img,
+          .terras .global-iconic-link.view-5 .main-item i img {
             max-width: 20px; }
     .terras .global-iconic-link.view-4 {
       margin-bottom: 15px; }
@@ -14173,7 +14272,8 @@ html, body {
       line-height: normal;
       letter-spacing: 0.3px;
       column-gap: 12px; }
-      .terras .global-iconic-link a i img, .terras .global-iconic-link .main-item i img {
+      .terras .global-iconic-link a i img,
+      .terras .global-iconic-link .main-item i img {
         max-width: 30px; }
     .terras .global-iconic-link.view-2 i {
       width: 30px;
@@ -14340,7 +14440,14 @@ html, body {
   .terras .mobile-global-mx-padding {
     padding-left: 50px;
     padding-right: 50px; }
-  .terras .inset-container-type-1, .terras .inset-cotainer-tylpe-1, .terras .inset-container-type-2, .terras .tab-center, .terras .inset-container-type-3, .terras .inset-container-type-4, .terras .inset-container-type-7, .terras .inset-container-type-6 {
+  .terras .inset-container-type-1,
+  .terras .inset-cotainer-tylpe-1,
+  .terras .inset-container-type-2,
+  .terras .tab-center,
+  .terras .inset-container-type-3,
+  .terras .inset-container-type-4,
+  .terras .inset-container-type-7,
+  .terras .inset-container-type-6 {
     max-width: 600px; }
   .terras .only-tab-half-width-parent {
     display: flex;
@@ -14381,7 +14488,7 @@ html, body {
       padding-left: 0px;
       padding-right: 0px; }
     .terras .main-menu-expanded .main-menu-service-items .global-item-part {
-      width: auto !important; }
+      width: 50% !important; }
       .terras .main-menu-expanded .main-menu-service-items .global-item-part.floating-menu-social-links {
         margin-left: auto; }
   .terras .graph-module {

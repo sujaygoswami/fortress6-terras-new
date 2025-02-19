@@ -141,9 +141,11 @@
                                 align-items: center;
                                 
                                 &:hover{
-                                    ul.submenu{
-                                        opacity: 1;
-                                        pointer-events: auto;
+                                    @media screen and (min-width: $xl) {
+                                        ul.submenu{
+                                            opacity: 1;
+                                            pointer-events: auto;
+                                        }
                                     }
                                 }
                               
@@ -173,6 +175,18 @@
                                         min-height: 100%;
 
                                         & > li{
+                                            list-style: none;
+                                            margin: 0px !important;
+                                            padding: 0px !important;
+
+                                            & > ul{
+                                                list-style: none;
+                                                margin: 0px !important;
+                                                padding: 0px !important;
+                                            }
+                                        }
+
+                                         li{
                                             font-size: 16px;
 
                                             &.has-external-link{
