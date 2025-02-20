@@ -384,6 +384,7 @@ var HEADERHEIGHT = jQuery('header.header').height();
 
 jQuery(window).resize(function(){
 
+  location.reload();
 
 });
 
@@ -1003,6 +1004,16 @@ jQuery(window).resize(function(){
 });
 
 
+
+
+
+
+// cover-bg-content-module
+jQuery('.cover-bg-content-module:not(.static-banner)').each(function(){
+  var CONTEXTHEIGHT = jQuery(this).find('.the-context > .main-wrap').height();
+  jQuery(this).css('min-height', CONTEXTHEIGHT);
+});
+
 // traingle-watermark-has
 jQuery('.traingle-watermark-has:not(.left-positioned):not(.mask-size-2)').each(function(){
   var HEIGHT = jQuery(this).height();
@@ -1031,11 +1042,14 @@ jQuery('.traingle-watermark-has.left-positioned').each(function(){
   jQuery(this).find('.mask-it').css('-webkit-mask-position-x', 0);
 });
 
-// cover-bg-content-module
-jQuery('.cover-bg-content-module:not(.static-banner)').each(function(){
-  var CONTEXTHEIGHT = jQuery(this).find('.the-context > .main-wrap').height();
-  jQuery(this).css('min-height', CONTEXTHEIGHT);
-});
+// jQuery('.traingle-watermark-has.left-positioned.mask-size-2').each(function(){
+//   var HEIGHT = jQuery(this).height();
+//   var WIDTH = jQuery(this).width();
+//   var CLONEMASKHEIGHT = jQuery(this).find('.the-mask-img img').height();
+//   var CLONEMASKWIDTH = jQuery(this).find('.the-mask-img img').width();
+//   jQuery(this).find('.mask-it').css('-webkit-mask-position-y',  CLONEMASKHEIGHT - HEIGHT + 38);
+//   jQuery(this).find('.mask-it').css('-webkit-mask-position-x', 0);
+// });
 
 
 // has-global-mask
