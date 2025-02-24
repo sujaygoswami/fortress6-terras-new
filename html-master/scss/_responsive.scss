@@ -427,6 +427,11 @@
             line-height: 45px;
             letter-spacing: 0.72px;
 
+            &.lg{
+                font-size: 65px;
+                line-height: 75px;
+            }
+
             &.special-lg {
                 font-size: 77px;
                 line-height: 104px;
@@ -1761,6 +1766,8 @@
             padding-right: 50px;
         }
 
+        
+
         .inset-container-type-1,
         .inset-cotainer-tylpe-1,
         .inset-container-type-2,
@@ -1791,6 +1798,14 @@
         }
 
         // basic
+
+        // typography
+        h1{
+            &.lg{
+                font-size: 90px;
+                line-height: 110px;
+            }
+        }
 
         // graph-module
         .graph-module {
@@ -2153,6 +2168,12 @@
 // for mobile only
 @media screen and (max-width: ($md - 1px)) {
     .terras {
+
+
+        .only-mobile-global-mx-padding{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
         img {
             &.only-mobile-full-width-img {

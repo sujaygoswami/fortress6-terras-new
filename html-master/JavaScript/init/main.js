@@ -1015,13 +1015,28 @@ jQuery('.cover-bg-content-module:not(.static-banner)').each(function(){
 });
 
 // traingle-watermark-has
-jQuery('.traingle-watermark-has:not(.left-positioned):not(.mask-size-2)').each(function(){
+jQuery('.traingle-watermark-has:not(.left-positioned):not(.mask-size-2):not(.mask-position-right-shift-type-1):not(.mask-size-3)').each(function(){
   var HEIGHT = jQuery(this).height();
   var WIDTH = jQuery(this).width();
   var CLONEMASKHEIGHT = jQuery(this).find('.the-mask-img img').height();
   var CLONEMASKWIDTH = jQuery(this).find('.the-mask-img img').width();
   jQuery(this).find('.mask-it').css('-webkit-mask-position-y', HEIGHT - CLONEMASKHEIGHT);
   jQuery(this).find('.mask-it').css('-webkit-mask-position-x', WIDTH - CLONEMASKWIDTH);
+});
+
+
+jQuery('.traingle-watermark-has.mask-position-right-shift-type-1.mask-size-3').each(function(){
+  var HEIGHT = jQuery(this).height();
+  var WIDTH = jQuery(this).width();
+  var CLONEMASKHEIGHT = jQuery(this).find('.the-mask-img img').height();
+  var CLONEMASKWIDTH = jQuery(this).find('.the-mask-img img').width();
+  jQuery(this).find('.mask-it').css('-webkit-mask-position-y', HEIGHT - CLONEMASKHEIGHT);
+  if ($(window).width() >= $lgDesktopEnds) {
+    jQuery(this).find('.mask-it').css('-webkit-mask-position-x', WIDTH - CLONEMASKWIDTH - 280);
+  }else{
+    jQuery(this).find('.mask-it').css('-webkit-mask-position-x', WIDTH - CLONEMASKWIDTH);
+  }
+  
 });
 
 jQuery('.traingle-watermark-has.mask-size-2:not(.left-positioned)').each(function(){

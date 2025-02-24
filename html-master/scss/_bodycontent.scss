@@ -948,6 +948,11 @@
         letter-spacing: 0px;
         margin-bottom: 20px;
 
+        &.lg{
+            font-size: 120px;
+            line-height: 150px;
+        }
+
         &.special-lg{
             font-size: 156px;
             line-height: normal;
@@ -1490,6 +1495,17 @@
         }
 
         &.traingle-view-2{
+            &.mask-size-3{
+
+                .the-mask-img{
+                    width: 21vw;
+                }
+
+                .mask-it {
+                    mask-size: 21vw;
+                }
+
+            }
             &.mask-size-2{
 
                 .the-mask-img{

@@ -11736,6 +11736,9 @@ html, body {
   line-height: 85px;
   letter-spacing: 0px;
   margin-bottom: 20px; }
+  .terras h1.lg, .terras .lg.h1 {
+    font-size: 120px;
+    line-height: 150px; }
   .terras h1.special-lg, .terras .special-lg.h1 {
     font-size: 156px;
     line-height: normal;
@@ -12038,6 +12041,12 @@ html, body {
   mask-image: url(../Images/traingle-shape-banner-video-part.svg);
   mask-size: 34vw;
   mask-repeat: no-repeat; }
+
+.terras .traingle-watermark-has.traingle-view-2.mask-size-3 .the-mask-img {
+  width: 21vw; }
+
+.terras .traingle-watermark-has.traingle-view-2.mask-size-3 .mask-it {
+  mask-size: 21vw; }
 
 .terras .traingle-watermark-has.traingle-view-2.mask-size-2 .the-mask-img {
   width: 32vw; }
@@ -13833,6 +13842,9 @@ html, body {
       font-size: 36px;
       line-height: 45px;
       letter-spacing: 0.72px; }
+      .terras h1.lg, .terras .lg.h1 {
+        font-size: 65px;
+        line-height: 75px; }
       .terras h1.special-lg, .terras .special-lg.h1 {
         font-size: 77px;
         line-height: 104px;
@@ -14458,6 +14470,9 @@ html, body {
     .terras .only-tab-half-width-parent > .only-tab-half-width {
       width: calc(50% - 5px);
       height: 100% !important; }
+  .terras h1.lg, .terras .lg.h1 {
+    font-size: 90px;
+    line-height: 110px; }
   .terras .graph-module > .main-wrap > div span {
     font-size: 22px; }
   .terras .team-member-detail-group-module .global-light-video-player {
@@ -14593,6 +14608,9 @@ html, body {
         right: 0px; } }
 
 @media screen and (max-width: 767px) {
+  .terras .only-mobile-global-mx-padding {
+    padding-left: 20px;
+    padding-right: 20px; }
   .terras img.only-mobile-full-width-img {
     width: 100%;
     height: auto; }
