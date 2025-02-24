@@ -885,6 +885,27 @@ jQuery('.parallel-equal-height').each(function(){
 
 
 
+// site-dropdown-module-global
+jQuery('.site-dropdown-module-global .check-radio').each(function(){
+  
+
+  jQuery(this).click(function(){
+    if(jQuery(this).is(':checked')) {
+      var CHECKEDTEXT = jQuery(this).parent('.item-check-radio').find('label').text();
+      jQuery(this).parents('.dropdown').find('.dropdown-toggle span').text(CHECKEDTEXT);
+      jQuery(this).parents('.dropdown').find('.dropdown-toggle').removeClass('not-choosed-yet');
+      jQuery(this).parents('.dropdown').find('.dropdown-toggle').trigger('click');
+   }
+   
+});
+
+
+   
+});
+// site-dropdown-module-global
+
+
+
 
 // forms
 jQuery('.postcommentsform').each(function(){

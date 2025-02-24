@@ -1215,6 +1215,11 @@
         background-size: 34.83px;
         text-align: left;
         position: relative;
+        border: none;
+        &:active{
+            color: white;
+        }
+       
 
 
         &.animating-right-direction-arrow-btn{
@@ -2123,9 +2128,15 @@
             & > .main-wrap{
                 width: 165px;
                 height: 90px;
+
+                img{
+                    max-width: 155px;
+                    max-height: 80px;
+                }
             }
             &.bg-white{
                 background-color: rgba($color: #ffffff, $alpha: 0.74) !important;
+                backdrop-filter: blur(20px);
             }
         }
 
@@ -2140,7 +2151,11 @@
             justify-content: center;
             width: 180px;
             height: 110px;
-            padding: 7px;
+            
+            img{
+                max-width: 170px;
+                max-height: 100px;
+            }
         }
 
         &.pos-1{
@@ -2635,7 +2650,11 @@
                 display: none;
                 justify-content: center;
                 align-items: center;
-                padding: 10px;
+                
+                img{
+                    max-width: 60px;
+                    max-height: 40px;
+                }
                 
                 
             }
@@ -3330,6 +3349,23 @@
 
     // site-iconic-flex-form
     .site-iconic-flex-form{
+        .overlaped-field-label{
+            position: absolute;
+            left: 10px;
+            top: -12px;
+            pointer-events: none;
+
+            span{
+                padding: 0 10px 0 10px;
+                background-color: white;
+                font-size: 18px;
+
+                i{
+                    color: var(--site-primary-color) !important;
+                    font-style: normal;
+                }
+            }
+        }
         & > .main-wrap{
             display: flex;
             column-gap: 10px;
@@ -3349,10 +3385,58 @@
 
             
         }
+
+        &.layout-3{
+            .main-reactive-item{
+                &:after{
+                    width: 23.48px;
+                    height: 13.74px;
+                    background-size: 23.48px;
+                }
+            }
+            .form-field{
+                height: 60px;
+                border-radius: 45px;
+
+                .dropdown-menu{
+                    border: 2px solid;
+                }
+                
+                &.light-bg{
+                    .dropdown-menu{
+                        margin-top: 5px !important;
+                        padding-top: 0px;
+                        border-radius: 20px;
+                        padding: 20px;
+
+                        li:first-child{
+                            border-top: none;
+                            padding-top: 10px;
+                        }
+                        
+                    }
+                }
+            }
+
+            
+        }
         .form-field{
             height: 60px;
             border-radius: 30px;
             min-width: 275px;
+
+            &.cover-filed{
+                min-width: inherit;
+                width: 100%;
+
+                &.sm-field{
+                    width: 200px;
+                }
+            }
+
+            &.bordered{
+                border: 2px solid;
+            }
 
             .form-btn{
                 height: 100%;
@@ -3394,7 +3478,7 @@
                 }
 
                 .main-reactive-item{
-                    
+                    backdrop-filter: none;
                     &:after{
                         background-image: url(../Images/thin-dropdown-down-arrow-dark.svg);
                     }
@@ -3416,6 +3500,7 @@
                             border-top: 1px solid var(--site-grey-type-2);
                             padding-top: 22px;
                         }
+                        
                     }
 
                     .item-check-radio{
@@ -3435,6 +3520,8 @@
             }
         }
 
+       
+
         .dropdown-menu{
             width: 100%;
             border-radius: 30px;
@@ -3448,6 +3535,45 @@
 
             li{
                 padding: 10px 0;
+
+                &.item-select{
+                    padding: 0px !important;
+                    
+                    .item-check-radio{
+                        padding: 10px;
+                        position: relative;
+
+                        .check-radio{
+                            z-index: 2;
+                            &:checked{
+                                & + .clone-check{
+                                    background-color: var(--site-global-dark) !important;
+                                    background-image: none !important;
+
+                                    & + label{
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+
+                        .clone-check{
+                            border: none;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 0px;
+                            background-image: none;
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                        }
+
+                        label{
+                            position: relative;
+                            z-index: 1;
+                        }
+                    }
+                }
             }
 
             .item-check-radio{
@@ -3513,6 +3639,12 @@
             overflow: hidden;
             color: white;
 
+            &.not-choosed-yet{
+                span{
+                    opacity: 0.3;
+                }
+            }
+
             .text-input{
                 width: 100%;
                 height: 100%;
@@ -3559,6 +3691,10 @@
                 transform-origin: center center;
                 @include transition(all 0.3s ease 0s);
             }
+        }
+
+        .group-header{
+            margin-bottom: 35px;
         }
     }
     // site-iconic-flex-form
@@ -3708,5 +3844,26 @@
         }
     }
     // stand-alone-contact-info-module
+
+    // site-modal
+    .site-modal{
+        display: none;
+        padding: 0px;
+        background-color: transparent;
+        &.layout-1{
+            width: 965px;
+            max-width: 80%;
+        }
+
+        .modal-header{
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .main-content-holder{
+            padding: 50px;
+        }
+    }
+    // site-modal
 
 }

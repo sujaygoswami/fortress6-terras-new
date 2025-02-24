@@ -1128,7 +1128,11 @@
                 &>.main-wrap {
                     width: 90px;
                     height: 46px;
-                    padding: 10px;
+                    
+                    img{
+                        max-width: 70px;
+                        max-height: 40px;
+                    }
                 }
             }
 

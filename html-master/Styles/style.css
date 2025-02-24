@@ -11883,7 +11883,10 @@ html, body {
   background-position: right 21px center;
   background-size: 34.83px;
   text-align: left;
-  position: relative; }
+  position: relative;
+  border: none; }
+  .terras .site-btn:active, .terras .btn:active {
+    color: white; }
   .terras .site-btn.animating-right-direction-arrow-btn, .terras .btn.animating-right-direction-arrow-btn {
     position: relative;
     background-image: none;
@@ -12478,8 +12481,12 @@ html, body {
   .terras .global-logo-badge.view-2 > .main-wrap {
     width: 165px;
     height: 90px; }
+    .terras .global-logo-badge.view-2 > .main-wrap img {
+      max-width: 155px;
+      max-height: 80px; }
   .terras .global-logo-badge.view-2.bg-white {
-    background-color: rgba(255, 255, 255, 0.74) !important; }
+    background-color: rgba(255, 255, 255, 0.74) !important;
+    backdrop-filter: blur(20px); }
   .terras .global-logo-badge.bg-white {
     background-color: rgba(255, 255, 255, 0.92) !important; }
   .terras .global-logo-badge > .main-wrap {
@@ -12487,8 +12494,10 @@ html, body {
     align-items: center;
     justify-content: center;
     width: 180px;
-    height: 110px;
-    padding: 7px; }
+    height: 110px; }
+    .terras .global-logo-badge > .main-wrap img {
+      max-width: 170px;
+      max-height: 100px; }
   .terras .global-logo-badge.pos-1 {
     position: absolute;
     left: 24px;
@@ -12794,8 +12803,10 @@ html, body {
     -webkit-backdrop-filter: blur(30px);
     display: none;
     justify-content: center;
-    align-items: center;
-    padding: 10px; }
+    align-items: center; }
+    .terras .interactive-map-module .pointer .pointer-info img {
+      max-width: 60px;
+      max-height: 40px; }
   .terras .interactive-map-module .pointer .trigger {
     width: 36.96px;
     height: 31.98px;
@@ -13286,6 +13297,19 @@ html, body {
         opacity: 1;
         color: var(--site-text-color-dark); }
 
+.terras .site-iconic-flex-form .overlaped-field-label {
+  position: absolute;
+  left: 10px;
+  top: -12px;
+  pointer-events: none; }
+  .terras .site-iconic-flex-form .overlaped-field-label span {
+    padding: 0 10px 0 10px;
+    background-color: white;
+    font-size: 18px; }
+    .terras .site-iconic-flex-form .overlaped-field-label span i {
+      color: var(--site-primary-color) !important;
+      font-style: normal; }
+
 .terras .site-iconic-flex-form > .main-wrap {
   display: flex;
   column-gap: 10px;
@@ -13298,10 +13322,36 @@ html, body {
     margin-top: -22px !important;
     padding-top: 23px; }
 
+.terras .site-iconic-flex-form.layout-3 .main-reactive-item:after {
+  width: 23.48px;
+  height: 13.74px;
+  background-size: 23.48px; }
+
+.terras .site-iconic-flex-form.layout-3 .form-field {
+  height: 60px;
+  border-radius: 45px; }
+  .terras .site-iconic-flex-form.layout-3 .form-field .dropdown-menu {
+    border: 2px solid; }
+  .terras .site-iconic-flex-form.layout-3 .form-field.light-bg .dropdown-menu {
+    margin-top: 5px !important;
+    padding-top: 0px;
+    border-radius: 20px;
+    padding: 20px; }
+    .terras .site-iconic-flex-form.layout-3 .form-field.light-bg .dropdown-menu li:first-child {
+      border-top: none;
+      padding-top: 10px; }
+
 .terras .site-iconic-flex-form .form-field {
   height: 60px;
   border-radius: 30px;
   min-width: 275px; }
+  .terras .site-iconic-flex-form .form-field.cover-filed {
+    min-width: inherit;
+    width: 100%; }
+    .terras .site-iconic-flex-form .form-field.cover-filed.sm-field {
+      width: 200px; }
+  .terras .site-iconic-flex-form .form-field.bordered {
+    border: 2px solid; }
   .terras .site-iconic-flex-form .form-field .form-btn {
     height: 100%;
     border-radius: 30px;
@@ -13329,8 +13379,10 @@ html, body {
       z-index: 1; }
     .terras .site-iconic-flex-form .form-field.light-bg * {
       color: inherit; }
-    .terras .site-iconic-flex-form .form-field.light-bg .main-reactive-item:after {
-      background-image: url(../Images/thin-dropdown-down-arrow-dark.svg); }
+    .terras .site-iconic-flex-form .form-field.light-bg .main-reactive-item {
+      backdrop-filter: none; }
+      .terras .site-iconic-flex-form .form-field.light-bg .main-reactive-item:after {
+        background-image: url(../Images/thin-dropdown-down-arrow-dark.svg); }
     .terras .site-iconic-flex-form .form-field.light-bg .dropdown-menu {
       background-color: white;
       box-shadow: 0px 3px 20px #1B20201F;
@@ -13361,6 +13413,30 @@ html, body {
   backdrop-filter: blur(30px); }
   .terras .site-iconic-flex-form .dropdown-menu li {
     padding: 10px 0; }
+    .terras .site-iconic-flex-form .dropdown-menu li.item-select {
+      padding: 0px !important; }
+      .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio {
+        padding: 10px;
+        position: relative; }
+        .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .check-radio {
+          z-index: 2; }
+          .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .check-radio:checked + .clone-check {
+            background-color: var(--site-global-dark) !important;
+            background-image: none !important; }
+            .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .check-radio:checked + .clone-check + label {
+              color: white; }
+        .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .clone-check {
+          border: none;
+          width: 100%;
+          height: 100%;
+          border-radius: 0px;
+          background-image: none;
+          position: absolute;
+          left: 0px;
+          top: 0px; }
+        .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio label {
+          position: relative;
+          z-index: 1; }
   .terras .site-iconic-flex-form .dropdown-menu .item-check-radio {
     position: relative;
     display: flex;
@@ -13411,6 +13487,8 @@ html, body {
   border-radius: 30px;
   overflow: hidden;
   color: white; }
+  .terras .site-iconic-flex-form .main-reactive-item.not-choosed-yet span {
+    opacity: 0.3; }
   .terras .site-iconic-flex-form .main-reactive-item .text-input {
     width: 100%;
     height: 100%;
@@ -13444,6 +13522,9 @@ html, body {
     transform-origin: center center;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s; }
+
+.terras .site-iconic-flex-form .group-header {
+  margin-bottom: 35px; }
 
 .terras .job-card-module .client-logo img {
   max-width: 100px; }
@@ -13551,6 +13632,19 @@ html, body {
     .terras .stand-alone-contact-info-module .dp img {
       max-height: 190px;
       max-width: 165px; }
+
+.terras .site-modal {
+  display: none;
+  padding: 0px;
+  background-color: transparent; }
+  .terras .site-modal.layout-1 {
+    width: 965px;
+    max-width: 80%; }
+  .terras .site-modal .modal-header {
+    margin-bottom: 40px;
+    text-align: center; }
+  .terras .site-modal .main-content-holder {
+    padding: 50px; }
 
 .terras footer.footer > .main-wrap {
   background-image: url(../Images/footer-bg.svg);
@@ -14166,8 +14260,10 @@ html, body {
       border-radius: 14px; }
       .terras .global-logo-badge.view-2 > .main-wrap {
         width: 90px;
-        height: 46px;
-        padding: 10px; }
+        height: 46px; }
+        .terras .global-logo-badge.view-2 > .main-wrap img {
+          max-width: 70px;
+          max-height: 40px; }
       .terras .global-logo-badge.pos-1 {
         left: 9px;
         bottom: 9px; }
