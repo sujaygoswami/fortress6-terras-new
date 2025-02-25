@@ -948,6 +948,13 @@ if ($(window).width() >= $xl)  {
 }
 
 
+// datepicker
+jQuery('.site-datepicker').each(function(){
+  jQuery(this).datepicker({
+    dateFormat: 'dd.mm.yy',
+  });
+});
+
 
 
 

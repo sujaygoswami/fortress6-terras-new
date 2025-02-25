@@ -3349,11 +3349,81 @@
 
     // site-iconic-flex-form
     .site-iconic-flex-form{
+
+        .check-radio-field{
+            display: flex;
+            align-items: flex-start;
+            cursor: pointer;
+            label{
+                font-size: 18px;
+                line-height: 30px;
+                padding-left: 10px;
+                cursor: pointer;
+            }
+            .check-radio-box{
+                width: 30px;
+                height: 30px;
+                border: 2px solid;
+                position: relative;
+                overflow: hidden;
+
+                .selected-item{
+                    margin: 0px;
+                    padding: 0px;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0px;
+                    top: 0px;
+                    opacity: 0;
+                    cursor: pointer;
+                    &:checked{
+                        & + .clone-item{
+                            background-color: var(--site-primary-color);
+                            background-image: url(../Images/tick-mark-icon-white.svg);
+                        }
+                    }
+                }
+
+                .clone-item{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0px;
+                    top: 0px;
+                    pointer-events: none;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 12px;
+                }
+
+                &.the-radio{
+                    border-radius: 100%;
+
+                    .selected-item, .clone-item{
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+
+        .group-row{
+            
+            row-gap: 35px;
+            
+        }
+        .field-group{
+            margin-bottom: 50px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
         .overlaped-field-label{
             position: absolute;
             left: 10px;
             top: -12px;
             pointer-events: none;
+            
 
             span{
                 padding: 0 10px 0 10px;
@@ -3424,6 +3494,14 @@
             height: 60px;
             border-radius: 30px;
             min-width: 275px;
+            &.length-type-textarea{
+                height: 100px;
+                border-radius: 20px;
+
+                .main-reactive-item{
+                    padding: 20px;
+                }
+            }
 
             &.cover-filed{
                 min-width: inherit;
@@ -3657,6 +3735,12 @@
                     opacity: 1;
                     color: inherit;
                 }
+
+                &.opech-place-holder{
+                    &::placeholder{
+                        opacity: 0.3;
+                    }
+                }
             }
 
             &.dropdown-toggle{
@@ -3865,5 +3949,11 @@
         }
     }
     // site-modal
+
+    // ui
+    .ui-datepicker{
+        z-index: 125845608418515 !important;
+    }
+    // ui
 
 }
