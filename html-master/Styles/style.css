@@ -11717,6 +11717,28 @@ html, body {
   .terras .global-iconic-link-wrap.layout-flex-type-1 .global-iconic-link {
     margin-bottom: 0px; }
 
+.terras .viewport-hidden {
+  visibility: hidden; }
+
+.terras .vieport-appear.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.terras .viewport-line-appear span {
+  display: inline-flex;
+  transform-origin: bottom;
+  vertical-align: text-top;
+  opacity: 0;
+  transform: translateY(0px) scaleY(0.5);
+  -webkit-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+  position: relative;
+  top: 5vw; }
+  .terras .viewport-line-appear span.appeard {
+    opacity: 1;
+    transform: translateY(0px) scaleY(1);
+    top: 0px; }
+
 .terras .head-tag {
   padding: 8px 12px;
   -webkit-border-radius: 10px;
@@ -11730,6 +11752,8 @@ html, body {
 .terras h1, .terras .h1, .terras h2, .terras .h2, .terras h3, .terras .h3, .terras h4, .terras .h4, .terras h5, .terras .h5, .terras h6, .terras .h6 {
   font-family: var(--site-secondary-font);
   font-weight: normal; }
+  .terras h1.viewport-line-appear span, .terras .viewport-line-appear.h1 span, .terras h2.viewport-line-appear span, .terras .viewport-line-appear.h2 span, .terras h3.viewport-line-appear span, .terras .viewport-line-appear.h3 span, .terras h4.viewport-line-appear span, .terras .viewport-line-appear.h4 span, .terras h5.viewport-line-appear span, .terras .viewport-line-appear.h5 span, .terras h6.viewport-line-appear span, .terras .viewport-line-appear.h6 span {
+    display: block; }
 
 .terras h1, .terras .h1 {
   font-size: 65px;
@@ -11737,8 +11761,8 @@ html, body {
   letter-spacing: 0px;
   margin-bottom: 20px; }
   .terras h1.lg, .terras .lg.h1 {
-    font-size: 120px;
-    line-height: 150px; }
+    font-size: 6.3vw;
+    line-height: normal; }
   .terras h1.special-lg, .terras .special-lg.h1 {
     font-size: 156px;
     line-height: normal;
@@ -13998,8 +14022,7 @@ html, body {
       line-height: 45px;
       letter-spacing: 0.72px; }
       .terras h1.lg, .terras .lg.h1 {
-        font-size: 65px;
-        line-height: 75px; }
+        font-size: 8vw; }
       .terras h1.special-lg, .terras .special-lg.h1 {
         font-size: 77px;
         line-height: 104px;
@@ -14627,9 +14650,6 @@ html, body {
     .terras .only-tab-half-width-parent > .only-tab-half-width {
       width: calc(50% - 5px);
       height: 100% !important; }
-  .terras h1.lg, .terras .lg.h1 {
-    font-size: 90px;
-    line-height: 110px; }
   .terras .graph-module > .main-wrap > div span {
     font-size: 22px; }
   .terras .team-member-detail-group-module .global-light-video-player {

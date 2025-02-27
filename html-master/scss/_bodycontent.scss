@@ -930,6 +930,35 @@
     }
     // global-iconic-link ends
 
+    // viewport checker
+    .viewport-hidden{
+        visibility: hidden;
+    }
+    .vieport-appear{
+        &.animated{
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+        }
+    }
+   .viewport-line-appear{
+    span{
+        display: inline-flex;
+        transform-origin: bottom;
+        vertical-align: text-top;
+        opacity: 0;
+        transform: translateY(0px) scaleY(0.5);
+        @include transition(all 0.7s ease 0s);
+        position: relative;
+        top: 5vw;
+        &.appeard{
+            opacity: 1;
+            transform: translateY(0px) scaleY(1);
+            top: 0px;
+        }
+    }
+   }
+    // viewport checker
+
     // typography
     .head-tag{
         padding: 8px 12px;
@@ -941,6 +970,12 @@
     h1, h2, h3,h4,h5,h6{
         font-family: var(--site-secondary-font);
         font-weight: normal;
+
+        &.viewport-line-appear{
+            span{
+                display: block;
+            }
+        }
     }
     h1{
         font-size: 65px;
@@ -949,8 +984,8 @@
         margin-bottom: 20px;
 
         &.lg{
-            font-size: 120px;
-            line-height: 150px;
+            font-size: 6.3vw;
+            line-height: normal;
         }
 
         &.special-lg{
