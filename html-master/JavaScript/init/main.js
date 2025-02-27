@@ -289,6 +289,26 @@ var checkMobile = function(){
 //Execute Check
 checkMobile();
 
+
+
+
+
+
+
+
+
+// viewportChecker
+jQuery('.viewport-appear-type-1').each(function(){
+  $this = jQuery(this);
+  $this.find('span').viewportChecker({
+    classToAdd: 'appeard',
+    classToRemove: 'viewport-hidden',
+    classToAddForFullView : 'nothing',
+    repeat: false,
+    offset: 0,
+  });
+});
+
 // basic-content-carousel
 jQuery('.basic-content-carousel').parents('section').addClass('overflow-hidden');
 
@@ -955,22 +975,7 @@ jQuery('.site-datepicker').each(function(){
   });
 });
 
-// viewportChecker
-jQuery('.viewport-appear-type-1').each(function(){
-  $this = jQuery(this);
-  $this.find('.first').viewportChecker({
-    classToAdd: 'appeard',
-    classToRemove: 'viewport-hidden',
-    repeat: false,
-    offset: 0,
-    callbackFunction: function (elem, action) {
-      setTimeout(function () {
-       $this.find('.second').addClass('appeard');
-       $this.find('.second').removeClass('viewport-hidden');
-    }, 300);
-    },
-  });
-});
+
 
 
 

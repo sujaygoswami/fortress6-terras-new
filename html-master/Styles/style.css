@@ -11434,7 +11434,9 @@ html, body {
   .terras .section-top-gap-tyep-1 {
     margin-top: 85px; }
   .terras .section-top-gap-tyep-2 {
-    margin-top: 75px; } }
+    margin-top: 75px; }
+  .terras .section-top-gap-tyep-3 {
+    margin-top: 15px; } }
 
 @media screen and (min-width: 1200px) {
   .terras .global-card-content.view-1, .terras .inset-card-content.view-1 {
@@ -11737,7 +11739,9 @@ html, body {
   .terras .viewport-line-appear span.appeard {
     opacity: 1;
     transform: translateY(0px) scaleY(1);
-    top: 0px; }
+    top: 0px !important; }
+  .terras .viewport-line-appear span.second {
+    top: 10vw; }
 
 .terras .head-tag {
   padding: 8px 12px;
@@ -11823,17 +11827,17 @@ html, body {
   color: var(--site-primary-color);
   display: inline-block; }
 
-.terras main .entry ul:not(.dropdown-menu) {
+.terras main .entry ul:not(.dropdown-menu):not(.normal-list) {
   list-style: none;
   margin: 0px;
   padding: 0px; }
-  .terras main .entry ul:not(.dropdown-menu) li {
+  .terras main .entry ul:not(.dropdown-menu):not(.normal-list) li {
     position: relative;
     padding-left: 27px; }
     @media screen and (min-width: 1200px) {
-      .terras main .entry ul:not(.dropdown-menu) li {
+      .terras main .entry ul:not(.dropdown-menu):not(.normal-list) li {
         padding-left: 40px; } }
-    .terras main .entry ul:not(.dropdown-menu) li:before {
+    .terras main .entry ul:not(.dropdown-menu):not(.normal-list) li:before {
       position: absolute;
       font-family: 'icomoon-check-primary';
       content: "\e900";
@@ -11842,13 +11846,13 @@ html, body {
       color: var(--site-primary-color);
       font-size: 11px; }
       @media screen and (min-width: 1200px) {
-        .terras main .entry ul:not(.dropdown-menu) li:before {
+        .terras main .entry ul:not(.dropdown-menu):not(.normal-list) li:before {
           font-size: 16px; } }
 
 .terras .entry li {
   font-size: 18px;
   line-height: 35px;
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
   .terras .entry li:last-child {
     margin-bottom: 0px; }
 
