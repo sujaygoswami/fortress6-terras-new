@@ -4056,11 +4056,11 @@
     // site-modal
     .fancybox__container{
         &.is-opening{
-            .site-modal{
+            
                 .is-close-btn{
                     visibility: hidden;
                 }
-            }
+            
         }
 
         &.site-modal-fancy-box{
@@ -4102,7 +4102,7 @@
                 display: none;
             }
         }
-        &.global-light-box-settings{
+        
             .is-close-btn{
                 position: fixed;
                 right: 60px;
@@ -4127,36 +4127,13 @@
                     display: none;
                 }
             }
-        }
+        
     }
     .site-modal{
         display: none;
         padding: 0px;
         background-color: transparent;
-        .is-close-btn{
-            position: fixed;
-            right: 45px;
-            top: 45px;
-            width: 85px;
-            height: 85px;
-            border-radius: 100%;
-            background-color: var(--site-primary-color);
-            background-image: url(../Images/close-icon-white-with-site-bg-primary.svg);
-            background-size: cover;
-            background-position: left top;
-            opacity: 1;
-
-            @media screen and (max-width: ($xl - 1px)) {
-                width: 43px;
-                height: 43px;
-                right: 20px !important;
-                top: 20px !important;
-            }
-
-            svg{
-                display: none;
-            }
-        }
+       
         &.layout-1{
             width: 965px;
             max-width: 80%;

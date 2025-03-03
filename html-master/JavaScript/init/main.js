@@ -492,7 +492,7 @@ Fancybox.bind('[data-fancybox="site-modal-fancy-box-form"], [data-fancybox="site
 });
 
 Fancybox.bind('[data-fancybox="team-member-video"]',{
-  mainClass: 'light-box-video-width-only global-light-box-settings',
+  mainClass: 'light-box-video-width-only',
   dragToClose: false,
   groupAttr: "data-ungroup",
 });

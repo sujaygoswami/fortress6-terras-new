@@ -213,3 +213,52 @@ https://formstone.it/components/upload/
 
 
 
+
+
+
+
+GIT STAGING LIVE (only pull)
+======================
+Last login: Mon Mar  3 09:24:44 on console
+sujaygoswami@Sujays-Mac-mini ~ % cd /Users/sujaygoswami/.ssh 
+sujaygoswami@Sujays-Mac-mini .ssh % chmod 600 id_ed25519
+sujaygoswami@Sujays-Mac-mini .ssh % chmod 600 id_ed25519.pub
+sujaygoswami@Sujays-Mac-mini .ssh % cd/Users/sujaygoswami/Documents/works/fortress6-terras-new/live-git
+zsh: no such file or directory: cd/Users/sujaygoswami/Documents/works/fortress6-terras-new/live-git
+sujaygoswami@Sujays-Mac-mini .ssh % cd ..
+sujaygoswami@Sujays-Mac-mini ~ % cd /Users/sujaygoswami/Documents/works/fortress6-terras-new/live-git
+sujaygoswami@Sujays-Mac-mini live-git % git clone git@bitbucket.org:bytebuilders/terras-group.git
+Cloning into 'terras-group'...
+The authenticity of host 'bitbucket.org (2401:1d80:322c:5:0:bbc:1:df7c)' can't be established.
+ED25519 key fingerprint is SHA256:ybgmFkzwOSotHTHLJgHO0QN8L0xErw6vd0VhFA9m3SM.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'bitbucket.org' (ED25519) to the list of known hosts.
+Receiving objects: 100% (961/961), 20.35 MiB | 3.36 MiB/s, done.
+Resolving deltas: 100% (259/259), done.
+sujaygoswami@Sujays-Mac-mini live-git % cd terras-group 
+sujaygoswami@Sujays-Mac-mini terras-group % git checkout staging
+Branch 'staging' set up to track remote branch 'staging' from 'origin'.
+Switched to a new branch 'staging'
+sujaygoswami@Sujays-Mac-mini terras-group % git pull            
+Already up to date.
+sujaygoswami@Sujays-Mac-mini terras-group % 
+
+
+MITTWALD GIT (push here)
+======================
+Last login: Mon Mar  3 12:04:18 on ttys002
+sujaygoswami@Sujays-Mac-mini ~ % ssh p683199@p683199.webspaceconfig.de
+The authenticity of host 'p683199.webspaceconfig.de (46.30.62.207)' can't be established.
+ED25519 key fingerprint is SHA256:zqUiSOtAsA+fokxC9yWbPNqaPFiKeXGVlezSJ0EYAro.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:9: p657043.webspaceconfig.de
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'p683199.webspaceconfig.de' (ED25519) to the list of known hosts.
+p683199@p683199.webspaceconfig.de's password: 
+p683199:~ > cd html/typo3-composer
+
+
+
+
+

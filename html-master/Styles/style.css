@@ -13773,7 +13773,7 @@ html, body {
       max-height: 190px;
       max-width: 165px; }
 
-.terras .fancybox__container.is-opening .site-modal .is-close-btn {
+.terras .fancybox__container.is-opening .is-close-btn {
   visibility: hidden; }
 
 .terras .fancybox__container.site-modal-fancy-box {
@@ -13805,7 +13805,7 @@ html, body {
 .terras .fancybox__container.no-nav .fancybox__nav {
   display: none; }
 
-.terras .fancybox__container.global-light-box-settings .is-close-btn {
+.terras .fancybox__container .is-close-btn {
   position: fixed;
   right: 60px;
   top: 45px;
@@ -13818,38 +13818,18 @@ html, body {
   background-position: left top;
   opacity: 1; }
   @media screen and (max-width: 1199px) {
-    .terras .fancybox__container.global-light-box-settings .is-close-btn {
+    .terras .fancybox__container .is-close-btn {
       width: 43px;
       height: 43px;
       right: 20px !important;
       top: 20px !important; } }
-  .terras .fancybox__container.global-light-box-settings .is-close-btn svg {
+  .terras .fancybox__container .is-close-btn svg {
     display: none; }
 
 .terras .site-modal {
   display: none;
   padding: 0px;
   background-color: transparent; }
-  .terras .site-modal .is-close-btn {
-    position: fixed;
-    right: 45px;
-    top: 45px;
-    width: 85px;
-    height: 85px;
-    border-radius: 100%;
-    background-color: var(--site-primary-color);
-    background-image: url(../Images/close-icon-white-with-site-bg-primary.svg);
-    background-size: cover;
-    background-position: left top;
-    opacity: 1; }
-    @media screen and (max-width: 1199px) {
-      .terras .site-modal .is-close-btn {
-        width: 43px;
-        height: 43px;
-        right: 20px !important;
-        top: 20px !important; } }
-    .terras .site-modal .is-close-btn svg {
-      display: none; }
   .terras .site-modal.layout-1 {
     width: 965px;
     max-width: 80%; }
