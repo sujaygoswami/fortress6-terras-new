@@ -13771,7 +13771,9 @@ html, body {
     border-radius: 100px; }
     .terras .stand-alone-contact-info-module .dp img {
       max-height: 190px;
-      max-width: 165px; }
+      max-width: 165px;
+      width: auto;
+      height: auto; }
 
 .terras .fancybox__container.is-opening .is-close-btn {
   visibility: hidden; }
@@ -14471,6 +14473,9 @@ html, body {
       .terras .global-logo-badge > .main-wrap {
         width: 95px;
         height: 58px; }
+        .terras .global-logo-badge > .main-wrap img {
+          max-width: 70px;
+          max-height: 40px; }
     .terras .global-date-badge.pos-1 {
       top: 12px;
       right: 10px; }

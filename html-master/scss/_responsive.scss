@@ -1143,6 +1143,11 @@
             &>.main-wrap {
                 width: 95px;
                 height: 58px;
+
+                img{
+                    max-width: 70px;
+                    max-height: 40px;
+                }
             }
         }
 
