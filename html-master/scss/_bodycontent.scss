@@ -4045,16 +4045,18 @@
             height: 270px;
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: left top;
+            background-position: center top;
             display: grid;
-            align-items: end;
+            align-items: flex-start;
             justify-content: center;
             overflow: hidden;
             @include border-radius(100px);
+
+           
             
             img{
-                max-height: 190px;
-                max-width: 165px;
+                max-width: 190px;
+                max-height: 270px;
                 width: auto;
                 height: auto;
             }

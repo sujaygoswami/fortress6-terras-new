@@ -13766,9 +13766,9 @@ html, body {
     height: 270px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left top;
+    background-position: center top;
     display: grid;
-    align-items: end;
+    align-items: flex-start;
     justify-content: center;
     overflow: hidden;
     -webkit-border-radius: 100px;
@@ -13776,8 +13776,8 @@ html, body {
     -ms-border-radius: 100px;
     border-radius: 100px; }
     .terras .stand-alone-contact-info-module .dp img {
-      max-height: 190px;
-      max-width: 165px;
+      max-width: 190px;
+      max-height: 270px;
       width: auto;
       height: auto; }
 
@@ -14938,7 +14938,7 @@ html, body {
       width: 73px;
       height: 104px; }
       .terras .stand-alone-contact-info-module .dp img {
-        max-width: 65px;
+        max-width: 73px;
         max-height: 104px; }
   .terras .global-iconic-link-wrap.layout-flex-type-1 {
     flex-direction: column;
