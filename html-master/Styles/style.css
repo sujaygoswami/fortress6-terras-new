@@ -12861,6 +12861,9 @@ html, body {
   letter-spacing: 0.4px;
   color: var(--site-grey-type-4);
   column-gap: 17px; }
+  @media screen and (max-width: 1199px) {
+    .terras .line-info-module > .main-wrap {
+      column-gap: 5px; } }
   .terras .line-info-module > .main-wrap > div:last-child::after {
     display: none; }
   .terras .line-info-module > .main-wrap > div:last-child span {
@@ -12869,6 +12872,9 @@ html, body {
     content: '|'; }
   .terras .line-info-module > .main-wrap > div span {
     padding-right: 17px; }
+    @media screen and (max-width: 1199px) {
+      .terras .line-info-module > .main-wrap > div span {
+        padding-right: 5px; } }
 
 .terras .site-form-style-1 .main-field {
   width: 430px;

@@ -279,7 +279,8 @@ var checkMobile = function(){
 
     }
     else {
-
+        
+      
         jQuery('body').addClass('no-touch');
 
     };
@@ -320,36 +321,7 @@ if ($(window).width() < $xl) {
 }
 
 
-// paralax
-jQuery('.paralaxed-item-type-2').each(function(){
-  if ($(window).width() >= $lgDesktopEnds) {
-    jQuery(this).parallaxed({
-      speed: 0.5,
-    });
-  }else if ($(window).width() >= $xl) {
-    jQuery(this).parallaxed({
-      speed: 0.1,
-    });
-  }
-});
-jQuery('.paralaxed-item-type-1').each(function(){
- if ($(window).width() >= $xl) {
-    jQuery(this).parallaxed({
-      speed: 1,
-    });
-  }
-});
 
-var controller = $.superscrollorama();
-jQuery('.paralax-pause-scroller.pause-scroller-type-1').each(function () {  
-  var PARENTS = jQuery(this);
- 
-  var paralaxCard = TweenMax.to(
-    $(PARENTS).find('.slidings-tiles:nth-child(2n+1)'), .5, { css: { top: 0 } }
-  );
-  controller.pin(PARENTS, 900, { offset: -900, anim: paralaxCard });
-  
-});
 
 
 
@@ -400,11 +372,19 @@ var HEADERHEIGHT = jQuery('header.header').height();
 
 
 
-
+var prevWidth = window.innerWidth;
+window.addEventListener('resize', function() {
+    var width = window.innerWidth;
+    if (width !== prevWidth) {
+        prevWidth = width;
+        console.log(width);
+        location.reload();
+    }
+});
 
 jQuery(window).resize(function(){
 
-  location.reload();
+  
 
 });
 
@@ -412,7 +392,7 @@ jQuery(window).resize(function(){
 
 jQuery( window ).on( "orientationchange", function( event ) {
 
-   
+  location.reload();
           
 });
 
@@ -1140,12 +1120,28 @@ jQuery('.has-global-mask').each(function(){
 // team-member-video-teaser-snippet
 jQuery('.team-member-video-teaser-snippet:not(.stand-alone)').each(function(){
 
+
+  
+
   if ($(window).width() >= $xl) {
     var cols = jQuery(this).find('> .my-col');
-    for(var i = 0; i < cols.length; i+=4) {
-      cols.slice(i, i+4).wrapAll('<div class="row my-row default-row jc-right"></div>');
+
+    if (jQuery(this).hasClass('four-per-row')) {
+      for(var i = 0; i < cols.length; i+=4) {
+        cols.slice(i, i+4).wrapAll('<div class="row my-row default-row jc-right"></div>');
+      }
     }
+
+    if (jQuery(this).hasClass('three-per-row')) {
+      for(var i = 0; i < cols.length; i+=3) {
+        cols.slice(i, i+3).wrapAll('<div class="row my-row default-row jc-right"></div>');
+      }
+    }
+
+
   }
+
+
   if ($(window).width() < $xl) {
     jQuery(this).find('> .my-col').wrapAll('<div class="row my-row default-row jc-right"></div>');
   }
@@ -1158,6 +1154,41 @@ jQuery('.team-member-video-teaser-snippet:not(.stand-alone)').each(function(){
   jQuery(this).css('margin-bottom', - (HEIGHT - 200));
  jQuery(this).parents('.section-row').css('padding-bottom', (HEIGHT - 200));
  }
+});
+
+
+
+
+
+// paralax
+jQuery('.paralaxed-item-type-2').each(function(){
+  if ($(window).width() >= $lgDesktopEnds) {
+    jQuery(this).parallaxed({
+      speed: 0.5,
+    });
+  }else if ($(window).width() >= $xl) {
+    jQuery(this).parallaxed({
+      speed: 0.1,
+    });
+  }
+});
+jQuery('.paralaxed-item-type-1').each(function(){
+ if ($(window).width() >= $xl) {
+    jQuery(this).parallaxed({
+      speed: 1,
+    });
+  }
+});
+
+var controller = $.superscrollorama();
+jQuery('.paralax-pause-scroller.pause-scroller-type-1').each(function () {  
+  var PARENTS = jQuery(this);
+ 
+  var paralaxCard = TweenMax.to(
+    $(PARENTS).find('.slidings-tiles:nth-child(2n+1)'), .5, { css: { top: 0 } }
+  );
+  controller.pin(PARENTS, 900, { offset: -900, anim: paralaxCard });
+  
 });
 
 });

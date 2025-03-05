@@ -2742,6 +2742,9 @@
             letter-spacing: 0.4px;
             color: var(--site-grey-type-4);
             column-gap: 17px;
+            @media screen and (max-width: ($xl - 1px)){
+                column-gap: 5px;
+            }
             & > div{
                 &:last-child{
                     &::after{
@@ -2757,6 +2760,10 @@
                 }
                 span{
                     padding-right: 17px;
+
+                    @media screen and (max-width: ($xl - 1px)){
+                        padding-right: 5px;
+                    }
                 }
                 
             }
