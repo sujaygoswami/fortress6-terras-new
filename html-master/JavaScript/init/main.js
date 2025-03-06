@@ -180,9 +180,11 @@ site.PAGEBANNERWITHMINISLIDERRESPONSIVEPLACEMENTFORTABONLY = function() {
     jQuery('header.header .main-menu-expanded .site-nav li.has-sub-menu').hover(function(){
       var HEIGHT = jQuery(this).find('.submenu').height();
       jQuery(this).parents('.site-nav').css('min-height', HEIGHT + 60);
+      jQuery(this).parent().find('li').not(this).addClass('inactive');
     }, 
     function () {
       jQuery(this).parents('.site-nav').css('min-height','inherit');
+      jQuery(this).parent().find('li').removeClass('inactive');
     });
 
    

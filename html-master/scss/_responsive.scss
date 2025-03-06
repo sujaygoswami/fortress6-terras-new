@@ -1764,6 +1764,21 @@
 
 // for tab mobile
 
+// from desktop to tab
+@media screen and (min-width: $md) {
+    .terras {
+        .global-carousel{
+            &.hide-counter-desktop-tab{
+                .slider__counter{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+// from desktop to tab
+
 // from less lowsesktop to tab
 @media screen and (max-width: ($xl - 1px)) and (min-width: $md) {
     .terras {

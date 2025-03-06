@@ -102,6 +102,11 @@
                 &.site-nav {
                     & > ul{
                         & > li{
+                            @include transition(all 0.3s ease 0s);
+                            &.inactive{
+                                opacity: 0.2;
+                                pointer-events: none;
+                            }
                             & > a{
                                 width: 250px;
                             }
