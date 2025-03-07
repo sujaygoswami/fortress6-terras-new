@@ -20,6 +20,14 @@
             transition-duration: 1s;
             transition-timing-function: cubic-bezier(.125,.49,.295,1);
             transform: scale(1, 0.6);
+
+            .item-part{
+                .normal-text-element-module{
+                    p{
+                        line-height: 25px;
+                    }
+                }
+            }
         }
 
         &.expanded{
