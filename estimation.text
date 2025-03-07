@@ -255,7 +255,7 @@ This host key is known by the following other names/addresses:
     ~/.ssh/known_hosts:9: p657043.webspaceconfig.de
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Warning: Permanently added 'p683199.webspaceconfig.de' (ED25519) to the list of known hosts.
-p683199@p683199.webspaceconfig.de's password: 
+p683199@p683199.webspaceconfig.de's password: b0$a#qeme6hcNs
 p683199:~ > cd html/typo3-composer
 
 
