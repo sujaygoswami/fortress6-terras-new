@@ -30,7 +30,7 @@ function eraseCookie(name) {
 }
 $(window).load(function(){
 setCookie('mobileView','0',7);
-if ($(window).width() < 768) {
+if ($(window).width() <= 992) {
   setCookie('mobileView','1',7);
 }
 });

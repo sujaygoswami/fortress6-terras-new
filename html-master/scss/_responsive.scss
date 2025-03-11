@@ -75,7 +75,22 @@
     }
 }
 
+// from tab portrait to rest
+@media screen and (max-width: $lg) {
 
+    .terras {
+
+        // page-banner-module
+        .page-banner-module {
+            .page-banner-video-item{
+                video{
+                    width: 122% !important;
+                }
+            }
+        }
+    }
+
+}
 // for tab mobile
 @media screen and (max-width: ($xl - 1px)) {
     .terras {
@@ -84,7 +99,7 @@
 
 
         .ce-image{
-            .ce-gallery[data-ce-columns="4"]{
+            .ce-gallery[data-ce-columns="4"], .ce-gallery[data-ce-columns="3"]{
                 .ce-outer{
                     width: 100%;
                     position: static;
@@ -1027,6 +1042,8 @@
                     }
                 }
             }
+
+            
         }
 
         // page-banner-module

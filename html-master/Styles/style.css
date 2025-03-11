@@ -13992,26 +13992,30 @@ html, body {
     .terras .interactive-map-module .the-main-map.pos-2 .map-holder {
       max-width: 88%; } }
 
+@media screen and (max-width: 992px) {
+  .terras .page-banner-module .page-banner-video-item video {
+    width: 122% !important; } }
+
 @media screen and (max-width: 1199px) {
   .terras {
     padding-top: calc(var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter)); }
-    .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer {
+    .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer, .terras .ce-image .ce-gallery[data-ce-columns="3"] .ce-outer {
       width: 100%;
       position: static;
       float: none; }
-      .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer .ce-inner {
+      .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer .ce-inner, .terras .ce-image .ce-gallery[data-ce-columns="3"] .ce-outer .ce-inner {
         position: static;
         float: none; }
-        .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer .ce-inner .ce-row {
+        .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer .ce-inner .ce-row, .terras .ce-image .ce-gallery[data-ce-columns="3"] .ce-outer .ce-inner .ce-row {
           margin: 0 -10px 20px -10px;
           display: flex;
           row-gap: 20px;
           flex-wrap: wrap; }
-          .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer .ce-inner .ce-row .ce-column {
+          .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer .ce-inner .ce-row .ce-column, .terras .ce-image .ce-gallery[data-ce-columns="3"] .ce-outer .ce-inner .ce-row .ce-column {
             margin: 0px;
             padding: 0 10px;
             width: 50%; }
-            .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer .ce-inner .ce-row .ce-column img {
+            .terras .ce-image .ce-gallery[data-ce-columns="4"] .ce-outer .ce-inner .ce-row .ce-column img, .terras .ce-image .ce-gallery[data-ce-columns="3"] .ce-outer .ce-inner .ce-row .ce-column img {
               width: 100%; }
     .terras .page-main-title {
       padding-top: 20px; }
