@@ -82,6 +82,38 @@
         padding-top: calc(var(--header-height-mobile) + var(--mobile-header-top-bottom-gutter));
 
 
+
+        .ce-image{
+            .ce-gallery[data-ce-columns="4"]{
+                .ce-outer{
+                    width: 100%;
+                    position: static;
+                    float: none;
+                    .ce-inner{
+                        position: static;
+                        float: none;
+
+                        .ce-row{
+                            margin: 0 -10px 20px -10px;
+                            display: flex;
+                            row-gap: 20px;
+                            flex-wrap: wrap;
+                            .ce-column{
+                                margin: 0px;
+                                padding: 0 10px;
+                                width: 50%;
+
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
         // basic
         .page-main-title {
             padding-top: 20px;
@@ -2194,31 +2226,7 @@
 
 
 
-        .ce-image{
-            .ce-gallery[data-ce-columns="4"]{
-                .ce-outer{
-                    width: 100%;
-                    position: static;
-                    float: none;
-                    .ce-inner{
-                        position: static;
-                        float: none;
-
-                        .ce-row{
-                            margin: 0 -10px 20px -10px;
-                            display: flex;
-                            row-gap: 20px;
-                            flex-wrap: wrap;
-                            .ce-column{
-                                margin: 0px;
-                                padding: 0 10px;
-                                width: 50%;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        
 
 
         .only-mobile-global-mx-padding{
