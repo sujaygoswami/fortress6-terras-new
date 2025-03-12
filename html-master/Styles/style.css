@@ -12550,6 +12550,13 @@ html, body {
     padding-left: 10px;
     padding-right: 10px; }
 
+.terras .global-carousel.global-carousel-type-1.single-column-global-carousel .slick-list {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .terras .global-carousel.global-carousel-type-1.single-column-global-carousel .slick-list .slick-slide {
+    padding-left: 10px;
+    padding-right: 10px; }
+
 .terras .global-carousel .item:last-child .member-dp.has-oval-mask .oval-masked-img {
   -webkit-mask-image: url(../Images/Oval-no-cut-team.svg);
   mask-image: url(../Images/Oval-no-cut-team.svg); }
