@@ -12175,9 +12175,8 @@ html, body {
   bottom: 0px;
   z-index: 100;
   padding-top: 80px;
-  padding-bottom: 80px; }
-  .terras .page-banner-module .banner-context-item .normal-text-element-module {
-    max-width: 65%; }
+  padding-bottom: 80px;
+  width: 60%; }
 
 .terras .banner-mini-slider-module {
   position: absolute;
@@ -14453,19 +14452,18 @@ html, body {
       text-align: center;
       width: 100%;
       padding-top: 30px;
-      padding-bottom: 30px; }
-      .terras .page-banner-module .banner-context-item .normal-text-element-module {
-        max-width: inherit; }
-        .terras .page-banner-module .banner-context-item .normal-text-element-module .group-btn {
-          flex-direction: column;
-          row-gap: 15px;
-          display: inline-block; }
-          .terras .page-banner-module .banner-context-item .normal-text-element-module .group-btn .site-btn {
-            display: block;
-            padding-right: 50px;
-            margin-bottom: 15px; }
-            .terras .page-banner-module .banner-context-item .normal-text-element-module .group-btn .site-btn:last-child {
-              margin-bottom: 0px; }
+      padding-bottom: 30px;
+      max-width: inherit; }
+      .terras .page-banner-module .banner-context-item .normal-text-element-module .group-btn {
+        flex-direction: column;
+        row-gap: 15px;
+        display: inline-block; }
+        .terras .page-banner-module .banner-context-item .normal-text-element-module .group-btn .site-btn {
+          display: block;
+          padding-right: 50px;
+          margin-bottom: 15px; }
+          .terras .page-banner-module .banner-context-item .normal-text-element-module .group-btn .site-btn:last-child {
+            margin-bottom: 0px; }
     .terras .logo-stamp.pos1.mobile-view-1 {
       bottom: -40px; }
       .terras .logo-stamp.pos1.mobile-view-1 img {

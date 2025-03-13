@@ -1021,9 +1021,10 @@
                 width: 100%;
                 padding-top: 30px;
                 padding-bottom: 30px;
+                max-width: inherit;
 
                 .normal-text-element-module {
-                    max-width: inherit;
+                    
 
                     .group-btn {
                         flex-direction: column;
