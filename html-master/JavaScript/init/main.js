@@ -29,15 +29,16 @@ function eraseCookie(name) {
   document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 $(document).ready(function(){
+var videoHas = $('video').length;
 setCookie('mobileView','0',7);
 if ($(window).width() <= 992) {
   setCookie('mobileView','1',7);
 }
-if (getCookie('mobileView') == 1 && !getCookie('reload')){
+if (getCookie('mobileView') == 1 && !getCookie('reload') && videoHas){
   setCookie('reload','2',7);
   location.reload();
 }
-if (getCookie('mobileView') == 0 && getCookie('reload') == 2){
+if (getCookie('mobileView') == 0 && getCookie('reload') == 2 && videoHas){
   eraseCookie('reload');
   location.reload();
 }
