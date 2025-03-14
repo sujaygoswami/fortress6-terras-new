@@ -1714,6 +1714,14 @@
             padding-top: 80px;
             padding-bottom: 80px;
             width: 60%;
+
+            &:last-child{
+                width: 100%;
+
+                .normal-text-element-module{
+                    width: 60%;
+                }
+            }
             
         }
 

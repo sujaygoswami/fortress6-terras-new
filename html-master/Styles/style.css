@@ -12177,6 +12177,10 @@ html, body {
   padding-top: 80px;
   padding-bottom: 80px;
   width: 60%; }
+  .terras .page-banner-module .banner-context-item:last-child {
+    width: 100%; }
+    .terras .page-banner-module .banner-context-item:last-child .normal-text-element-module {
+      width: 60%; }
 
 .terras .banner-mini-slider-module {
   position: absolute;
@@ -14454,6 +14458,8 @@ html, body {
       padding-top: 30px;
       padding-bottom: 30px;
       max-width: inherit; }
+      .terras .page-banner-module .banner-context-item:last-child .normal-text-element-module {
+        width: 100%; }
       .terras .page-banner-module .banner-context-item .normal-text-element-module .group-btn {
         flex-direction: column;
         row-gap: 15px;

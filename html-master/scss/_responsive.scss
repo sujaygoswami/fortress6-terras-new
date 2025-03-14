@@ -1023,6 +1023,14 @@
                 padding-bottom: 30px;
                 max-width: inherit;
 
+                &:last-child{
+                    
+    
+                    .normal-text-element-module{
+                        width: 100%;
+                    }
+                }
+
                 .normal-text-element-module {
                     
 
