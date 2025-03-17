@@ -2228,6 +2228,9 @@
     .interactive-map-module{
         &.slider-functionality{
             .global-carousel{
+                .global-carousel-slider-navigate-wrap{
+                    margin-top: 20px !important;
+                }
                     &.single-column-global-carousel{
                         .slick-list{
                             margin-left: -10px;

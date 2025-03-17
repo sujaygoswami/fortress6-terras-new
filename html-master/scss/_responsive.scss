@@ -283,6 +283,11 @@
             padding-right: 30px;
         }
 
+        .mobile-global-mx-padding-md {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
         .mobile-global-mx-padding-xs {
             padding-left: 10px;
             padding-right: 10px;
@@ -1841,6 +1846,14 @@
 @media screen and (max-width: ($xl - 1px)) and (min-width: $md) {
     .terras {
 
+
+        .banner-context-item{
+            .site-iconic-flex-form{
+                max-width: 320px;
+                margin: 0 auto;
+            }
+        }
+
         // basic
         .mobile-global-mx-padding {
             padding-left: 50px;
@@ -2258,6 +2271,10 @@
         .only-mobile-global-mx-padding{
             padding-left: 20px;
             padding-right: 20px;
+        }
+        .only-mobile-global-mx-padding-md{
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         img {
