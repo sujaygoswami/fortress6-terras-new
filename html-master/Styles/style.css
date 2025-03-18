@@ -11080,6 +11080,9 @@ html, body {
       margin-left: -1.484375em;
       color: var(--site-global-dark); }
 
+.terras .site-text-color-primary {
+  color: var(--site-text-color-dark); }
+
 .terras .global-tag {
   display: flex;
   flex-wrap: wrap;
@@ -11992,33 +11995,42 @@ html, body {
     .terras .site-btn.animating-right-direction-arrow-btn span, .terras .btn.animating-right-direction-arrow-btn span {
       z-index: 1;
       position: relative; }
-    .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn {
+    .terras .site-btn.animating-right-direction-arrow-btn.back-btn, .terras .btn.animating-right-direction-arrow-btn.back-btn {
       background-image: none; }
-      .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i {
-        background-image: url(../Images/prev-arrow-type-1-white.svg);
+      .terras .site-btn.animating-right-direction-arrow-btn.back-btn i, .terras .btn.animating-right-direction-arrow-btn.back-btn i {
         right: inherit;
         left: 27px; }
         @media screen and (max-width: 1199px) {
-          .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i {
+          .terras .site-btn.animating-right-direction-arrow-btn.back-btn i, .terras .btn.animating-right-direction-arrow-btn.back-btn i {
             left: 16px; } }
-      .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em {
-        background-image: url(../Images/prev-arrow-type-1-white.svg);
+      .terras .site-btn.animating-right-direction-arrow-btn.back-btn em, .terras .btn.animating-right-direction-arrow-btn.back-btn em {
         right: inherit;
         left: 70px; }
         @media screen and (max-width: 1199px) {
-          .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em {
+          .terras .site-btn.animating-right-direction-arrow-btn.back-btn em, .terras .btn.animating-right-direction-arrow-btn.back-btn em {
             left: 60px; } }
-      .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover i, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover i {
+      .terras .site-btn.animating-right-direction-arrow-btn.back-btn:hover i, .terras .btn.animating-right-direction-arrow-btn.back-btn:hover i {
         left: -28px; }
-      .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover em, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover em {
+      .terras .site-btn.animating-right-direction-arrow-btn.back-btn:hover em, .terras .btn.animating-right-direction-arrow-btn.back-btn:hover em {
         left: 27px; }
       @media screen and (max-width: 1199px) {
-        .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover i, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover i {
+        .terras .site-btn.animating-right-direction-arrow-btn.back-btn:hover i, .terras .btn.animating-right-direction-arrow-btn.back-btn:hover i {
           left: -25px; }
-        .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover em, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn:hover em {
+        .terras .site-btn.animating-right-direction-arrow-btn.back-btn:hover em, .terras .btn.animating-right-direction-arrow-btn.back-btn:hover em {
           left: 16px; } }
+    .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn i {
+      background-image: url(../Images/prev-arrow-type-1-white.svg); }
+    .terras .site-btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em, .terras .btn.animating-right-direction-arrow-btn.primary-color-btn.back-btn em {
+      background-image: url(../Images/prev-arrow-type-1-white.svg); }
+    .terras .site-btn.animating-right-direction-arrow-btn.light-color-btn.back-btn i, .terras .btn.animating-right-direction-arrow-btn.light-color-btn.back-btn i {
+      background-image: url(../Images/prev-arrow-type-1-dark.svg); }
+    .terras .site-btn.animating-right-direction-arrow-btn.light-color-btn.back-btn em, .terras .btn.animating-right-direction-arrow-btn.light-color-btn.back-btn em {
+      background-image: url(../Images/prev-arrow-type-1-dark.svg); }
   .terras .site-btn.primary-color-btn, .terras .site-btn.btn-primary, .terras .btn.primary-color-btn, .terras .btn.btn-primary {
     background-color: var(--site-primary-color); }
+  .terras .site-btn.light-color-btn, .terras .site-btn.btn-light, .terras .btn.light-color-btn, .terras .btn.btn-light {
+    background-color: white;
+    color: var(--site-text-color-dark); }
   .terras .site-btn.transparent-bg-color-btn, .terras .btn.transparent-bg-color-btn {
     background-color: transparent;
     width: 23.84px;
@@ -14978,6 +14990,9 @@ html, body {
         right: 0px; } }
 
 @media screen and (max-width: 767px) {
+  .terras .site-logo-holder .logo-part {
+    border-right: none;
+    padding-right: 0px; }
   .terras .only-mobile-global-mx-padding {
     padding-left: 20px;
     padding-right: 20px; }

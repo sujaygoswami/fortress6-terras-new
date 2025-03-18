@@ -809,6 +809,9 @@ jQuery('.email-icon, .phone-icon').each(function(){
 jQuery('.site-btn:not(.down-arrow-btn):not(.reload-btn)').addClass('animating-right-direction-arrow-btn');
 jQuery('.site-btn.animating-right-direction-arrow-btn').wrapInner('<span></span>');
 jQuery('.site-btn.animating-right-direction-arrow-btn').append('<em></em><i></i>');
+jQuery('.site-btn.light-color-btn').addClass('has-dark-arrow');
+
+
 
 
 

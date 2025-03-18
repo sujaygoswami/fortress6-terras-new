@@ -262,11 +262,34 @@ p683199:~ > cd html/typo3-composer
 MERGE LIVE
 ======================
 
+"git stash" to get last commit
+
+git diff filename
+
+
+
+
 git checkout staging
 git pull
 git checkout main
+
+git pull
+
+
+git branch
+
 git merge staging
+
+git commit -m "staging to live"
+
 git push
+
+git rebase origin/main
+git rebase origin/staging
+
+
+ssh terqmncg@37.228.155.55
+q#!%#3$d4wAu
 
 
 
