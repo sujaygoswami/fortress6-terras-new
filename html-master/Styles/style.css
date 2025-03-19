@@ -11335,6 +11335,9 @@ html, body {
 .terras .site-bg-grey-type-3 {
   background-color: var(--site-grey-type-3); }
 
+.terras .site-bg-grey-type-4 {
+  background-color: var(--site-grey-type-4); }
+
 .terras .desktop-invert-row-resolution-type-1 {
   flex-direction: row-reverse; }
 
@@ -12150,6 +12153,11 @@ html, body {
   .terras .special-collage-grid-layout .my-col.md-col {
     width: 20%;
     flex-grow: 1; } }
+
+.terras .page-banner-module.static-height {
+  height: 625px; }
+  .terras .page-banner-module.static-height.layout-2 {
+    height: 918px; }
 
 .terras .page-banner-module.height-view-1 {
   height: calc(100vh - (var(--header-height) + var(--grid-gutter) * 3)); }
@@ -14441,6 +14449,10 @@ html, body {
         width: 16px; }
         .terras .job-card-module .footer-info .info-box i img {
           max-width: 16px; }
+    .terras .page-banner-module.static-height {
+      height: 500px; }
+      .terras .page-banner-module.static-height.layout-2 {
+        height: 670px; }
     .terras .page-banner-module + .banner-mini-slider-module {
       position: static;
       padding: 0px;

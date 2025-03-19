@@ -371,6 +371,11 @@
     .site-bg-grey-type-3{
         background-color: var(--site-grey-type-3);
     }
+    .site-bg-grey-type-4{
+        background-color: var(--site-grey-type-4);
+    }
+
+    
     .desktop-invert-row-resolution-type-1{
         flex-direction: row-reverse;
     }
@@ -1657,6 +1662,14 @@
     .page-banner-module{
 
         
+            &.static-height{
+                height: 625px;
+    
+                &.layout-2{
+                    height: 918px;
+                }
+            }
+        
 
 
         &.height-view-1{
@@ -1873,6 +1886,8 @@
             }
             
         }
+
+        
 
         &.static-banner{
             min-height: 625px;

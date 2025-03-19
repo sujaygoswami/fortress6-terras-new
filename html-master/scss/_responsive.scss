@@ -963,6 +963,13 @@
 
         // page-banner-module
         .page-banner-module {
+            &.static-height{
+                height: 500px;
+    
+                &.layout-2{
+                    height: 670px;
+                }
+            }
             &+.banner-mini-slider-module {
                 position: static;
                 padding: 0px;
