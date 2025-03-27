@@ -2,6 +2,25 @@
 
 
     // basic starts
+    .global-seprate-link{
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+
+        p{
+            margin: 0px;
+            &:after{
+                content: '|';
+                padding-left: 12px;
+            }
+
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
     .site-text-color-primary{
         color: var(--site-text-color-dark);
     }
@@ -568,6 +587,9 @@
             }
             &.view-13{
                 padding: 25px;
+            }
+            &.view-14{
+                padding: 75px;
             }
         }
         

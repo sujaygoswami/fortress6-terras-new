@@ -11080,6 +11080,18 @@ html, body {
       margin-left: -1.484375em;
       color: var(--site-global-dark); }
 
+.terras .global-seprate-link {
+  display: flex;
+  align-items: center;
+  column-gap: 12px; }
+  .terras .global-seprate-link p {
+    margin: 0px; }
+    .terras .global-seprate-link p:after {
+      content: '|';
+      padding-left: 12px; }
+    .terras .global-seprate-link p:last-child:after {
+      display: none; }
+
 .terras .site-text-color-primary {
   color: var(--site-text-color-dark); }
 
@@ -11492,7 +11504,9 @@ html, body {
   .terras .global-card-content.view-12, .terras .inset-card-content.view-12 {
     padding: 30px; }
   .terras .global-card-content.view-13, .terras .inset-card-content.view-13 {
-    padding: 25px; } }
+    padding: 25px; }
+  .terras .global-card-content.view-14, .terras .inset-card-content.view-14 {
+    padding: 75px; } }
 
 .terras .grid-flex-v-align-center {
   align-items: center; }
