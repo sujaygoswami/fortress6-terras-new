@@ -796,7 +796,7 @@ jQuery('.global-carousel:not(.counter-hidden)').each(function(){
 
 
 // integration label changes
-jQuery('.primary-color-btn, .outline-btn').addClass('site-btn');
+jQuery('.primary-color-btn, .outline-btn, .light-color-btn').addClass('site-btn');
 jQuery('.banner-text p').addClass('group-btn');
 jQuery('.half-height:not(.keep-half-height-tab-mobile)').parent('.full-height').addClass('mobile-full-height-remove');
 jQuery('h1.special-lg').addClass('mb-0');
