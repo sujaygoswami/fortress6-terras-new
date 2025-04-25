@@ -153,14 +153,14 @@
                                 display: flex;
                                 align-items: center;
                                 
-                                &:hover{
-                                    @media screen and (min-width: $xl) {
-                                        ul.submenu{
-                                            opacity: 1;
-                                            pointer-events: auto;
-                                        }
-                                    }
-                                }
+                                // &:hover{
+                                //     @media screen and (min-width: $xl) {
+                                //         ul.submenu{
+                                //             opacity: 1;
+                                //             pointer-events: auto;
+                                //         }
+                                //     }
+                                // }
                               
                                 
 
@@ -186,6 +186,11 @@
                                         opacity: 0;
                                         pointer-events: none;
                                         min-height: 100%;
+
+                                        &.active{
+                                            opacity: 1;
+                                            pointer-events: auto;
+                                        }
 
                                         & > li{
                                             list-style: none;

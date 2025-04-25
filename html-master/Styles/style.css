@@ -10901,10 +10901,6 @@ html, body {
           .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu {
             display: flex;
             align-items: center; }
-            @media screen and (min-width: 1200px) {
-              .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu:hover ul.submenu {
-                opacity: 1;
-                pointer-events: auto; } }
             .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu .sub-item-trigger {
               pointer-events: none; }
               .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu .sub-item-trigger i {
@@ -10921,6 +10917,9 @@ html, body {
               opacity: 0;
               pointer-events: none;
               min-height: 100%; }
+              .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu.active {
+                opacity: 1;
+                pointer-events: auto; }
               .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu > li {
                 list-style: none;
                 margin: 0px !important;

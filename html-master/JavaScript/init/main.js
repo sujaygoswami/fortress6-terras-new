@@ -186,14 +186,30 @@ site.PAGEBANNERWITHMINISLIDERRESPONSIVEPLACEMENTFORTABONLY = function() {
   // menu items sub menu hover
   site.MAINMENUSUBMENUFUNCTION = function() {
 
-    jQuery('header.header .main-menu-expanded .site-nav li.has-sub-menu').hover(function(){
+    var ACTIONSELECTOR = jQuery('.main-menu-expanded .site-nav > ul > li');
+
+
+    jQuery(ACTIONSELECTOR).mouseenter(function(e){
+
       var HEIGHT = jQuery(this).find('.submenu').height();
       jQuery(this).parents('.site-nav').css('min-height', HEIGHT + 60);
-      jQuery(this).parent().find('li').not(this).addClass('inactive');
-    }, 
-    function () {
-      jQuery(this).parents('.site-nav').css('min-height','inherit');
-      jQuery(this).parent().find('li').removeClass('inactive');
+      jQuery(this).parents('.site-nav').find('> ul > li').not(this).addClass('inactive');
+
+      // jQuery('.main-menu-expanded li.has-sub-menu').not(this).parent().find('.submenu').removeClass('active');
+
+      // jQuery(this).parent().find('.submenu').addClass('active');
+
+      e.stopPropagation();
+    });
+    jQuery('.main-menu-expanded .menu-items > .site-nav').mouseleave(function(e){
+
+    //  jQuery(this).find('.submenu').removeClass('active');
+
+     jQuery(this).css('min-height','inherit');
+     jQuery(this).find('li').removeClass('inactive');
+    
+
+      e.stopPropagation();
     });
 
    
