@@ -186,27 +186,32 @@ site.PAGEBANNERWITHMINISLIDERRESPONSIVEPLACEMENTFORTABONLY = function() {
   // menu items sub menu hover
   site.MAINMENUSUBMENUFUNCTION = function() {
 
-    var ACTIONSELECTOR = jQuery('.main-menu-expanded .site-nav > ul > li');
+    var ACTIONSELECTOR = jQuery('.main-menu-expanded .site-nav > ul > li.parent-menu > a');
 
 
     jQuery(ACTIONSELECTOR).mouseenter(function(e){
 
-      var HEIGHT = jQuery(this).find('.submenu').height();
+      var HEIGHT = jQuery(this).parent().find('.submenu').height();
       jQuery(this).parents('.site-nav').css('min-height', HEIGHT + 60);
-      jQuery(this).parents('.site-nav').find('> ul > li').not(this).addClass('inactive');
+      jQuery(this).parents('.site-nav').find('> ul > li.parent-menu > a').not(this).parent().addClass('inactive');
+      jQuery(this).parent().removeClass('inactive');
+      jQuery(this).parents('.site-nav').find('> ul > li.parent-menu > a').not(this).parent().removeClass('hovered');
+      jQuery(this).parent().addClass('hovered');
 
-      // jQuery('.main-menu-expanded li.has-sub-menu').not(this).parent().find('.submenu').removeClass('active');
+      jQuery('.main-menu-expanded li.has-sub-menu > a').not(this).parent().find('.submenu').removeClass('active');
 
-      // jQuery(this).parent().find('.submenu').addClass('active');
+      jQuery(this).parent().find('.submenu').addClass('active');
+      jQuery(this).parent().find('.submenu').show();
 
       e.stopPropagation();
     });
     jQuery('.main-menu-expanded .menu-items > .site-nav').mouseleave(function(e){
 
-    //  jQuery(this).find('.submenu').removeClass('active');
+     jQuery(this).find('.submenu').removeClass('active');
+     jQuery(this).parent().find('.submenu').hide();
 
      jQuery(this).css('min-height','inherit');
-     jQuery(this).find('li').removeClass('inactive');
+     jQuery(this).find('li.parent-menu').removeClass('inactive hovered');
     
 
       e.stopPropagation();
@@ -1213,6 +1218,10 @@ jQuery('.paralax-pause-scroller.pause-scroller-type-1').each(function () {
   controller.pin(PARENTS, 900, { offset: -900, anim: paralaxCard });
   
 });
+
+if ($(window).width() >= $xl) {
+  jQuery('.main-menu-expanded .submenu').hide();
+};
 
 });
 

@@ -56,14 +56,15 @@
 
         <!-- main menu -->
         <div class="main-menu-expanded animated">
+            <!-- menu close -->
+            <div class="menu-close">
+                <div class="back-link-to-parent-menu d-block d-xl-none">Zurück</div>
+                <div class="global-action-icon close-icon-type-1"></div>
+            </div>
+            <!-- menu close -->
             <div class="item-holder">
                 <div class="main-wrap">
-                    <!-- menu close -->
-                    <div class="menu-close">
-                        <div class="back-link-to-parent-menu d-block d-xl-none">Zurück</div>
-                        <div class="global-action-icon close-icon-type-1"></div>
-                    </div>
-                    <!-- menu close -->
+                    
 
                     <div class="menu-items-wrap">
                         <!-- menu items -->
@@ -72,9 +73,9 @@
                             <!-- item part -->
                             <div class="item-part global-item-part lg-part item-global-mx-padding site-nav">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Stellenangebote</a></li>
-                                    <li class="has-sub-menu">
+                                    <li class="parent-menu"><a href="#">Home</a></li>
+                                    <li class="parent-menu"><a href="#">Stellenangebote</a></li>
+                                    <li class="parent-menu has-sub-menu">
                                         <a href="#">Einsatzbereiche</a>
                                         <span class="sub-item-trigger"><i class="fa fa-angle-right"></i></span>
                                         <ul class="submenu">
@@ -127,8 +128,8 @@
 
                                         </ul>
                                     </li>
-                                    <li><a href="#">Berufe im Tiefbau</a></li>
-                                    <li class="has-sub-menu">
+                                    <li class="parent-menu"><a href="#">Berufe im Tiefbau</a></li>
+                                    <li class="has-sub-menu parent-menu">
                                         <a href="#">Unternehmen</a>
                                         <span class="sub-item-trigger"><i class="fa fa-angle-right"></i></span>
                                         <ul class="submenu">
@@ -143,8 +144,8 @@
                                            
                                         </ul>
                                     </li>
-                                    <li><a href="#">Messen</a></li>
-                                    <li><a href="#">FAQ</a></li>
+                                    <li class="parent-menu"><a href="#">Messen</a></li>
+                                    <li class="parent-menu"><a href="#">FAQ</a></li>
                                 </ul>
                             </div>
                             <!-- item part -->
@@ -401,7 +402,7 @@
                                     <div
                                         class="page-banner-module global-border-radius-all height-view-1 pos-relative traingle-view-1 traingle-watermark-has mobile-height-view-2">
                                         <!-- video item -->
-                                        <div class="page-banner-video-item global-border-radius-all overflow-hidden">
+                                        <div class="page-banner-video-item global-border-radius-all overflow-hidden d-none">
                                             <div class="overlay-1"></div>
                                             <div class="overlay-2"></div>
 
@@ -417,7 +418,7 @@
 
                                         <!-- image item -->
                                         <div
-                                            class="page-banner-img-item global-border-radius-all overflow-hidden d-none">
+                                            class="page-banner-img-item global-border-radius-all overflow-hidden">
                                             <!-- cover bg content module -->
 
 

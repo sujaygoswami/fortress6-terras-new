@@ -2977,6 +2977,8 @@
             padding: 0px;
             display: flex;
             column-gap: 15px;
+            flex-wrap: wrap;
+            row-gap: 15px;
 
             li{
                 margin: 0px;

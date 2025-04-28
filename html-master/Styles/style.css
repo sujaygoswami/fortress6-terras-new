@@ -10813,7 +10813,14 @@ html, body {
   background-size: cover;
   background-position: left top;
   background-repeat: no-repeat;
-  display: none; }
+  display: none;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+  @media screen and (max-width: 1199px) {
+    .terras .main-menu-expanded.mobile-sub-menu-open .item-holder {
+      overflow-y: hidden; } }
+  .terras .main-menu-expanded .menu-items-wrap {
+    margin-top: 115px; }
   .terras .main-menu-expanded .menu-items {
     transform-origin: top;
     will-change: transform;
@@ -10826,7 +10833,10 @@ html, body {
   .terras .main-menu-expanded.expanded .menu-items {
     transform: scale(1); }
   .terras .main-menu-expanded .menu-close {
-    margin-bottom: 30px; }
+    margin-bottom: 0px;
+    position: fixed;
+    right: 50px;
+    top: 50px; }
     .terras .main-menu-expanded .menu-close .global-action-icon {
       margin-left: auto; }
   .terras .main-menu-expanded .item-global-mx-padding {
@@ -10878,8 +10888,7 @@ html, body {
         -webkit-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s; }
         .terras .main-menu-expanded .menu-items .item-part.site-nav > ul > li.inactive {
-          opacity: 0.2;
-          pointer-events: none; }
+          opacity: 0.2; }
         .terras .main-menu-expanded .menu-items .item-part.site-nav > ul > li > a {
           width: 250px; }
       .terras .main-menu-expanded .menu-items .item-part.site-nav ul {
@@ -10894,9 +10903,9 @@ html, body {
           line-height: normal;
           letter-spacing: 0.72px;
           font-family: var(--site-secondary-font); }
-          .terras .main-menu-expanded .menu-items .item-part.site-nav ul li:hover > a {
+          .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.hovered > a {
             color: var(--site-primary-color); }
-            .terras .main-menu-expanded .menu-items .item-part.site-nav ul li:hover > a + .sub-item-trigger i {
+            .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.hovered > a + .sub-item-trigger i {
               color: var(--site-primary-color); }
           .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu {
             display: flex;
@@ -10916,7 +10925,10 @@ html, body {
               top: 0px;
               opacity: 0;
               pointer-events: none;
-              min-height: 100%; }
+              min-height: 100%;
+              z-index: 1; }
+              .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu.first-load {
+                display: none; }
               .terras .main-menu-expanded .menu-items .item-part.site-nav ul li.has-sub-menu ul.submenu.active {
                 opacity: 1;
                 pointer-events: auto; }
@@ -10963,14 +10975,13 @@ html, body {
     .terras .main-menu-expanded .menu-items:last-child {
       margin-bottom: 0px; }
   .terras .main-menu-expanded .item-holder {
-    padding: 25px; }
+    padding: 25px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto; }
     @media screen and (min-width: 1366px) {
       .terras .main-menu-expanded .item-holder {
         padding: 50px; } }
-    .terras .main-menu-expanded .item-holder .menu-items-wrap {
-      max-height: 80vh;
-      overflow-x: hidden;
-      overflow-y: auto; }
 
 .terras .site-logo-holder {
   display: flex;
@@ -13031,7 +13042,9 @@ html, body {
   margin: 0px;
   padding: 0px;
   display: flex;
-  column-gap: 15px; }
+  column-gap: 15px;
+  flex-wrap: wrap;
+  row-gap: 15px; }
   .terras .bredcrumb-module ul li {
     margin: 0px;
     padding: 0px;
@@ -14437,7 +14450,8 @@ html, body {
       .terras header.header .main-menu-expanded .item-holder {
         padding: 25px; }
         .terras header.header .main-menu-expanded .item-holder .menu-items-wrap {
-          padding-top: 65px; }
+          padding-top: 65px;
+          margin-top: 0px; }
         .terras header.header .main-menu-expanded .item-holder > .main-wrap {
           min-width: inherit;
           width: 100%; }
@@ -14718,7 +14732,8 @@ html, body {
       letter-spacing: 0.38px;
       column-gap: 9px; }
     .terras .bredcrumb-module ul {
-      column-gap: 10px; }
+      column-gap: 10px;
+      row-gap: 10px; }
       .terras .bredcrumb-module ul li {
         font-size: 16px;
         letter-spacing: 0.32px; }

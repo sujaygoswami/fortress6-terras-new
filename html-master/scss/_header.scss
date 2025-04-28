@@ -12,6 +12,20 @@
         background-position: left top;
         background-repeat: no-repeat;
         display: none;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        &.mobile-sub-menu-open{
+            .item-holder{
+                @media screen and (max-width: ($xl - 1px)) {
+                    overflow-y: hidden;
+                }
+            }
+        }
+
+        .menu-items-wrap{
+            margin-top: 115px;
+        }
 
         .menu-items{
             transform-origin: top;
@@ -37,7 +51,10 @@
         }
 
         .menu-close {
-            margin-bottom: 30px;
+            margin-bottom: 0px;
+            position: fixed;
+            right: 50px;
+            top: 50px;
 
             .global-action-icon {
                 margin-left: auto;
@@ -113,7 +130,6 @@
                             @include transition(all 0.3s ease 0s);
                             &.inactive{
                                 opacity: 0.2;
-                                pointer-events: none;
                             }
                             & > a{
                                 width: 250px;
@@ -135,7 +151,7 @@
                             font-family: var(--site-secondary-font);
                             
 
-                            &:hover{
+                            &.hovered{
                                 & > a{
                                     color: var(--site-primary-color);
 
@@ -153,14 +169,7 @@
                                 display: flex;
                                 align-items: center;
                                 
-                                // &:hover{
-                                //     @media screen and (min-width: $xl) {
-                                //         ul.submenu{
-                                //             opacity: 1;
-                                //             pointer-events: auto;
-                                //         }
-                                //     }
-                                // }
+                                
                               
                                 
 
@@ -186,6 +195,11 @@
                                         opacity: 0;
                                         pointer-events: none;
                                         min-height: 100%;
+                                        z-index: 1;
+
+                                        &.first-load{
+                                            display: none;
+                                        }
 
                                         &.active{
                                             opacity: 1;
@@ -273,6 +287,11 @@
 
         .item-holder {
             padding: 25px;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            
            
 
             @media screen and (min-width: $lowResDesktopEnds) {
@@ -280,11 +299,7 @@
             }
 
 
-            .menu-items-wrap{
-                max-height: 80vh;
-                overflow-x: hidden;
-                overflow-y: auto;
-            }
+           
 
 
             
