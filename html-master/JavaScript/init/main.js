@@ -991,6 +991,7 @@ if ($(window).width() >= $xl)  {
 jQuery('.site-datepicker').each(function(){
   jQuery(this).datepicker({
     dateFormat: 'dd.mm.yy',
+    minDate: "+1"
   });
 });
 

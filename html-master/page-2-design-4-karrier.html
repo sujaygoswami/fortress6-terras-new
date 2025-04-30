@@ -15,7 +15,7 @@
     <script src="JavaScript/lib/modernizr.js"></script>
     <style>
         :root {
-            --fancy-modal-bg: url(../Images/verlauf_rot.jpg);
+            --fancy-modal-bg: url(../Images/application-form-bg-global.png);
         }
     </style>
 </head>
@@ -1108,6 +1108,7 @@
                                         <div class="site-modal layout-1" id="dialog-content">
                                             <div class="modal-header text-white pull-text-center d-grid">
                                                 <h3>Deine Initiativbewerbung</h3>
+                                                <p><strong>Bohrhelfer:in / Maschinenführer:in / Allrounder:in (m/w/d)</strong><br> bei BBU Dr. Schubert GmbH</p>
                                             </div>
                                             <div class="main-content-holder bg-white global-border-radius-all">
                                                 <!-- site iconic flex form -->
@@ -1201,21 +1202,7 @@
 
                                                             <!-- group row -->
                                                             <div class="row my-row group-row default-row-plus">
-                                                                <!-- group-col -->
-                                                                <div class="col-12 my-col group-col">
-                                                                    <!-- form-field -->
-                                                                    <div
-                                                                        class="form-field cover-filed light-bg bordered site-dropdown-module-global">
-                                                                        <div class="overlaped-field-label"><span>Straße,
-                                                                                Nr. <i>*</i></span></div>
-                                                                        <div class="main-reactive-item bg-transparent">
-                                                                            <input type="text" placeholder="Straße, Nr."
-                                                                                class="text-input opech-place-holder">
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--form-field  -->
-                                                                </div>
-                                                                <!-- group-col -->
+
                                                                 <!-- group-col -->
                                                                 <div class="col-md-6 col-12 my-col group-col">
                                                                     <!-- form-field -->
@@ -1248,41 +1235,7 @@
                                                                 </div>
                                                                 <!-- group-col -->
 
-                                                                <!-- group-col -->
-                                                                <div class="col-md-6 col-12 my-col group-col">
-                                                                    <!-- form-field -->
-                                                                    <div
-                                                                        class="form-field cover-filed dropdown light-bg bordered site-dropdown-module-global">
-                                                                        <div class="overlaped-field-label"><span>Land
-                                                                                <i>*</i></span></div>
-                                                                        <button
-                                                                            class="dropdown-toggle main-reactive-item bg-transparent not-choosed-yet"
-                                                                            type="button" data-bs-toggle="dropdown"
-                                                                            aria-expanded="false">
-                                                                            <span>Bitte wählen</span>
-                                                                        </button>
-                                                                        <ul class="dropdown-menu px-0">
-                                                                            <li class="item-select">
-                                                                                <div class="item-check-radio">
-                                                                                    <input type="radio"
-                                                                                        class="check-radio" name="area">
-                                                                                    <div class="clone-check"></div>
-                                                                                    <label>Area 1</label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li class="item-select">
-                                                                                <div class="item-check-radio">
-                                                                                    <input type="radio"
-                                                                                        class="check-radio" name="area">
-                                                                                    <div class="clone-check"></div>
-                                                                                    <label>Area 2</label>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <!--form-field  -->
-                                                                </div>
-                                                                <!-- group-col -->
+
                                                             </div>
                                                             <!-- group row -->
                                                         </div>
@@ -1327,13 +1280,108 @@
                                                                 </div>
                                                                 <!-- group-col -->
 
+
+
+
+                                                            </div>
+                                                            <!-- group row -->
+                                                        </div>
+                                                        <!-- field group -->
+
+                                                        <!-- field group -->
+                                                        <div class="field-group">
+                                                            <div class="group-header">
+                                                                <h5>Dein Einstieg</h5>
+                                                            </div>
+
+                                                            <!-- group row -->
+                                                            <div class="row my-row group-row default-row-plus">
+
+
+                                                                <!-- group-col -->
+                                                                <div class="col-md-6 col-12 my-col group-col">
+                                                                    <!-- form-field -->
+                                                                    <div
+                                                                        class="form-field cover-filed light-bg bordered site-dropdown-module-global">
+                                                                        <div class="overlaped-field-label">
+                                                                            <span>Frühestes Startdatum</span>
+                                                                        </div>
+                                                                        <div class="main-reactive-item bg-transparent">
+                                                                            <input type="text" placeholder="TT.MM.JJJJ"
+                                                                                class="text-input opech-place-holder site-datepicker">
+                                                                            <img src="Images/noun-calender-2-dark.svg"
+                                                                                width="30">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--form-field  -->
+                                                                </div>
+                                                                <!-- group-col -->
+
+
+
+
+                                                            </div>
+                                                            <!-- group row -->
+                                                        </div>
+                                                        <!-- field group -->
+
+
+
+                                                        <!-- field group -->
+                                                        <div class="field-group">
+                                                            <div class="group-header">
+                                                                <h5>Bewerbungsunterlagen hochladen</h5>
+                                                                <p>Lade hier Lebenslauf, Anschreiben, Arbeitszeugnisse,
+                                                                    etc. hoch.<br> Du kannst bis zu <strong>10
+                                                                        Dateien</strong> hochladen (erlaubte
+                                                                    Dateiendung: PDF, PNG, JPG / max. 25 MB)
+                                                                </p>
+                                                            </div>
+
+                                                            <!-- group row -->
+                                                            <div class="row my-row group-row default-row-plus">
+                                                                <!-- group-col -->
+                                                                <div class="col-12 my-col group-col">
+                                                                    <div class="site-dropzone">
+                                                                        <form action="/target" class="dropzone"
+                                                                            id="my-great-dropzone">
+                                                                            <div class="dz-message" data-dz-message>
+                                                                                <span class="drop-icon"><i><img
+                                                                                            src="Images/noun-file-upload.svg"
+                                                                                            width="30"></i></span>
+                                                                                <span class="primary-msg">Dateien
+                                                                                    durchsuchen</span>
+                                                                                <span class="secondary-msg">oder per
+                                                                                    Drag and Drop hochladen</span>
+                                                                            </div>
+                                                                        </form>
+
+                                                                    </div>
+                                                                </div>
+                                                                <!-- group-col -->
+
+                                                            </div>
+                                                            <!-- group row -->
+                                                        </div>
+                                                        <!-- field group -->
+
+
+                                                        <!-- field group -->
+                                                        <div class="field-group">
+
+
+                                                            <!-- group row -->
+                                                            <div class="row my-row group-row default-row-plus">
+
+
                                                                 <!-- group-col -->
                                                                 <div class="col-12 my-col group-col">
                                                                     <!-- form-field -->
                                                                     <div
                                                                         class="form-field cover-filed light-bg bordered site-dropdown-module-global">
                                                                         <div class="overlaped-field-label">
-                                                                            <span>LinkedIn</span></div>
+                                                                            <span>LinkedIn</span>
+                                                                        </div>
                                                                         <div class="main-reactive-item bg-transparent">
                                                                             <input type="text"
                                                                                 placeholder="Link zu deinem LinkedIn Profil"
@@ -1352,239 +1400,16 @@
                                                         </div>
                                                         <!-- field group -->
 
-                                                        <!-- field group -->
-                                                        <div class="field-group">
-                                                            <div class="group-header">
-                                                                <h5>Deine Wunschposition</h5>
-                                                            </div>
 
-                                                            <!-- group row -->
-                                                            <div class="row my-row group-row default-row-plus">
-                                                                <!-- group-col -->
-                                                                <div class="col-md-6 col-12 my-col group-col">
-                                                                    <!-- form-field -->
-                                                                    <div
-                                                                        class="form-field cover-filed dropdown light-bg bordered site-dropdown-module-global">
-                                                                        <div class="overlaped-field-label">
-                                                                            <span>Einsatzbereich
-                                                                                <i>*</i></span></div>
-                                                                        <button
-                                                                            class="dropdown-toggle main-reactive-item bg-transparent not-choosed-yet"
-                                                                            type="button" data-bs-toggle="dropdown"
-                                                                            aria-expanded="false">
-                                                                            <span>Bitte wählen</span>
-                                                                        </button>
-                                                                        <ul class="dropdown-menu px-0">
-                                                                            <li class="item-select">
-                                                                                <div class="item-check-radio">
-                                                                                    <input type="radio"
-                                                                                        class="check-radio" name="area">
-                                                                                    <div class="clone-check"></div>
-                                                                                    <label>Area 1</label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li class="item-select">
-                                                                                <div class="item-check-radio">
-                                                                                    <input type="radio"
-                                                                                        class="check-radio" name="area">
-                                                                                    <div class="clone-check"></div>
-                                                                                    <label>Area 2</label>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <!--form-field  -->
-                                                                </div>
-                                                                <!-- group-col -->
-                                                                <!-- group-col -->
-                                                                <div class="col-md-6 col-12 my-col group-col">
-                                                                    <!-- form-field -->
-                                                                    <div
-                                                                        class="form-field cover-filed dropdown light-bg bordered site-dropdown-module-global">
-                                                                        <div class="overlaped-field-label">
-                                                                            <span>Unternehmen</span></div>
-                                                                        <button
-                                                                            class="dropdown-toggle main-reactive-item bg-transparent not-choosed-yet"
-                                                                            type="button" data-bs-toggle="dropdown"
-                                                                            aria-expanded="false">
-                                                                            <span>Bitte wählen</span>
-                                                                        </button>
-                                                                        <ul class="dropdown-menu px-0">
-                                                                            <li class="item-select">
-                                                                                <div class="item-check-radio">
-                                                                                    <input type="radio"
-                                                                                        class="check-radio" name="area">
-                                                                                    <div class="clone-check"></div>
-                                                                                    <label>Area 1</label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li class="item-select">
-                                                                                <div class="item-check-radio">
-                                                                                    <input type="radio"
-                                                                                        class="check-radio" name="area">
-                                                                                    <div class="clone-check"></div>
-                                                                                    <label>Area 2</label>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <!--form-field  -->
-                                                                </div>
-                                                                <!-- group-col -->
-                                                                <!-- group-col -->
-                                                                <div class="col-md-6 col-12 my-col group-col">
-                                                                    <!-- form-field -->
-                                                                    <div
-                                                                        class="form-field cover-filed light-bg bordered site-dropdown-module-global">
-                                                                        <div class="overlaped-field-label">
-                                                                            <span>Frühestes Startdatum</span></div>
-                                                                        <div class="main-reactive-item bg-transparent">
-                                                                            <input type="text" placeholder="TT.MM.JJJJ"
-                                                                                class="text-input opech-place-holder site-datepicker">
-                                                                            <img src="Images/noun-calender-2-dark.svg"
-                                                                                width="30">
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--form-field  -->
-                                                                </div>
-                                                                <!-- group-col -->
-
-                                                                <!-- group-col -->
-                                                                <div class="col-md-6 col-12 my-col group-col">
-                                                                    <!-- form-field -->
-                                                                    <div
-                                                                        class="form-field cover-filed dropdown light-bg bordered site-dropdown-module-global">
-                                                                        <div class="overlaped-field-label">
-                                                                            <span>Beschäftigungsart</span></div>
-                                                                        <button
-                                                                            class="dropdown-toggle main-reactive-item bg-transparent not-choosed-yet"
-                                                                            type="button" data-bs-toggle="dropdown"
-                                                                            aria-expanded="false">
-                                                                            <span>Bitte wählen</span>
-                                                                        </button>
-                                                                        <ul class="dropdown-menu px-0">
-                                                                            <li class="item-select">
-                                                                                <div class="item-check-radio">
-                                                                                    <input type="radio"
-                                                                                        class="check-radio" name="area">
-                                                                                    <div class="clone-check"></div>
-                                                                                    <label>Area 1</label>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li class="item-select">
-                                                                                <div class="item-check-radio">
-                                                                                    <input type="radio"
-                                                                                        class="check-radio" name="area">
-                                                                                    <div class="clone-check"></div>
-                                                                                    <label>Area 2</label>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <!--form-field  -->
-                                                                </div>
-                                                                <!-- group-col -->
-
-
-                                                            </div>
-                                                            <!-- group row -->
-                                                        </div>
-                                                        <!-- field group -->
 
                                                         <!-- field group -->
                                                         <div class="field-group">
-                                                            <div class="group-header">
-                                                                <h5>Warst du in der Vergangenheit bereits für TERRAS o.
-                                                                    ein TERRAS Tochterunternehmen tätig?</h5>
-                                                            </div>
+
 
                                                             <!-- group row -->
                                                             <div class="row my-row group-row default-row-plus">
-                                                                <!-- group-col -->
-                                                                <div class="col-auto my-col group-col">
-                                                                    <!-- check radio field -->
-                                                                    <div class="check-radio-field">
-                                                                        <div class="check-radio-box the-radio">
-                                                                            <input type="radio" class="selected-item"
-                                                                                name="yesno" id="ja"></inpu>
-                                                                            <div class="clone-item"></div>
-                                                                        </div>
-                                                                        <label for="ja">Ja</label>
-                                                                    </div>
-                                                                    <!-- check radio field -->
-                                                                </div>
-                                                                <!-- group-col -->
-
-                                                                <!-- group-col -->
-                                                                <div class="col-auto my-col group-col">
-                                                                    <!-- check radio field -->
-                                                                    <div class="check-radio-field">
-                                                                        <div class="check-radio-box the-radio">
-                                                                            <input type="radio" class="selected-item"
-                                                                                name="yesno" id="Nein"></inpu>
-                                                                            <div class="clone-item"></div>
-                                                                        </div>
-                                                                        <label for="Nein">Nein</label>
-                                                                    </div>
-                                                                    <!-- check radio field -->
-                                                                </div>
-                                                                <!-- group-col -->
-
-                                                                <!-- group-col -->
-                                                                <div class="col-12 my-col group-col">
-                                                                    <!-- form-field -->
-                                                                    <div
-                                                                        class="form-field cover-filed light-bg bordered site-dropdown-module-global length-type-textarea">
-                                                                        <div class="overlaped-field-label"><span>Falls
-                                                                                ja, wo und in welcher Position?</span>
-                                                                        </div>
-                                                                        <div class="main-reactive-item bg-transparent">
-                                                                            <textarea placeholder="Deine Antwort"
-                                                                                class="text-input opech-place-holder"></textarea>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--form-field  -->
-                                                                </div>
-                                                                <!-- group-col -->
 
 
-
-                                                            </div>
-                                                            <!-- group row -->
-                                                        </div>
-                                                        <!-- field group -->
-
-                                                        <!-- field group -->
-                                                        <div class="field-group">
-                                                            <div class="group-header">
-                                                                <h5>Bewerbungsunterlagen hochladen</h5>
-                                                                <p>Lade hier Lebenslauf, Arbeitszeugnisse, etc. hoch. Du
-                                                                    kannst bis zu <strong>10 Dateien</strong> hochladen
-                                                                    (erlaubte Dateiendung: PDF, PNG, JPG / max. 25 MB)
-                                                                </p>
-                                                            </div>
-
-                                                            <!-- group row -->
-                                                            <div class="row my-row group-row default-row-plus">
-                                                                <!-- group-col -->
-                                                                <div class="col-12 my-col group-col">
-                                                                    <div class="site-dropzone">
-                                                                        <form action="/target" class="dropzone"
-                                                                            id="my-great-dropzone">
-                                                                            <div class="dz-message" data-dz-message>
-                                                                                <span class="drop-icon"><i><img
-                                                                                            src="Images/note-icon-dark.svg"
-                                                                                            width="30"></i></span>
-                                                                                <span class="primary-msg">Dateien
-                                                                                    durchsuchen</span>
-                                                                                <span class="secondary-msg">oder per
-                                                                                    Drag and Drop hochladen</span>
-                                                                            </div>
-                                                                        </form>
-
-                                                                    </div>
-                                                                </div>
-                                                                <!-- group-col -->
                                                                 <!-- group-col -->
                                                                 <div class="col-12 my-col group-col">
                                                                     <!-- check radio field -->
@@ -1619,6 +1444,8 @@
                                                                     </p>
                                                                 </div>
                                                                 <!-- group-col -->
+
+
                                                             </div>
                                                             <!-- group row -->
                                                         </div>
@@ -1644,22 +1471,20 @@
                                                         <div
                                                             class="global-oval-icon-holder d-grid jc-center element-gap element-gap-3">
                                                             <div class="site-bg-grey pos-relative">
-                                                                <img src="Images/note-icon-dark.svg" width="30">
+                                                                <img src="Images/noun-documents-thankyou.svg" width="37">
                                                                 <div class="global-tip pos-1 view-2">
-                                                                    <div
-                                                                        class="the-tip site-bg-primary text-white">
-                                                                        <img
-                                                                            src="Images/noun-tick-icon-white.svg" width="12">
+                                                                    <div class="the-tip site-bg-primary text-white">
+                                                                        <img src="Images/noun-tick-icon-white.svg"
+                                                                            width="12">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="normal-text-element-module entry pull-text-center">
                                                             <div class="module-header element-gap element-gap-4">
-                                                                <h4>Viele Dank für deine Bewerbung!</h4>
+                                                                <h4>Vielen Dank für diene Bewerbung!</h4>
                                                             </div>
-                                                            <p>Deine Bewerbung ist sicher bei uns eingebaut – wir graben uns jetzt zügig durch und melden uns schneller, als ein Bagger schaufeln kann!
-                                                            </p>
+                                                            <p>Deine Bewerbung ist sicher bei uns eingebaut – wir graben uns jetzt zügig<br> durch und melden uns schneller, als ein Bagger schaufeln kann!</p>
                                                         </div>
 
 
