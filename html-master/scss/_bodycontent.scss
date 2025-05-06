@@ -3516,6 +3516,10 @@
             display: grid;
             align-items: center;
 
+            &.error-field-box{
+                border-color: var(--site-primary-color);
+            }
+
             &.dz-started{
                 display: flex;
                 column-gap: 10px;
@@ -3569,6 +3573,12 @@
             display: flex;
             align-items: flex-start;
             cursor: pointer;
+
+            &.error-field-box{
+                .check-radio-box{
+                    border-color: var(--site-primary-color);
+                }
+            }
             label{
                 font-size: 18px;
                 line-height: 30px;
@@ -3727,6 +3737,7 @@
             height: 60px;
             border-radius: 30px;
             min-width: 275px;
+           
             &.length-type-textarea{
                 height: 100px;
                 border-radius: 20px;
@@ -3750,6 +3761,10 @@
 
             &.bordered{
                 border: 2px solid;
+
+                &.error-field-box{
+                    border-color: var(--site-primary-color);
+                }
             }
 
             .form-btn{

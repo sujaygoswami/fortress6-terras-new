@@ -13436,6 +13436,8 @@ html, body {
   padding: 30px;
   display: grid;
   align-items: center; }
+  .terras .site-dropzone .dropzone.error-field-box {
+    border-color: var(--site-primary-color); }
   .terras .site-dropzone .dropzone.dz-started {
     display: flex;
     column-gap: 10px;
@@ -13470,6 +13472,8 @@ html, body {
   display: flex;
   align-items: flex-start;
   cursor: pointer; }
+  .terras .site-iconic-flex-form .check-radio-field.error-field-box .check-radio-box {
+    border-color: var(--site-primary-color); }
   .terras .site-iconic-flex-form .check-radio-field label {
     font-size: 18px;
     line-height: 30px;
@@ -13592,6 +13596,8 @@ html, body {
           width: inherit; } }
   .terras .site-iconic-flex-form .form-field.bordered {
     border: 2px solid; }
+    .terras .site-iconic-flex-form .form-field.bordered.error-field-box {
+      border-color: var(--site-primary-color); }
   .terras .site-iconic-flex-form .form-field .form-btn {
     height: 100%;
     border-radius: 30px;
