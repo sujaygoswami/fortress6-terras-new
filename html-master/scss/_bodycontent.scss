@@ -3568,6 +3568,8 @@
 
     // site-iconic-flex-form
     .site-iconic-flex-form{
+        position: relative;
+        z-index: 2;
 
         .check-radio-field{
             display: flex;
@@ -3849,7 +3851,20 @@
             }
         }
 
-       
+       .preferd-dropdown-typing-visible{
+            .prefered-dropdown{
+                display: none;
+            }
+        } 
+        
+        .prefered-value-reset{
+            position: absolute;
+            right: 110px;
+            top: 50%;
+            margin-top: -10px;
+            cursor: pointer;
+            display: none;
+        }
 
         .dropdown-menu{
             width: 100%;
@@ -3910,6 +3925,7 @@
                 display: flex;
                 column-gap: 15px;
                 align-items: start;
+                flex-wrap: wrap;
 
                 .check-radio{
                     position: absolute;
@@ -3944,9 +3960,36 @@
                 label{
                     font-size: 19px;
                     line-height: 20px;
+                    max-width: calc(100% - 35px);
                 }
             }
         }
+
+
+        
+
+        .prefered-dropdown{
+                height: 100%;
+                width: 100px;
+                background-color: var(--site-primary-color);
+                border-radius: 0 30px 30px 0;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+
+                .dropdown-menu{
+                    padding: 15px;
+                }
+
+                .main-reactive-item.dropdown-toggle{
+                    padding-left: 10px;
+                    padding-right: 10px;
+
+                    &:after{
+                        right: 10px;
+                    }
+                }
+            }
 
         .main-reactive-item{
             border: none;
@@ -3967,6 +4010,9 @@
             border-radius: 30px;
             overflow: hidden;
             color: white;
+            &.overflow-inherit{
+                overflow: inherit;
+            }
 
             &.not-choosed-yet{
                 span{
@@ -3974,8 +4020,16 @@
                 }
             }
 
+            &.has-prefred-dropdown{
+                .text-input{
+                    margin-right: 100px;
+                }
+            }
+
+            
+
             .text-input{
-                width: 100%;
+                flex-grow: 1;
                 height: 100%;
                 border: none;
                 background-color: transparent;

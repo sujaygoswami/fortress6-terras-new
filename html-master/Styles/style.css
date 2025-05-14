@@ -13468,311 +13468,333 @@ html, body {
           background-color: white;
           margin: 0 auto; }
 
-.terras .site-iconic-flex-form .check-radio-field {
-  display: flex;
-  align-items: flex-start;
-  cursor: pointer; }
-  .terras .site-iconic-flex-form .check-radio-field.error-field-box .check-radio-box {
-    border-color: var(--site-primary-color); }
-  .terras .site-iconic-flex-form .check-radio-field label {
-    font-size: 18px;
-    line-height: 30px;
-    padding-left: 10px;
-    cursor: pointer;
-    max-width: 95%; }
-    @media screen and (max-width: 1199px) {
-      .terras .site-iconic-flex-form .check-radio-field label {
-        font-size: 15px;
-        max-width: 75%; } }
-    .terras .site-iconic-flex-form .check-radio-field label a {
-      color: var(--site-primary-color); }
-  .terras .site-iconic-flex-form .check-radio-field .check-radio-box {
-    width: 30px;
-    height: 30px;
-    border: 2px solid;
-    position: relative;
-    overflow: hidden; }
-    .terras .site-iconic-flex-form .check-radio-field .check-radio-box .selected-item {
-      margin: 0px;
-      padding: 0px;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0px;
-      top: 0px;
-      opacity: 0;
-      cursor: pointer; }
-      .terras .site-iconic-flex-form .check-radio-field .check-radio-box .selected-item:checked + .clone-item {
-        background-color: var(--site-primary-color);
-        background-image: url(../Images/tick-mark-icon-white.svg); }
-    .terras .site-iconic-flex-form .check-radio-field .check-radio-box .clone-item {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0px;
-      top: 0px;
-      pointer-events: none;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 12px; }
-    .terras .site-iconic-flex-form .check-radio-field .check-radio-box.the-radio {
-      border-radius: 100%; }
-      .terras .site-iconic-flex-form .check-radio-field .check-radio-box.the-radio .selected-item, .terras .site-iconic-flex-form .check-radio-field .check-radio-box.the-radio .clone-item {
-        border-radius: 100%; }
-    .terras .site-iconic-flex-form .check-radio-field .check-radio-box.the-checkbox {
-      border-radius: 9px; }
-
-.terras .site-iconic-flex-form .group-row {
-  row-gap: 35px; }
-
-.terras .site-iconic-flex-form .field-group {
-  margin-bottom: 50px; }
-  .terras .site-iconic-flex-form .field-group:last-child {
-    margin-bottom: 0px; }
-
-.terras .site-iconic-flex-form .overlaped-field-label {
-  position: absolute;
-  left: 10px;
-  top: -12px;
-  pointer-events: none; }
-  .terras .site-iconic-flex-form .overlaped-field-label span {
-    padding: 0 10px 0 10px;
-    background-color: white;
-    font-size: 18px; }
-    @media screen and (max-width: 1199px) {
-      .terras .site-iconic-flex-form .overlaped-field-label span {
-        font-size: 15px; } }
-    .terras .site-iconic-flex-form .overlaped-field-label span i {
-      color: var(--site-primary-color) !important;
-      font-style: normal; }
-
-.terras .site-iconic-flex-form > .main-wrap {
-  display: flex;
-  column-gap: 10px;
-  row-gap: 20px;
-  flex-wrap: wrap; }
-
-.terras .site-iconic-flex-form.layout-2 .form-field {
-  height: 50px; }
-  .terras .site-iconic-flex-form.layout-2 .form-field.light-bg .dropdown-menu {
-    margin-top: -22px !important;
-    padding-top: 23px; }
-
-.terras .site-iconic-flex-form.layout-3 .main-reactive-item:after {
-  width: 23.48px;
-  height: 13.74px;
-  background-size: 23.48px; }
-
-.terras .site-iconic-flex-form.layout-3 .form-field {
-  height: 60px;
-  border-radius: 45px; }
-  .terras .site-iconic-flex-form.layout-3 .form-field .dropdown-menu {
-    border: 2px solid; }
-  .terras .site-iconic-flex-form.layout-3 .form-field.light-bg .dropdown-menu {
-    margin-top: 5px !important;
-    padding-top: 0px;
-    border-radius: 20px;
-    padding: 20px; }
-    .terras .site-iconic-flex-form.layout-3 .form-field.light-bg .dropdown-menu li:first-child {
-      border-top: none;
-      padding-top: 10px; }
-
-.terras .site-iconic-flex-form .form-field {
-  height: 60px;
-  border-radius: 30px;
-  min-width: 275px; }
-  .terras .site-iconic-flex-form .form-field.length-type-textarea {
-    height: 100px;
-    border-radius: 20px; }
-    .terras .site-iconic-flex-form .form-field.length-type-textarea .main-reactive-item {
-      padding: 20px; }
-  .terras .site-iconic-flex-form .form-field.cover-filed {
-    min-width: inherit;
-    width: 100%; }
-    .terras .site-iconic-flex-form .form-field.cover-filed.sm-field {
-      width: 200px; }
-      @media screen and (max-width: 1199px) {
-        .terras .site-iconic-flex-form .form-field.cover-filed.sm-field {
-          width: inherit; } }
-  .terras .site-iconic-flex-form .form-field.bordered {
-    border: 2px solid; }
-    .terras .site-iconic-flex-form .form-field.bordered.error-field-box {
-      border-color: var(--site-primary-color); }
-  .terras .site-iconic-flex-form .form-field .form-btn {
-    height: 100%;
-    border-radius: 30px;
-    background-color: var(--site-primary-color);
-    color: white;
-    border: none;
-    text-align: left;
-    font-size: 19px;
-    font-weight: var(--site-primary-font-bold);
-    margin: 0px;
-    padding: 0 54px 0 22px;
-    background-repeat: no-repeat;
-    background-position: right 18px center;
-    background-size: 21.17px; }
-    .terras .site-iconic-flex-form .form-field .form-btn.search-btn {
-      background-image: url(../Images/search-thin-icon-white.svg); }
-  .terras .site-iconic-flex-form .form-field.dark-bg {
-    color: white; }
-    .terras .site-iconic-flex-form .form-field.dark-bg * {
-      color: white; }
-  .terras .site-iconic-flex-form .form-field.light-bg {
-    color: inherit;
-    position: relative; }
-    .terras .site-iconic-flex-form .form-field.light-bg.show {
-      z-index: 1; }
-    .terras .site-iconic-flex-form .form-field.light-bg * {
-      color: inherit; }
-    .terras .site-iconic-flex-form .form-field.light-bg .main-reactive-item {
-      backdrop-filter: none; }
-      .terras .site-iconic-flex-form .form-field.light-bg .main-reactive-item:after {
-        background-image: url(../Images/thin-dropdown-down-arrow-dark.svg); }
-    .terras .site-iconic-flex-form .form-field.light-bg .dropdown-menu {
-      background-color: white;
-      box-shadow: 0px 3px 20px #1B20201F;
-      margin-top: -28px !important;
-      border-radius: 0 0 30px 30px;
-      padding-top: 28px;
-      top: inherit !important;
-      bottom: inherit !important;
-      transform: none !important;
-      z-index: -1; }
-      .terras .site-iconic-flex-form .form-field.light-bg .dropdown-menu li:first-child {
-        border-top: 1px solid var(--site-grey-type-2);
-        padding-top: 22px; }
-      .terras .site-iconic-flex-form .form-field.light-bg .dropdown-menu .item-check-radio .check-radio:checked + .clone-check {
-        background-color: var(--site-primary-color);
-        border-color: var(--site-primary-color);
-        background-image: url(../Images/tick-mark-icon-white.svg); }
-
-.terras .site-iconic-flex-form .dropdown-menu {
-  width: 100%;
-  border-radius: 30px;
-  width: 100%;
-  border: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  overflow: hidden;
-  padding: 20px;
-  backdrop-filter: blur(30px); }
-  .terras .site-iconic-flex-form .dropdown-menu li {
-    padding: 10px 0; }
-    .terras .site-iconic-flex-form .dropdown-menu li.item-select {
-      padding: 0px !important; }
-      .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio {
-        padding: 10px;
-        position: relative; }
-        .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .check-radio {
-          z-index: 2; }
-          .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .check-radio:checked + .clone-check {
-            background-color: var(--site-global-dark) !important;
-            background-image: none !important; }
-            .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .check-radio:checked + .clone-check + label {
-              color: white; }
-        .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .clone-check {
-          border: none;
-          width: 100%;
-          height: 100%;
-          border-radius: 0px;
-          background-image: none;
-          position: absolute;
-          left: 0px;
-          top: 0px; }
-        .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio label {
-          position: relative;
-          z-index: 1; }
-  .terras .site-iconic-flex-form .dropdown-menu .item-check-radio {
-    position: relative;
-    display: flex;
-    column-gap: 15px;
-    align-items: start; }
-    .terras .site-iconic-flex-form .dropdown-menu .item-check-radio .check-radio {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      left: 0px;
-      top: 0px;
-      margin: 0px;
-      padding: 0px;
-      cursor: pointer;
-      opacity: 0; }
-      .terras .site-iconic-flex-form .dropdown-menu .item-check-radio .check-radio:checked + .clone-check {
-        background-color: white;
-        background-image: url(../Images/tick-mark-icon-dark.svg); }
-    .terras .site-iconic-flex-form .dropdown-menu .item-check-radio .clone-check {
-      width: 20px;
-      height: 20px;
-      border-radius: 5px;
-      border: 2px solid;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: 10.37px; }
-    .terras .site-iconic-flex-form .dropdown-menu .item-check-radio label {
-      font-size: 19px;
-      line-height: 20px; }
-
-.terras .site-iconic-flex-form .main-reactive-item {
-  border: none;
-  background-color: transparent;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0 20px 0 20px;
-  font-size: 19px;
-  text-align: left;
-  display: flex;
-  column-gap: 10px;
-  align-items: center;
-  line-height: normal;
+.terras .site-iconic-flex-form {
   position: relative;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  border-radius: 30px;
-  overflow: hidden;
-  color: white; }
-  .terras .site-iconic-flex-form .main-reactive-item.not-choosed-yet span {
-    opacity: 0.3; }
-  .terras .site-iconic-flex-form .main-reactive-item .text-input {
+  z-index: 2; }
+  .terras .site-iconic-flex-form .check-radio-field {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer; }
+    .terras .site-iconic-flex-form .check-radio-field.error-field-box .check-radio-box {
+      border-color: var(--site-primary-color); }
+    .terras .site-iconic-flex-form .check-radio-field label {
+      font-size: 18px;
+      line-height: 30px;
+      padding-left: 10px;
+      cursor: pointer;
+      max-width: 95%; }
+      @media screen and (max-width: 1199px) {
+        .terras .site-iconic-flex-form .check-radio-field label {
+          font-size: 15px;
+          max-width: 75%; } }
+      .terras .site-iconic-flex-form .check-radio-field label a {
+        color: var(--site-primary-color); }
+    .terras .site-iconic-flex-form .check-radio-field .check-radio-box {
+      width: 30px;
+      height: 30px;
+      border: 2px solid;
+      position: relative;
+      overflow: hidden; }
+      .terras .site-iconic-flex-form .check-radio-field .check-radio-box .selected-item {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+        cursor: pointer; }
+        .terras .site-iconic-flex-form .check-radio-field .check-radio-box .selected-item:checked + .clone-item {
+          background-color: var(--site-primary-color);
+          background-image: url(../Images/tick-mark-icon-white.svg); }
+      .terras .site-iconic-flex-form .check-radio-field .check-radio-box .clone-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 12px; }
+      .terras .site-iconic-flex-form .check-radio-field .check-radio-box.the-radio {
+        border-radius: 100%; }
+        .terras .site-iconic-flex-form .check-radio-field .check-radio-box.the-radio .selected-item, .terras .site-iconic-flex-form .check-radio-field .check-radio-box.the-radio .clone-item {
+          border-radius: 100%; }
+      .terras .site-iconic-flex-form .check-radio-field .check-radio-box.the-checkbox {
+        border-radius: 9px; }
+  .terras .site-iconic-flex-form .group-row {
+    row-gap: 35px; }
+  .terras .site-iconic-flex-form .field-group {
+    margin-bottom: 50px; }
+    .terras .site-iconic-flex-form .field-group:last-child {
+      margin-bottom: 0px; }
+  .terras .site-iconic-flex-form .overlaped-field-label {
+    position: absolute;
+    left: 10px;
+    top: -12px;
+    pointer-events: none; }
+    .terras .site-iconic-flex-form .overlaped-field-label span {
+      padding: 0 10px 0 10px;
+      background-color: white;
+      font-size: 18px; }
+      @media screen and (max-width: 1199px) {
+        .terras .site-iconic-flex-form .overlaped-field-label span {
+          font-size: 15px; } }
+      .terras .site-iconic-flex-form .overlaped-field-label span i {
+        color: var(--site-primary-color) !important;
+        font-style: normal; }
+  .terras .site-iconic-flex-form > .main-wrap {
+    display: flex;
+    column-gap: 10px;
+    row-gap: 20px;
+    flex-wrap: wrap; }
+  .terras .site-iconic-flex-form.layout-2 .form-field {
+    height: 50px; }
+    .terras .site-iconic-flex-form.layout-2 .form-field.light-bg .dropdown-menu {
+      margin-top: -22px !important;
+      padding-top: 23px; }
+  .terras .site-iconic-flex-form.layout-3 .main-reactive-item:after {
+    width: 23.48px;
+    height: 13.74px;
+    background-size: 23.48px; }
+  .terras .site-iconic-flex-form.layout-3 .form-field {
+    height: 60px;
+    border-radius: 45px; }
+    .terras .site-iconic-flex-form.layout-3 .form-field .dropdown-menu {
+      border: 2px solid; }
+    .terras .site-iconic-flex-form.layout-3 .form-field.light-bg .dropdown-menu {
+      margin-top: 5px !important;
+      padding-top: 0px;
+      border-radius: 20px;
+      padding: 20px; }
+      .terras .site-iconic-flex-form.layout-3 .form-field.light-bg .dropdown-menu li:first-child {
+        border-top: none;
+        padding-top: 10px; }
+  .terras .site-iconic-flex-form .form-field {
+    height: 60px;
+    border-radius: 30px;
+    min-width: 275px; }
+    .terras .site-iconic-flex-form .form-field.length-type-textarea {
+      height: 100px;
+      border-radius: 20px; }
+      .terras .site-iconic-flex-form .form-field.length-type-textarea .main-reactive-item {
+        padding: 20px; }
+    .terras .site-iconic-flex-form .form-field.cover-filed {
+      min-width: inherit;
+      width: 100%; }
+      .terras .site-iconic-flex-form .form-field.cover-filed.sm-field {
+        width: 200px; }
+        @media screen and (max-width: 1199px) {
+          .terras .site-iconic-flex-form .form-field.cover-filed.sm-field {
+            width: inherit; } }
+    .terras .site-iconic-flex-form .form-field.bordered {
+      border: 2px solid; }
+      .terras .site-iconic-flex-form .form-field.bordered.error-field-box {
+        border-color: var(--site-primary-color); }
+    .terras .site-iconic-flex-form .form-field .form-btn {
+      height: 100%;
+      border-radius: 30px;
+      background-color: var(--site-primary-color);
+      color: white;
+      border: none;
+      text-align: left;
+      font-size: 19px;
+      font-weight: var(--site-primary-font-bold);
+      margin: 0px;
+      padding: 0 54px 0 22px;
+      background-repeat: no-repeat;
+      background-position: right 18px center;
+      background-size: 21.17px; }
+      .terras .site-iconic-flex-form .form-field .form-btn.search-btn {
+        background-image: url(../Images/search-thin-icon-white.svg); }
+    .terras .site-iconic-flex-form .form-field.dark-bg {
+      color: white; }
+      .terras .site-iconic-flex-form .form-field.dark-bg * {
+        color: white; }
+    .terras .site-iconic-flex-form .form-field.light-bg {
+      color: inherit;
+      position: relative; }
+      .terras .site-iconic-flex-form .form-field.light-bg.show {
+        z-index: 1; }
+      .terras .site-iconic-flex-form .form-field.light-bg * {
+        color: inherit; }
+      .terras .site-iconic-flex-form .form-field.light-bg .main-reactive-item {
+        backdrop-filter: none; }
+        .terras .site-iconic-flex-form .form-field.light-bg .main-reactive-item:after {
+          background-image: url(../Images/thin-dropdown-down-arrow-dark.svg); }
+      .terras .site-iconic-flex-form .form-field.light-bg .dropdown-menu {
+        background-color: white;
+        box-shadow: 0px 3px 20px #1B20201F;
+        margin-top: -28px !important;
+        border-radius: 0 0 30px 30px;
+        padding-top: 28px;
+        top: inherit !important;
+        bottom: inherit !important;
+        transform: none !important;
+        z-index: -1; }
+        .terras .site-iconic-flex-form .form-field.light-bg .dropdown-menu li:first-child {
+          border-top: 1px solid var(--site-grey-type-2);
+          padding-top: 22px; }
+        .terras .site-iconic-flex-form .form-field.light-bg .dropdown-menu .item-check-radio .check-radio:checked + .clone-check {
+          background-color: var(--site-primary-color);
+          border-color: var(--site-primary-color);
+          background-image: url(../Images/tick-mark-icon-white.svg); }
+  .terras .site-iconic-flex-form .preferd-dropdown-typing-visible .prefered-dropdown {
+    display: none; }
+  .terras .site-iconic-flex-form .prefered-value-reset {
+    position: absolute;
+    right: 110px;
+    top: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+    display: none; }
+  .terras .site-iconic-flex-form .dropdown-menu {
     width: 100%;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    overflow: hidden;
+    padding: 20px;
+    backdrop-filter: blur(30px); }
+    .terras .site-iconic-flex-form .dropdown-menu li {
+      padding: 10px 0; }
+      .terras .site-iconic-flex-form .dropdown-menu li.item-select {
+        padding: 0px !important; }
+        .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio {
+          padding: 10px;
+          position: relative; }
+          .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .check-radio {
+            z-index: 2; }
+            .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .check-radio:checked + .clone-check {
+              background-color: var(--site-global-dark) !important;
+              background-image: none !important; }
+              .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .check-radio:checked + .clone-check + label {
+                color: white; }
+          .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio .clone-check {
+            border: none;
+            width: 100%;
+            height: 100%;
+            border-radius: 0px;
+            background-image: none;
+            position: absolute;
+            left: 0px;
+            top: 0px; }
+          .terras .site-iconic-flex-form .dropdown-menu li.item-select .item-check-radio label {
+            position: relative;
+            z-index: 1; }
+    .terras .site-iconic-flex-form .dropdown-menu .item-check-radio {
+      position: relative;
+      display: flex;
+      column-gap: 15px;
+      align-items: start;
+      flex-wrap: wrap; }
+      .terras .site-iconic-flex-form .dropdown-menu .item-check-radio .check-radio {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        left: 0px;
+        top: 0px;
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+        opacity: 0; }
+        .terras .site-iconic-flex-form .dropdown-menu .item-check-radio .check-radio:checked + .clone-check {
+          background-color: white;
+          background-image: url(../Images/tick-mark-icon-dark.svg); }
+      .terras .site-iconic-flex-form .dropdown-menu .item-check-radio .clone-check {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        border: 2px solid;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 10.37px; }
+      .terras .site-iconic-flex-form .dropdown-menu .item-check-radio label {
+        font-size: 19px;
+        line-height: 20px;
+        max-width: calc(100% - 35px); }
+  .terras .site-iconic-flex-form .prefered-dropdown {
     height: 100%;
+    width: 100px;
+    background-color: var(--site-primary-color);
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+    .terras .site-iconic-flex-form .prefered-dropdown .dropdown-menu {
+      padding: 15px; }
+    .terras .site-iconic-flex-form .prefered-dropdown .main-reactive-item.dropdown-toggle {
+      padding-left: 10px;
+      padding-right: 10px; }
+      .terras .site-iconic-flex-form .prefered-dropdown .main-reactive-item.dropdown-toggle:after {
+        right: 10px; }
+  .terras .site-iconic-flex-form .main-reactive-item {
     border: none;
     background-color: transparent;
-    font-size: 19px; }
-    .terras .site-iconic-flex-form .main-reactive-item .text-input::placeholder {
-      opacity: 1;
-      color: inherit; }
-    .terras .site-iconic-flex-form .main-reactive-item .text-input.opech-place-holder::placeholder {
-      opacity: 0.3; }
-  .terras .site-iconic-flex-form .main-reactive-item.dropdown-toggle {
-    padding-right: 65px; }
-  .terras .site-iconic-flex-form .main-reactive-item.show:after {
-    transform: rotate(180deg); }
-  .terras .site-iconic-flex-form .main-reactive-item i {
-    position: relative;
-    top: -2px; }
-  .terras .site-iconic-flex-form .main-reactive-item:after {
-    position: absolute;
-    right: 20px;
-    top: 50%;
+    width: 100%;
+    height: 100%;
     margin: 0px;
-    margin-top: -5px;
-    pointer-events: none;
-    border: none;
-    background-repeat: no-repeat;
-    background-image: url(../Images/thin-dropdown-down-arrow-white.svg);
-    background-size: 18.07px;
-    background-position: left top;
-    width: 18.07px;
-    height: 10.04px;
-    transform-origin: center center;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s; }
-
-.terras .site-iconic-flex-form .group-header {
-  margin-bottom: 35px; }
+    padding: 0 20px 0 20px;
+    font-size: 19px;
+    text-align: left;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    line-height: normal;
+    position: relative;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 30px;
+    overflow: hidden;
+    color: white; }
+    .terras .site-iconic-flex-form .main-reactive-item.overflow-inherit {
+      overflow: inherit; }
+    .terras .site-iconic-flex-form .main-reactive-item.not-choosed-yet span {
+      opacity: 0.3; }
+    .terras .site-iconic-flex-form .main-reactive-item.has-prefred-dropdown .text-input {
+      margin-right: 100px; }
+    .terras .site-iconic-flex-form .main-reactive-item .text-input {
+      flex-grow: 1;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      font-size: 19px; }
+      .terras .site-iconic-flex-form .main-reactive-item .text-input::placeholder {
+        opacity: 1;
+        color: inherit; }
+      .terras .site-iconic-flex-form .main-reactive-item .text-input.opech-place-holder::placeholder {
+        opacity: 0.3; }
+    .terras .site-iconic-flex-form .main-reactive-item.dropdown-toggle {
+      padding-right: 65px; }
+    .terras .site-iconic-flex-form .main-reactive-item.show:after {
+      transform: rotate(180deg); }
+    .terras .site-iconic-flex-form .main-reactive-item i {
+      position: relative;
+      top: -2px; }
+    .terras .site-iconic-flex-form .main-reactive-item:after {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin: 0px;
+      margin-top: -5px;
+      pointer-events: none;
+      border: none;
+      background-repeat: no-repeat;
+      background-image: url(../Images/thin-dropdown-down-arrow-white.svg);
+      background-size: 18.07px;
+      background-position: left top;
+      width: 18.07px;
+      height: 10.04px;
+      transform-origin: center center;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+  .terras .site-iconic-flex-form .group-header {
+    margin-bottom: 35px; }
 
 .terras .job-card-module .client-logo img {
   max-width: 100px; }

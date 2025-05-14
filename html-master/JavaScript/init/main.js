@@ -943,6 +943,28 @@ jQuery('.site-dropdown-module-global .check-radio').each(function(){
 });
 // site-dropdown-module-global
 
+// preferd-dropdown-typing-visible
+
+jQuery('.preferd-dropdown-typing-visible').each(function(){
+  
+  jQuery(this).find('.text-input').on("input", function(){
+   if($(this).length > 0 && $(this).val() != ''){
+    jQuery(this).parents('.preferd-dropdown-typing-visible').find('.prefered-dropdown').show();
+    jQuery(this).parents('.preferd-dropdown-typing-visible').find('.prefered-value-reset').show();
+   }else{
+    jQuery(this).parents('.preferd-dropdown-typing-visible').find('.prefered-dropdown').hide();
+    jQuery(this).parents('.preferd-dropdown-typing-visible').find('.prefered-value-reset').hide();
+   }
+  });
+
+});
+jQuery('.prefered-value-reset').click(function(){
+  jQuery(this).parents('.preferd-dropdown-typing-visible').find('.prefered-dropdown').hide();
+  jQuery(this).parents('.preferd-dropdown-typing-visible').find('.text-input').val('');
+  jQuery(this).hide();
+});
+// preferd-dropdown-typing-visible
+
 
 
 
