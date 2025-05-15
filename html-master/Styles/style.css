@@ -13720,7 +13720,7 @@ html, body {
         max-width: calc(100% - 35px); }
   .terras .site-iconic-flex-form .prefered-dropdown {
     height: 100%;
-    width: 100px;
+    width: 105px;
     background-color: var(--site-primary-color);
     border-radius: 0 30px 30px 0;
     position: absolute;
@@ -13757,7 +13757,7 @@ html, body {
     .terras .site-iconic-flex-form .main-reactive-item.not-choosed-yet span {
       opacity: 0.3; }
     .terras .site-iconic-flex-form .main-reactive-item.has-prefred-dropdown .text-input {
-      margin-right: 100px; }
+      margin-right: 105px; }
     .terras .site-iconic-flex-form .main-reactive-item .text-input {
       flex-grow: 1;
       height: 100%;
