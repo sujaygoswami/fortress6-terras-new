@@ -12334,7 +12334,10 @@ html, body {
     margin-top: 7px; }
   .terras .cover-bg-content-module .caption-with-link.caption-view-2 {
     padding: 25px 30px;
-    background-color: white; }
+    background-color: white;
+    display: flex; }
+    .terras .cover-bg-content-module .caption-with-link.caption-view-2 > .row {
+      flex-grow: 1; }
     @media screen and (max-width: 1199px) {
       .terras .cover-bg-content-module .caption-with-link.caption-view-2 {
         padding: 16px 20px; } }

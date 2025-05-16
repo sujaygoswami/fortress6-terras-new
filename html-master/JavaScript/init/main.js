@@ -1078,6 +1078,8 @@ jQuery(window).load(function(){
     jQuery(this).find('.job-context').matchHeight({byRow: false});
   });
 
+  jQuery('.caption-with-link.caption-view-2').matchHeight();
+
   
 
 
