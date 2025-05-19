@@ -13471,9 +13471,12 @@ html, body {
           background-color: white;
           margin: 0 auto; }
 
-.terras .site-iconic-flex-form {
+.terras .filter-panel-module {
   position: relative;
   z-index: 2; }
+
+.terras .site-iconic-flex-form {
+  position: relative; }
   .terras .site-iconic-flex-form .check-radio-field {
     display: flex;
     align-items: flex-start;
@@ -13759,8 +13762,6 @@ html, body {
       overflow: inherit; }
     .terras .site-iconic-flex-form .main-reactive-item.not-choosed-yet span {
       opacity: 0.3; }
-    .terras .site-iconic-flex-form .main-reactive-item.has-prefred-dropdown .text-input {
-      margin-right: 105px; }
     .terras .site-iconic-flex-form .main-reactive-item .text-input {
       flex-grow: 1;
       height: 100%;

@@ -3571,10 +3571,17 @@
     }
     // site-dropzone
 
+    // filter-panel-module
+    .filter-panel-module{
+        position: relative;
+        z-index: 2;
+    }
+    // filter-panel-module
+
     // site-iconic-flex-form
     .site-iconic-flex-form{
         position: relative;
-        z-index: 2;
+       
 
         .check-radio-field{
             display: flex;
@@ -4027,7 +4034,7 @@
 
             &.has-prefred-dropdown{
                 .text-input{
-                    margin-right: 105px;
+                    // margin-right: 105px;
                 }
             }
 
