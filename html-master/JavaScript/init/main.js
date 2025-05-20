@@ -491,10 +491,14 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 
-Fancybox.bind('[data-fancybox="site-modal-fancy-box-form"], [data-fancybox="site-modal-fancy-box-thank-you"]',{
-  mainClass: 'site-modal-fancy-box',
-  dragToClose: false
-});
+// Fancybox.bind('[data-fancybox="site-modal-fancy-box-form"], [data-fancybox="site-modal-fancy-box-thank-you"]',{
+//   mainClass: 'site-modal-fancy-box',
+//   dragToClose: false
+// });
+
+
+
+
 
 Fancybox.bind('[data-fancybox="team-member-video"]',{
   mainClass: 'light-box-video-width-only',
