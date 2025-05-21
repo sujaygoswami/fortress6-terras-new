@@ -2,6 +2,29 @@
 
 
     // basic starts
+    .no-job-result-found{
+        & + style + .single-column-grid-module{
+
+            .cover-bg-content-module{
+                min-height: inherit !important;
+
+                .the-context{
+                    position: static;
+                }
+
+                .inset-card-content{
+                    padding: 0px;
+                }
+            }
+            
+        }
+    }
+    .h-0{
+        height: 0px !important;
+    }
+    input[type="text"], input[type="email"]{
+        filter: grayscale(100%) brightness(110%);
+    }
     .global-flex-wrap{
         flex-wrap: wrap;
     }
@@ -3676,6 +3699,7 @@
             left: 10px;
             top: -12px;
             pointer-events: none;
+            z-index: 1;
             
 
             span{
@@ -3750,7 +3774,21 @@
         .form-field{
             height: 60px;
             border-radius: 30px;
-            min-width: 275px;
+            min-width: 255px;
+
+             @media screen and (max-width: 1279px) and (min-width: 1200px) {
+                &:not(.width-type-2){
+                    min-width: 235px;
+                }
+             }
+
+            &.width-type-2{
+
+                @media screen and (min-width: $xl) {
+                    min-width: 500px;
+                }
+                
+            }
            
             &.length-type-textarea{
                 height: 100px;
@@ -4267,6 +4305,10 @@
             background-position: right bottom;
             background-image: var(--fancy-modal-bg);
             --fancybox-bg: transparent;
+
+            // .fancybox__nav{
+            //     display: none !important;
+            // }
 
             @media screen and (max-width: ($xl - 1px)) {
                 .fancybox__slide{
