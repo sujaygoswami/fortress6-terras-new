@@ -12368,6 +12368,11 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
+  .terras .cover-bg-content-module.set-back.set-back-with-global-radius {
+    background-position: center bottom 40px; }
+    @media screen and (max-width: 1199px) {
+      .terras .cover-bg-content-module.set-back.set-back-with-global-radius {
+        background-position: center bottom 20px; } }
   .terras .cover-bg-content-module.set-back > .set-back-item {
     width: 100%;
     height: auto;
@@ -13685,7 +13690,8 @@ html, body {
     color: white;
     overflow: hidden;
     padding: 20px;
-    backdrop-filter: blur(30px); }
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px); }
     .terras .site-iconic-flex-form .dropdown-menu li {
       padding: 10px 0; }
       .terras .site-iconic-flex-form .dropdown-menu li.item-select {

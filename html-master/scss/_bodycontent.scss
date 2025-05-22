@@ -1971,6 +1971,13 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center top;
+            &.set-back-with-global-radius{
+                background-position: center bottom 40px;
+
+                @media screen and (max-width: ($xl - 1px)) {
+                    background-position: center bottom 20px;
+                }
+            }
             & > .set-back-item{
                 width: 100%;
                 height: auto;
@@ -3926,6 +3933,7 @@
             overflow: hidden;
             padding: 20px;
             backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
 
             li{
                 padding: 10px 0;
