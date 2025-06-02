@@ -13558,8 +13558,7 @@ html, body {
     position: absolute;
     left: 10px;
     top: -12px;
-    pointer-events: none;
-    z-index: 1; }
+    pointer-events: none; }
     .terras .site-iconic-flex-form .overlaped-field-label span {
       padding: 0 10px 0 10px;
       background-color: white;
@@ -13580,6 +13579,8 @@ html, body {
     .terras .site-iconic-flex-form.layout-2 .form-field.light-bg .dropdown-menu {
       margin-top: -22px !important;
       padding-top: 23px; }
+  .terras .site-iconic-flex-form.layout-3 .main-reactive-item .text-input {
+    height: auto; }
   .terras .site-iconic-flex-form.layout-3 .main-reactive-item:after {
     width: 23.48px;
     height: 13.74px;

@@ -3706,7 +3706,7 @@
             left: 10px;
             top: -12px;
             pointer-events: none;
-            z-index: 1;
+            
             
 
             span{
@@ -3745,7 +3745,11 @@
         }
 
         &.layout-3{
+           
             .main-reactive-item{
+                .text-input{
+                    height: auto;
+                }
                 &:after{
                     width: 23.48px;
                     height: 13.74px;
