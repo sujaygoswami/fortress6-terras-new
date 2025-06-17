@@ -13653,7 +13653,8 @@ html, body {
       .terras .site-iconic-flex-form .form-field.light-bg * {
         color: inherit; }
       .terras .site-iconic-flex-form .form-field.light-bg .main-reactive-item {
-        backdrop-filter: none; }
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none; }
         .terras .site-iconic-flex-form .form-field.light-bg .main-reactive-item:after {
           background-image: url(../Images/thin-dropdown-down-arrow-dark.svg); }
       .terras .site-iconic-flex-form .form-field.light-bg .dropdown-menu {

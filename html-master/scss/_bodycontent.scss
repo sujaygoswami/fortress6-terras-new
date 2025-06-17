@@ -3871,6 +3871,7 @@
 
                 .main-reactive-item{
                     backdrop-filter: none;
+                    -webkit-backdrop-filter: none;
                     &:after{
                         background-image: url(../Images/thin-dropdown-down-arrow-dark.svg);
                     }
